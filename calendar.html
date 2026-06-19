@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Academic Calendar - Glory High School</title>
+    <!-- Core CSS Files -->
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/header.css">
+    <link rel="stylesheet" href="../../css/navigation.css">
+    <link rel="stylesheet" href="../../css/animations.css">
+    <link rel="stylesheet" href="../../css/dark-mode.css">
+    <link rel="stylesheet" href="../../css/portrait-mode.css">
+    <link rel="stylesheet" href="../../css/responsive.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Top Header with Contact Info -->
+    <div class="top-header" id="topHeader">
+        <div class="container">
+            <div class="contact-info">
+                <div class="phone-numbers">
+                    <i class="fas fa-phone-alt"></i>
+                    <a href="tel:0754645377">0754645377</a>
+                    <span class="separator">|</span>
+                    <a href="tel:0778654311">0778654311</a>
+                </div>
+                <div class="email">
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:info@gloryhighschool.ac.ug">info@gloryhighschool.ac.ug</a>
+                </div>
+                <div class="location">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Church of Uganda Busimbi Hill, Mityana</span>
+                </div>
+            </div>
+            <div class="dark-mode-toggle">
+                <button id="darkModeBtn" class="dark-mode-btn">🌓 Dark Mode</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Header -->
+    <header class="main-header" id="mainHeader">
+        <div class="container">
+            <a href="../../index.html" class="logo-link">
+                <div class="logo-section">
+                    <img src="../../assets/images/seeta3.png" alt="Glory High School Logo" class="logo" onerror="this.src='https://via.placeholder.com/60x60?text=GHS'">
+                    <div class="school-info">
+                        <h1>Glory High School</h1>
+                        <p class="motto">Excellence, Integrity, Service</p>
+                    </div>
+                </div>
+            </a>
+            
+            <nav class="main-nav">
+                <ul class="nav-menu">
+                    <!-- Home Dropdown -->
+                    <li class="dropdown">
+                        <a href="../../index.html">Home</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../../index.html">Home Overview</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- About Dropdown -->
+                    <li class="dropdown">
+                        <a href="../../about.html">About</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../about/history.html">History</a></li>
+                            <li><a href="../about/mission-vision.html">Mission & Vision</a></li>
+                            <li><a href="../about/leadership.html">Leadership</a></li>
+                            <li><a href="../about/staff.html">Staff Directory</a></li>
+                            <li><a href="../about/accreditation.html">Accreditation</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Academics Dropdown - Active -->
+                    <li class="dropdown active">
+                        <a href="../../academics.html">Academics</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="curriculum.html">Curriculum</a></li>
+                            <li><a href="departments.html">Departments</a></li>
+                            <li><a href="calendar.html" class="active">Academic Calendar</a></li>
+                            <li><a href="results.html">Examination Results</a></li>
+                            <li><a href="apply-now.html" class="apply-btn">Apply Now</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Admissions Dropdown -->
+                    <li class="dropdown">
+                        <a href="../../admissions.html">Admission</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../admissions/requirements.html">Requirements</a></li>
+                            <li><a href="../admissions/fees-structure.html">Fees Structure</a></li>
+                            <li><a href="../admissions/application-form.html">Application Form</a></li>
+                            <li><a href="../admissions/scholarships.html">Scholarships</a></li>
+                            <li><a href="../admissions/faqs.html">FAQs</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- School Life Dropdown -->
+                    <li class="dropdown">
+                        <a href="../../school-life.html">School Life</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../school-life/sports.html">Sports</a></li>
+                            <li><a href="../school-life/clubs.html">Clubs & Societies</a></li>
+                            <li><a href="../school-life/events.html">Events</a></li>
+                            <li><a href="../school-life/gallery.html">Gallery</a></li>
+                            <li><a href="../school-life/student-council.html">Student Council</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Contacts Dropdown -->
+                    <li class="dropdown">
+                        <a href="../../contacts.html">Contacts</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../contacts/contact-form.html">Contact Form</a></li>
+                            <li><a href="../contacts/directory.html">Staff Directory</a></li>
+                            <li><a href="../contacts/visit-us.html">Visit Us</a></li>
+                            <li><a href="../contacts/career.html">Careers</a></li>
+                            <li><a href="../contacts/support.html">Support</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Large Hero Image with Calendar Title -->
+    <section class="calendar-hero">
+        <div class="calendar-hero-image">
+            <img src="../../assets/images/seeta3.png" alt="Academic Calendar" class="hero-img">
+            <div class="hero-overlay">
+                <div class="container">
+                    <h1 class="slide-down">Academic Calendar 2024</h1>
+                    <p class="fade-in-up">Plan Your Academic Journey • Key Dates • Important Events</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Info Bar -->
+    <section class="calendar-quick-info">
+        <div class="container">
+            <div class="info-grid">
+                <div class="info-item scroll-animate zoom-in">
+                    <i class="fas fa-calendar-check"></i>
+                    <div>
+                        <span class="info-label">Current Term</span>
+                        <span class="info-value">Term I, 2024</span>
+                    </div>
+                </div>
+                <div class="info-item scroll-animate zoom-in" style="animation-delay: 0.2s;">
+                    <i class="fas fa-clock"></i>
+                    <div>
+                        <span class="info-label">Days Remaining</span>
+                        <span class="info-value">45 Days</span>
+                    </div>
+                </div>
+                <div class="info-item scroll-animate zoom-in" style="animation-delay: 0.4s;">
+                    <i class="fas fa-graduation-cap"></i>
+                    <div>
+                        <span class="info-label">Next Event</span>
+                        <span class="info-value">Mid-Term Exams</span>
+                    </div>
+                </div>
+                <div class="info-item scroll-animate zoom-in" style="animation-delay: 0.6s;">
+                    <i class="fas fa-umbrella-beach"></i>
+                    <div>
+                        <span class="info-label">Next Holiday</span>
+                        <span class="info-value">Easter Break</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Term Overview Section -->
+    <section class="term-overview">
+        <div class="container">
+            <h2 class="section-title scroll-animate fade-in">2024 Academic Year Overview</h2>
+            
+            <!-- Term Cards -->
+            <div class="term-cards">
+                <!-- Term I -->
+                <div class="term-card scroll-animate slide-left">
+                    <div class="term-header term-1">
+                        <h3>Term I</h3>
+                        <span class="term-dates">January 15 - April 26, 2024</span>
+                    </div>
+                    <div class="term-body">
+                        <div class="term-progress">
+                            <div class="progress-label">
+                                <span>Progress</span>
+                                <span>65% Complete</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 65%"></div>
+                            </div>
+                        </div>
+                        <div class="term-events">
+                            <h4><i class="fas fa-star"></i> Key Events</h4>
+                            <ul>
+                                <li><i class="fas fa-check-circle"></i> <strong>Jan 15:</strong> School Opens</li>
+                                <li><i class="fas fa-check-circle"></i> <strong>Feb 10:</strong> Sports Day</li>
+                                <li><i class="fas fa-check-circle"></i> <strong>Mar 1-5:</strong> Mid-Term Exams</li>
+                                <li><i class="fas fa-check-circle"></i> <strong>Mar 8:</strong> Mid-Term Break</li>
+                                <li><i class="fas fa-check-circle"></i> <strong>Mar 29-Apr 1:</strong> Easter Holiday</li>
+                                <li><i class="fas fa-hourglass-half"></i> <strong>Apr 15-23:</strong> End of Term Exams</li>
+                                <li><i class="fas fa-hourglass-half"></i> <strong>Apr 26:</strong> School Closes</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Term II -->
+                <div class="term-card scroll-animate zoom-in" style="animation-delay: 0.2s;">
+                    <div class="term-header term-2">
+                        <h3>Term II</h3>
+                        <span class="term-dates">May 20 - August 23, 2024</span>
+                    </div>
+                    <div class="term-body">
+                        <div class="term-status">
+                            <i class="fas fa-clock"></i>
+                            <span>Starts in 45 days</span>
+                        </div>
+                        <div class="term-events">
+                            <h4><i class="fas fa-star"></i> Planned Events</h4>
+                            <ul>
+                                <li><i class="fas fa-calendar-plus"></i> <strong>May 20:</strong> School Opens</li>
+                                <li><i class="fas fa-calendar-plus"></i> <strong>June 3:</strong> Heroes' Day Celebration</li>
+                                <li><i class="fas fa-calendar-plus"></i> <strong>June 17-21:</strong> Career Week</li>
+                                <li><i class="fas fa-calendar-plus"></i> <strong>July 8-12:</strong> Mid-Term Exams</li>
+                                <li><i class="fas fa-calendar-plus"></i> <strong>July 15-19:</strong> Mid-Term Break</li>
+                                <li><i class="fas fa-calendar-plus"></i> <strong>Aug 12-21:</strong> End of Term Exams</li>
+                                <li><i class="fas fa-calendar-plus"></i> <strong>Aug 23:</strong> School Closes</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Term III -->
+                <div class="term-card scroll-animate slide-right" style="animation-delay: 0.4s;">
+                    <div class="term-header term-3">
+                        <h3>Term III</h3>
+                        <span class="term-dates">September 16 - December 6, 2024</span>
+                    </div>
+                    <div class="term-body">
+                        <div class="term-status">
+                            <i class="fas fa-clock"></i>
+                            <span>Starts in 140 days</span>
+                        </div>
+                        <div class="term-events">
+                            <h4><i class="fas fa-star"></i> Planned Events</h4>
+                            <ul>
+                                <li><i class="fas fa-calendar-plus"></i> <strong>Sep 16:</strong> School Opens</li>
+                                <li><i class="fas fa-calendar-plus"></i> <strong>Oct 9:</strong> Independence Day</li>
+                                <li><i class="fas fa-calendar-plus"></i> <strong>Oct 21-25:</strong> Mid-Term Exams</li>
+                                <li><i class="fas fa-calendar-plus"></i> <strong>Oct 28-Nov 1:</strong> Mid-Term Break</li>
+                                <li><i class="fas fa-calendar-plus"></i> <strong>Nov 4-8:</strong> UNEB Exams Start</li>
+                                <li><i class="fas fa-calendar-plus"></i> <strong>Nov 25-29:</strong> Prize Giving Day</li>
+                                <li><i class="fas fa-calendar-plus"></i> <strong>Dec 6:</strong> School Closes</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Monthly Calendar Section -->
+    <section class="monthly-calendar">
+        <div class="container">
+            <h2 class="section-title scroll-animate fade-in">Monthly Breakdown</h2>
+            
+            <!-- Month Tabs -->
+            <div class="month-tabs">
+                <button class="month-tab active" data-month="jan">January</button>
+                <button class="month-tab" data-month="feb">February</button>
+                <button class="month-tab" data-month="mar">March</button>
+                <button class="month-tab" data-month="apr">April</button>
+                <button class="month-tab" data-month="may">May</button>
+                <button class="month-tab" data-month="jun">June</button>
+                <button class="month-tab" data-month="jul">July</button>
+                <button class="month-tab" data-month="aug">August</button>
+                <button class="month-tab" data-month="sep">September</button>
+                <button class="month-tab" data-month="oct">October</button>
+                <button class="month-tab" data-month="nov">November</button>
+                <button class="month-tab" data-month="dec">December</button>
+            </div>
+
+            <!-- January Calendar -->
+            <div class="month-view active" id="jan">
+                <div class="calendar-grid">
+                    <div class="calendar-header">
+                        <div>Mon</div><div>Tue</div><div>Wed</div><div>Thu</div><div>Fri</div><div>Sat</div><div>Sun</div>
+                    </div>
+                    <div class="calendar-dates">
+                        <div class="date empty"></div>
+                        <div class="date empty"></div>
+                        <div class="date">1</div>
+                        <div class="date">2</div>
+                        <div class="date">3</div>
+                        <div class="date">4</div>
+                        <div class="date">5</div>
+                        <div class="date">6</div>
+                        <div class="date">7</div>
+                        <div class="date">8</div>
+                        <div class="date">9</div>
+                        <div class="date">10</div>
+                        <div class="date">11</div>
+                        <div class="date">12</div>
+                        <div class="date">13</div>
+                        <div class="date">14</div>
+                        <div class="date highlight">15</div>
+                        <div class="date">16</div>
+                        <div class="date">17</div>
+                        <div class="date">18</div>
+                        <div class="date">19</div>
+                        <div class="date">20</div>
+                        <div class="date">21</div>
+                        <div class="date">22</div>
+                        <div class="date">23</div>
+                        <div class="date">24</div>
+                        <div class="date">25</div>
+                        <div class="date">26</div>
+                        <div class="date">27</div>
+                        <div class="date">28</div>
+                        <div class="date">29</div>
+                        <div class="date">30</div>
+                        <div class="date">31</div>
+                    </div>
+                </div>
+                <div class="month-events">
+                    <h4><i class="fas fa-calendar-alt"></i> January Events</h4>
+                    <ul>
+                        <li><span class="event-date">Jan 15:</span> School Opens - Term I Begins</li>
+                        <li><span class="event-date">Jan 20:</span> Orientation for New Students</li>
+                        <li><span class="event-date">Jan 25:</span> Parent-Teacher Meeting</li>
+                        <li><span class="event-date">Jan 30:</span> Class Representatives Election</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- February Calendar -->
+            <div class="month-view" id="feb">
+                <div class="calendar-grid">
+                    <div class="calendar-header">
+                        <div>Mon</div><div>Tue</div><div>Wed</div><div>Thu</div><div>Fri</div><div>Sat</div><div>Sun</div>
+                    </div>
+                    <div class="calendar-dates">
+                        <div class="date empty"></div>
+                        <div class="date empty"></div>
+                        <div class="date empty"></div>
+                        <div class="date">1</div>
+                        <div class="date">2</div>
+                        <div class="date">3</div>
+                        <div class="date">4</div>
+                        <div class="date">5</div>
+                        <div class="date">6</div>
+                        <div class="date">7</div>
+                        <div class="date">8</div>
+                        <div class="date">9</div>
+                        <div class="date">10</div>
+                        <div class="date highlight">11</div>
+                        <div class="date">12</div>
+                        <div class="date">13</div>
+                        <div class="date">14</div>
+                        <div class="date">15</div>
+                        <div class="date">16</div>
+                        <div class="date">17</div>
+                        <div class="date">18</div>
+                        <div class="date">19</div>
+                        <div class="date">20</div>
+                        <div class="date">21</div>
+                        <div class="date">22</div>
+                        <div class="date">23</div>
+                        <div class="date">24</div>
+                        <div class="date">25</div>
+                        <div class="date">26</div>
+                        <div class="date">27</div>
+                        <div class="date">28</div>
+                        <div class="date">29</div>
+                    </div>
+                </div>
+                <div class="month-events">
+                    <h4><i class="fas fa-calendar-alt"></i> February Events</h4>
+                    <ul>
+                        <li><span class="event-date">Feb 10:</span> Annual Sports Day</li>
+                        <li><span class="event-date">Feb 14:</span> Valentine's Day Celebration</li>
+                        <li><span class="event-date">Feb 20:</span> Science Fair</li>
+                        <li><span class="event-date">Feb 25:</span> Inter-House Debates</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Continue with other months similarly -->
+        </div>
+    </section>
+
+    <!-- Important Dates Section -->
+    <section class="important-dates">
+        <div class="container">
+            <h2 class="section-title scroll-animate fade-in">Important Dates to Remember</h2>
+            
+            <div class="dates-grid">
+                <div class="date-card scroll-animate slide-left">
+                    <div class="date-icon">
+                        <i class="fas fa-pencil-alt"></i>
+                    </div>
+                    <div class="date-details">
+                        <h4>Mid-Term Examinations</h4>
+                        <p class="date-range">March 1-5, 2024</p>
+                        <p class="date-desc">All classes - Progress assessment</p>
+                        <span class="badge warning">Upcoming</span>
+                    </div>
+                </div>
+
+                <div class="date-card scroll-animate slide-right">
+                    <div class="date-icon">
+                        <i class="fas fa-umbrella-beach"></i>
+                    </div>
+                    <div class="date-details">
+                        <h4>Easter Holiday</h4>
+                        <p class="date-range">March 29 - April 1, 2024</p>
+                        <p class="date-desc">School closed for Easter break</p>
+                        <span class="badge warning">Upcoming</span>
+                    </div>
+                </div>
+
+                <div class="date-card scroll-animate slide-left" style="animation-delay: 0.2s;">
+                    <div class="date-icon">
+                        <i class="fas fa-church"></i>
+                    </div>
+                    <div class="date-details">
+                        <h4>Good Friday Service</h4>
+                        <p class="date-range">March 29, 2024</p>
+                        <p class="date-desc">School-wide church service</p>
+                        <span class="badge warning">Upcoming</span>
+                    </div>
+                </div>
+
+                <div class="date-card scroll-animate slide-right" style="animation-delay: 0.2s;">
+                    <div class="date-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <div class="date-details">
+                        <h4>End of Term Exams</h4>
+                        <p class="date-range">April 15-23, 2024</p>
+                        <p class="date-desc">Term I final examinations</p>
+                        <span class="badge">Planned</span>
+                    </div>
+                </div>
+
+                <div class="date-card scroll-animate slide-left" style="animation-delay: 0.4s;">
+                    <div class="date-icon">
+                        <i class="fas fa-flag"></i>
+                    </div>
+                    <div class="date-details">
+                        <h4>Labor Day</h4>
+                        <p class="date-range">May 1, 2024</p>
+                        <p class="date-desc">Public holiday - School closed</p>
+                        <span class="badge">Planned</span>
+                    </div>
+                </div>
+
+                <div class="date-card scroll-animate slide-right" style="animation-delay: 0.4s;">
+                    <div class="date-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="date-details">
+                        <h4>Career Day</h4>
+                        <p class="date-range">June 17-21, 2024</p>
+                        <p class="date-desc">Career guidance week</p>
+                        <span class="badge">Planned</span>
+                    </div>
+                </div>
+
+                <div class="date-card scroll-animate slide-left" style="animation-delay: 0.6s;">
+                    <div class="date-icon">
+                        <i class="fas fa-book-open"></i>
+                    </div>
+                    <div class="date-details">
+                        <h4>UNEB Exams Start</h4>
+                        <p class="date-range">November 4, 2024</p>
+                        <p class="date-desc">PLE, UCE, UACE examinations begin</p>
+                        <span class="badge">Planned</span>
+                    </div>
+                </div>
+
+                <div class="date-card scroll-animate slide-right" style="animation-delay: 0.6s;">
+                    <div class="date-icon">
+                        <i class="fas fa-gift"></i>
+                    </div>
+                    <div class="date-details">
+                        <h4>Prize Giving Day</h4>
+                        <p class="date-range">November 29, 2024</p>
+                        <p class="date-desc">Annual awards ceremony</p>
+                        <span class="badge">Planned</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Calendar Section -->
+    <section class="download-calendar">
+        <div class="container">
+            <div class="download-card scroll-animate zoom-in">
+                <div class="download-icon">
+                    <i class="fas fa-file-pdf"></i>
+                </div>
+                <div class="download-content">
+                    <h3>Download Full Academic Calendar</h3>
+                    <p>Get the complete 2024 academic calendar with all dates, events, and holidays</p>
+                    <div class="download-buttons">
+                        <a href="#" class="download-btn"><i class="fas fa-download"></i> PDF Version</a>
+                        <a href="#" class="download-btn"><i class="fas fa-download"></i> Excel Version</a>
+                        <a href="#" class="download-btn"><i class="fas fa-print"></i> Print</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="calendar-cta">
+        <div class="container">
+            <h2 class="slide-down">Stay Organized, Stay Successful</h2>
+            <p class="fade-in-up">Plan your academic year with our comprehensive calendar</p>
+            <a href="apply-now.html" class="cta-button pulse">Apply Now <i class="fas fa-arrow-right"></i></a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3><i class="fas fa-phone-alt"></i> Contact Us</h3>
+                    <p><i class="fas fa-phone"></i> 0754645377 / 0778654311</p>
+                    <p><i class="fas fa-envelope"></i> info@gloryhighschool.ac.ug</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Busimbi Hill, Mityana</p>
+                </div>
+                <div class="footer-section">
+                    <h3><i class="fas fa-link"></i> Quick Links</h3>
+                    <ul>
+                        <li><a href="../../admissions.html"><i class="fas fa-chevron-right"></i> Apply Now</a></li>
+                        <li><a href="calendar.html"><i class="fas fa-chevron-right"></i> Academic Calendar</a></li>
+                        <li><a href="../school-life/events.html"><i class="fas fa-chevron-right"></i> Upcoming Events</a></li>
+                        <li><a href="../../contacts.html"><i class="fas fa-chevron-right"></i> Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3><i class="fas fa-share-alt"></i> Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Glory High School. All rights reserved. <i class="fas fa-heart" style="color: #e74c3c;"></i></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Chat Widget -->
+    <div class="chat-widget" id="chatWidget">
+        <button class="chat-toggle" aria-label="Open chat">
+            <i class="fas fa-comment"></i>
+        </button>
+        <div class="chat-box">
+            <div class="chat-header">
+                <h4><i class="fas fa-comment-dots"></i> Chat with us</h4>
+                <button class="close-chat" aria-label="Close chat"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="chat-messages">
+                <p class="bot-message"><i class="fas fa-robot"></i> Hello! How can we help you today?</p>
+            </div>
+            <div class="chat-input">
+                <input type="text" placeholder="Type your message...">
+                <button><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript Files -->
+    <script src="../../js/main.js"></script>
+    <script src="../../js/header-scroll.js"></script>
+    <script src="../../js/navigation.js"></script>
+    <script src="../../js/darkMode.js"></script>
+    <script src="../../js/scroll-animations.js"></script>
+    <script src="../../js/backToTop.js"></script>
+    <script src="../../js/chatWidget.js"></script>

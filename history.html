@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glory High School - Our History</title>
+    
+    <!-- Core CSS Files -->
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/header.css">
+    <link rel="stylesheet" href="../../css/navigation.css">
+    <link rel="stylesheet" href="../../css/animations.css">
+    <link rel="stylesheet" href="../../css/dark-mode.css">
+    <link rel="stylesheet" href="../../css/portrait-mode.css">
+    <link rel="stylesheet" href="../../css/responsive.css">
+    <!-- History Page Specific CSS -->
+    <link rel="stylesheet" href="../../css/history.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Top Header (same as index) -->
+    <div class="top-header" id="topHeader">
+        <div class="container">
+            <div class="contact-info">
+                <div class="phone-numbers">
+                    <i class="fas fa-phone-alt"></i>
+                    <a href="tel:0754645377">0754645377</a>
+                    <span class="separator">|</span>
+                    <a href="tel:0778654311">0778654311</a>
+                </div>
+                <div class="email">
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:info@gloryhighschool.ac.ug">info@gloryhighschool.ac.ug</a>
+                </div>
+                <div class="location">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Church of Uganda Busimbi Hill, Mityana</span>
+                </div>
+            </div>
+            <div class="dark-mode-toggle">
+                <button id="darkModeBtn" class="dark-mode-btn">🌓 Dark Mode</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navigation (same as index) -->
+    <header class="main-header" id="mainHeader">
+        <div class="container">
+            <div class="logo-section">
+                <img src="../../assets/images/seeta3.png" alt="Glory High School Logo" class="logo" onerror="this.src='https://via.placeholder.com/60x60?text=GHS'">
+                <div class="school-info">
+                    <h1>Glory High School</h1>
+                    <p class="motto">Excellence, Integrity, Service</p>
+                </div>
+            </div>
+            
+            <nav class="main-nav">
+                <ul class="nav-menu">
+                    <!-- Home Dropdown -->
+                    <li class="dropdown">
+                        <a href="../../index.html">Home</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../../index.html">Home Overview</a></li>
+                        </ul>
+                    </li>
+                    <!-- About Dropdown -->
+                    <li class="dropdown">
+                        <a href="../../about.html">About</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="history.html">History</a></li>
+                            <li><a href="mission-vision.html">Mission & Vision</a></li>
+                            <li><a href="leadership.html">Leadership</a></li>
+                            <li><a href="staff.html">Staff Directory</a></li>
+                            <li><a href="accreditation.html">Accreditation</a></li>
+                        </ul>
+                    </li>
+                    <!-- Academics Dropdown -->
+                    <li class="dropdown">
+                        <a href="../../academics.html">Academics</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../academics/curriculum.html">Curriculum</a></li>
+                            <li><a href="../academics/departments.html">Departments</a></li>
+                            <li><a href="../academics/calendar.html">Academic Calendar</a></li>
+                            <li><a href="../academics/results.html">Examination Results</a></li>
+                            <li><a href="../academics/apply-now.html" class="apply-btn">Apply Now</a></li>
+                        </ul>
+                    </li>
+                    <!-- Admissions Dropdown -->
+                    <li class="dropdown">
+                        <a href="../../admissions.html">Admission</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../admissions/requirements.html">Requirements</a></li>
+                            <li><a href="../admissions/fees-structure.html">Fees Structure</a></li>
+                            <li><a href="../admissions/application-form.html">Application Form</a></li>
+                            <li><a href="../admissions/scholarships.html">Scholarships</a></li>
+                            <li><a href="../admissions/faqs.html">FAQs</a></li>
+                        </ul>
+                    </li>
+                    <!-- School Life Dropdown -->
+                    <li class="dropdown">
+                        <a href="../../school-life.html">School Life</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../school-life/sports.html">Sports</a></li>
+                            <li><a href="../school-life/clubs.html">Clubs & Societies</a></li>
+                            <li><a href="../school-life/events.html">Events</a></li>
+                            <li><a href="../school-life/gallery.html">Gallery</a></li>
+                            <li><a href="../school-life/student-council.html">Student Council</a></li>
+                        </ul>
+                    </li>
+                    <!-- Contacts Dropdown -->
+                    <li class="dropdown">
+                        <a href="../../contacts.html">Contacts</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../contacts/contact-form.html">Contact Form</a></li>
+                            <li><a href="../contacts/directory.html">Staff Directory</a></li>
+                            <li><a href="../contacts/visit-us.html">Visit Us</a></li>
+                            <li><a href="../contacts/career.html">Careers</a></li>
+                            <li><a href="../contacts/support.html">Support</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- HERO SECTION - Big Image with Text on Top -->
+<section class="history-hero">
+    <!-- Image with placeholder - CORRECTED PATH -->
+    <img src="../../assets/images/seeta3.png" alt="Glory High School History" class="history-hero-image" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+    <div class="image-placeholder" style="display: none;">
+        <span>Glory High School - Established 2000</span>
+    </div>
+    <div class="history-hero-overlay">
+        <div class="history-hero-text slide-left">
+            <h1>Glory High Schools' History</h1>
+            <p>Since opening its doors in 2000, Glory High School has been shaping futures for 24 years, and next year we proudly celebrate our 25th anniversary! With each passing year, we've continued to grow and expand, offering even more opportunities for our students to excel.</p>
+        </div>
+    </div>
+</section>
+
+    <!-- DR. SEUSS QUOTE SECTION -->
+    <section class="quote-section">
+        <div class="container">
+            <div class="quote-text zoom-out">
+                <i class="fas fa-quote-left"></i>
+                <p>"The more that you read, the more things you will know, the more that you learn, the more places you'll go."</p>
+                <p class="quote-author">— Dr. Seuss</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- TWO COLUMNS SECTION - Different Backgrounds -->
+    <section class="two-columns-section">
+        <div class="container">
+            <div class="columns-grid">
+                <!-- Left Column - Theme, Vision, Mission, Motto -->
+                <div class="left-column">
+                    <div class="theme-box">
+                        <span class="big-number">9</span>
+                        <h3>THEME</h3>
+                        <p>Our Family, Our Strength</p>
+                    </div>
+                    <div class="vision-box">
+                        <span class="big-number">9</span>
+                        <h3>VISION</h3>
+                        <p>To be a model school in moulding God fearing, academically excellent and responsible leaders.</p>
+                    </div>
+                    <div class="mission-box">
+                        <span class="big-number">9</span>
+                        <h3>MISSION</h3>
+                        <p>To develop academic and other talents of students in a truly humane and Christian environment.</p>
+                    </div>
+                    <div class="motto-box">
+                        <span class="big-number">9</span>
+                        <h3>MOTTO</h3>
+                        <p>Education for a Bright Future</p>
+                    </div>
+                </div>
+                
+                <!-- Right Column - Our History -->
+                <div class="right-column">
+                    <h2>Our History</h2>
+                    <p>Established in 2000, Seeta High School has proudly stood as a Towering Academic Giant for 24 years, making its mark on the nation's educational landscape. Located in Mukono district, we are a mixed boarding secondary school offering both Ordinary and Advanced Levels of education. As a Christian institution, we integrate faith into all our activities, nurturing students in both academics and values.</p>
+                    
+                    <p>Glory High School spans four campuse:</p>
+                    
+                    <ul class="campuses-list">
+                        <li><strong>Main Campus</strong> (Mityana Municipality Busimbi hill alongside mityana market.)</li>
+                    </ul>
+                    
+                    <p>With uniform policies and guidelines across all campuses, we ensure consistency and excellence in our students. Our serene environments, state-of-the-art facilities, and easy accessibility create the perfect setting for learning. We pride ourselves on offering a holistic, high-quality education that nurtures both academic success and talent development.</p>
+                    
+                    <h3 class="campuses-heading">Our Campuses</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EDUCATIONAL PATH SECTION - Image Left, Text Right -->
+    <section class="educational-path">
+        <div class="container">
+            <div class="content-row">
+                <div class="image-col slide-left">
+                    <img src="../../assets/images/educational-path.jpg" alt="Educational Path" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="image-placeholder" style="display: none;">
+                        <span>Educational Path</span>
+                    </div>
+                </div>
+                <div class="text-col zoom-out">
+                    <h2>OUR EDUCATIONAL PATH</h2>
+                    <p><strong>Teacher Role:</strong> At Seeta High School, our teachers are dedicated mentors, guiding students in all aspects of life. They actively engage with students in both academic and extracurricular activities, fostering independence, leadership, and interpersonal skills. Every school activity is thoughtfully planned, with a commitment to achieving excellence both inside and outside the classroom.</p>
+                    
+                    <p>Our teachers regularly participate in professional development, staying up-to-date with curriculum standards and modern teaching practices. They are imaginative, creative, and highly motivated professionals who are passionate about nurturing students' love for learning.</p>
+                    
+                    <p>We carefully recruit staff from diverse backgrounds around the world, bringing a wealth of experience and global perspectives to enrich our students' educational journey.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TEACHER ROLE SECTION - Text Left, Image Right -->
+    <section class="teacher-role">
+        <div class="container">
+            <div class="content-row reverse">
+                <div class="text-col zoom-out">
+                    <h2>TEACHER ROLE</h2>
+                    <p><strong>Teacher Role:</strong> At Glory High School, our teachers are dedicated mentors, guiding students in all aspects of life. They actively engage with students in both academic and extracurricular activities, fostering independence, leadership, and interpersonal skills. Every school activity is thoughtfully planned, with a commitment to achieving excellence both inside and outside the classroom.</p>
+                    
+                    <p>Our teachers regularly participate in professional development, staying up-to-date with curriculum standards and modern teaching practices. They are imaginative, creative, and highly motivated professionals who are passionate about nurturing students' love for learning.</p>
+                    
+                    <p>We carefully recruit staff from diverse backgrounds around the world, bringing a wealth of experience and global perspectives to enrich our students' educational journey.</p>
+                </div>
+                <div class="image-col slide-right">
+                    <img src="../../assets/images/teacher-role.jpg" alt="Teacher Role" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="image-placeholder" style="display: none;">
+                        <span>Teacher Role</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PARENTS TESTIMONIALS - 3 Columns -->
+    <section class="testimonials-section">
+        <div class="container">
+            <h2>Parents Testimonials</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card zoom-out">
+                    <i class="fas fa-quote-left quote-icon"></i>
+                    <p>"I am truly grateful for the discipline and life values my child has gained through the school's mentorship program. It has made a remarkable difference in their character development."</p>
+                    <p class="testimonial-author">Parent of Galiwango Jeed</p>
+                </div>
+                
+                <div class="testimonial-card zoom-out">
+                    <i class="fas fa-quote-left quote-icon"></i>
+                    <p>"I greatly appreciate the friendly teachers who take the time to address each student's individual needs with care. The administration is also responsive, actively gathering and acting on feedback from parents."</p>
+                    <p class="testimonial-author">Parent of Kakande Dison</p>
+                </div>
+                
+                <div class="testimonial-card zoom-out">
+                    <i class="fas fa-quote-left quote-icon"></i>
+                    <p>"I am impressed with the school's excellent facilities and well-balanced student population, ensuring no overcrowding. The curriculum is comprehensive, and the co-curricular programs are outstanding. The MDD and China Day events were particularly exciting."</p>
+                    <p class="testimonial-author">Parent of Ethan</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (same as index) -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3><i class="fas fa-phone-alt"></i> Contact Us</h3>
+                    <p><i class="fas fa-phone"></i> 0754645377 / 0778654311</p>
+                    <p><i class="fas fa-envelope"></i> info@gloryhighschool.ac.ug</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Busimbi Hill, Mityana</p>
+                </div>
+                <div class="footer-section">
+                    <h3><i class="fas fa-link"></i> Quick Links</h3>
+                    <ul>
+                        <li><a href="../../admissions.html"><i class="fas fa-chevron-right"></i> Apply Now</a></li>
+                        <li><a href="../academics/calendar.html"><i class="fas fa-chevron-right"></i> Academic Calendar</a></li>
+                        <li><a href="../school-life/events.html"><i class="fas fa-chevron-right"></i> Upcoming Events</a></li>
+                        <li><a href="../../contacts.html"><i class="fas fa-chevron-right"></i> Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3><i class="fas fa-share-alt"></i> Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Glory High School. All rights reserved. <i class="fas fa-heart" style="color: #e74c3c;"></i></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- JavaScript Files -->
+    <script src="../../js/main.js"></script>
+    <script src="../../js/header-scroll.js"></script>
+    <script src="../../js/navigation.js"></script>
+    <script src="../../js/darkMode.js"></script>
+    <script src="../../js/backToTop.js"></script>
+    <script src="../../js/scroll-animations.js"></script>
+</body>
+</html>

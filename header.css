@@ -1,0 +1,26 @@
+/* Clickable logo styles */
+.logo-link {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    transition: opacity 0.3s ease;
+}
+
+.logo-link:hover {
+    opacity: 0.9;
+}
+
+.logo-link:hover .logo {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+/* Keep your existing colors */
+.logo-link .school-info h1 {
+    color: var(--dark-blue);
+}
+
+.logo-link .motto {
+    color: var(--primary-blue);
+}

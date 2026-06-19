@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Gallery - Glory High School</title>
+    <!-- Core CSS Files -->
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/header.css">
+    <link rel="stylesheet" href="../../css/navigation.css">
+    <link rel="stylesheet" href="../../css/animations.css">
+    <link rel="stylesheet" href="../../css/dark-mode.css">
+    <link rel="stylesheet" href="../../css/portrait-mode.css">
+    <link rel="stylesheet" href="../../css/responsive.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Lightbox CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css">
+</head>
+<body>
+    <!-- Top Header with Contact Info -->
+    <div class="top-header" id="topHeader">
+        <div class="container">
+            <div class="contact-info">
+                <div class="phone-numbers">
+                    <i class="fas fa-phone-alt"></i>
+                    <a href="tel:0754645377">0754645377</a>
+                    <span class="separator">|</span>
+                    <a href="tel:0778654311">0778654311</a>
+                </div>
+                <div class="email">
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:info@gloryhighschool.ac.ug">info@gloryhighschool.ac.ug</a>
+                </div>
+                <div class="location">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Church of Uganda Busimbi Hill, Mityana</span>
+                </div>
+            </div>
+            <div class="dark-mode-toggle">
+                <button id="darkModeBtn" class="dark-mode-btn">🌓 Dark Mode</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Header -->
+    <header class="main-header" id="mainHeader">
+        <div class="container">
+            <a href="../../index.html" class="logo-link">
+                <div class="logo-section">
+                    <img src="../../assets/images/seeta3.png" alt="Glory High School Logo" class="logo" onerror="this.src='https://via.placeholder.com/60x60?text=GHS'">
+                    <div class="school-info">
+                        <h1>Glory High School</h1>
+                        <p class="motto">Excellence, Integrity, Service</p>
+                    </div>
+                </div>
+            </a>
+            
+            <nav class="main-nav">
+                <ul class="nav-menu">
+                    <!-- Home Dropdown -->
+                    <li class="dropdown">
+                        <a href="../../index.html">Home</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../../index.html">Home Overview</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- About Dropdown -->
+                    <li class="dropdown">
+                        <a href="../../about.html">About</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../about/history.html">History</a></li>
+                            <li><a href="../about/mission-vision.html">Mission & Vision</a></li>
+                            <li><a href="../about/leadership.html">Leadership</a></li>
+                            <li><a href="../about/staff.html">Staff Directory</a></li>
+                            <li><a href="../about/accreditation.html">Accreditation</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Academics Dropdown -->
+                    <li class="dropdown">
+                        <a href="../../academics.html">Academics</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../academics/curriculum.html">Curriculum</a></li>
+                            <li><a href="../academics/departments.html">Departments</a></li>
+                            <li><a href="../academics/calendar.html">Academic Calendar</a></li>
+                            <li><a href="../academics/results.html">Examination Results</a></li>
+                            <li><a href="../academics/apply-now.html" class="apply-btn">Apply Now</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Admissions Dropdown -->
+                    <li class="dropdown">
+                        <a href="../../admissions.html">Admission</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../admissions/requirements.html">Requirements</a></li>
+                            <li><a href="../admissions/fees-structure.html">Fees Structure</a></li>
+                            <li><a href="../admissions/scholarships.html">Scholarships</a></li>
+                            <li><a href="../admissions/faqs.html">FAQs</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- School Life Dropdown - Active -->
+                    <li class="dropdown active">
+                        <a href="../../school-life.html">School Life</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="sports.html">Sports</a></li>
+                            <li><a href="clubs.html">Clubs & Societies</a></li>
+                            <li><a href="events.html">Events</a></li>
+                            <li><a href="gallery.html" class="active">Gallery</a></li>
+                            <li><a href="student-council.html">Student Council</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Contacts Dropdown -->
+                    <li class="dropdown">
+                        <a href="../../contacts.html">Contacts</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../contacts/contact-form.html">Contact Form</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Gallery Hero Section -->
+    <section class="gallery-hero">
+        <div class="container">
+            <h1 class="slide-down">Our School Gallery</h1>
+            <p class="fade-in-up">Moments Captured • Memories Made • Life at Glory</p>
+        </div>
+    </section>
+
+    <!-- Gallery Categories -->
+    <section class="gallery-categories">
+        <div class="container">
+            <div class="category-filters">
+                <button class="category-filter active" data-category="all">All Photos</button>
+                <button class="category-filter" data-category="academics">Academics</button>
+                <button class="category-filter" data-category="sports">Sports</button>
+                <button class="category-filter" data-category="events">Events</button>
+                <button class="category-filter" data-category="campus">Campus</button>
+                <button class="category-filter" data-category="students">Students</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Grid - 4x5 = 20 images -->
+    <section class="gallery-section">
+        <div class="container">
+            <div class="gallery-grid" id="gallery-grid">
+                <!-- Row 1 - Images 1-4 -->
+                <div class="gallery-item" data-category="campus">
+                    <a href="../../assets/images/seeta3.png" data-lightbox="school-gallery" data-title="School Campus - Main Building">
+                        <img src="../../assets/images/seeta3.png" alt="School Campus" onerror="this.src='https://via.placeholder.com/400x300?text=Image+1'">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-search-plus"></i>
+                            <span>Click to enlarge</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="gallery-item" data-category="academics">
+                    <a href=" assets/images/seeta5.png" data-lightbox="school-gallery" data-title="Classroom Session">
+                        <img src="../../assets/images/seeta3.png" alt="Classroom" onerror="this.src='https://via.placeholder.com/400x300?text=Image+2'">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-search-plus"></i>
+                            <span>Click to enlarge</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="gallery-item" data-category="sports">
+                    <a href="../../assets/images/seeta3.png" data-lightbox="school-gallery" data-title="Football Team">
+                        <img src="../../assets/images/seeta3.png" alt="Sports" onerror="this.src='https://via.placeholder.com/400x300?text=Image+3'">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-search-plus"></i>
+                            <span>Click to enlarge</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="gallery-item" data-category="events">
+                    <a href="../../assets/images/seeta3.png" data-lightbox="school-gallery" data-title="Prize Giving Day">
+                        <img src="../../assets/images/seeta3.png" alt="Event" onerror="this.src='https://via.placeholder.com/400x300?text=Image+4'">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-search-plus"></i>
+                            <span>Click to enlarge</span>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Row 2 - Images 5-8 -->
+                <div class="gallery-item" data-category="students">
+                    <a href="../../assets/images/seeta3.png" data-lightbox="school-gallery" data-title="Students in Library">
+                        <img src="../../assets/images/seeta3.png" alt="Students" onerror="this.src='https://via.placeholder.com/400x300?text=Image+5'">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-search-plus"></i>
+                            <span>Click to enlarge</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="gallery-item" data-category="campus">
+                    <a href="../../assets/images/seeta3.png" data-lightbox="school-gallery" data-title="School Garden">
+                        <img src="../../assets/images/seeta3.png" alt="Campus" onerror="this.src='https://via.placeholder.com/400x300?text=Image+6'">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-search-plus"></i>
+                            <span>Click to enlarge</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="gallery-item" data-category="academics">
+                    <a href="../../assets/images/seeta3.png" data-lightbox="school-gallery" data-title="Science Lab">
+                        <img src="../../assets/images/seeta3.png" alt="Science Lab" onerror="this.src='https://via.placeholder.com/400x300?text=Image+7'">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-search-plus"></i>
+                            <span>Click to enlarge</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="gallery-item" data-category="sports">
+                    <a href="../../assets/images/seeta3.png" data-lightbox="school-gallery" data-title="Netball Match">
+                        <img src="../../assets/images/seeta3.png" alt="Netball" onerror="this.src='https://via.placeholder.com/400x300?text=Image+8'">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-search-plus"></i>
+                            <span>Click to enlarge</span>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Row 3 - Images 9-12 -->
+                <div class="gallery-item" data-category="events">
+                    <a href="../../assets/images/seeta3.png" data-lightbox="school-gallery" data-title="Independence Day Celebration">
+                        <img src="../../assets/images/seeta3.png" alt="Celebration" onerror="this.src='https://via.placeholder.com/400x300?text=Image+9'">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-search-plus"></i>
+                            <span>Click to enlarge</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="gallery-item" data-category="students">
+                    <a href="../../assets/images/seeta3.png" data-lightbox="school-gallery" data-title="Students in Uniform">
+                        <img src="../../assets/images/seeta3.png" alt="Students" onerror="this.src='https://via.placeholder.com/400x300?text=Image+10'">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-search-plus"></i>
+                            <span>Click to enlarge</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="gallery-item" data-category="campus">
+                    <a href="../../assets/images/seeta3.png" data-lightbox="school-gallery" data-title="Dormitory">
+                        <img src="../../assets/images/seeta3.png" alt="Dormitory" onerror="this.src='https://via.placeholder.com/400x300?text=Image+11'">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-search-plus"></i>
+                            <span>Click to enlarge</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="gallery-item" data-category="academics">
+                    <a href="../../assets/images/seeta3.png" data-lightbox="school-gallery" data-title="Computer Lab">
+                        <img src="../../assets/images/seeta3.png" alt="Computer Lab" onerror="this.src='https://via.placeholder.com/400x300?text=Image+12'">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-search-plus"></i>
+                            <span>Click to enlarge</span>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Row 4 - Images 13-16 -->
+                <div class="gallery-item" data-category="sports">
+                    <a href="../../assets/images/seeta3.png" data-lightbox="school-gallery" data-title="Athletics">
+                        <img src="../../assets/images/seeta3.png" alt="Athletics" onerror="this.src='https://via.placeholder.com/400x300?text=Image+13'">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-search-plus"></i>
+                            <span>Click to enlarge</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="gallery-item" data-category="events">
+                    <a href="../../assets/images/seeta3.png" data-lightbox="school-gallery" data-title="Music Festival">
+                        <img src="../../assets/images/seeta3.png" alt="Music" onerror="this.src='https://via.placeholder.com/400x300?text=Image+14'">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-search-plus"></i>
+                            <span>Click to enlarge</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="gallery-item" data-category="students">
+                    <a href="../../assets/images/seeta3.png" data-lightbox="school-gallery" data-title="Graduation">
+                        <img src="../../assets/images/seeta3.png" alt="Graduation" onerror="this.src='https://via.placeholder.com/400x300?text=Image+15'">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-search-plus"></i>
+                            <span>Click to enlarge</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="gallery-item" data-category="campus">
+                    <a href="../../assets/images/seeta3.png" data-lightbox="school-gallery" data-title="Dining Hall">
+                        <img src="../../assets/images/seeta3.png" alt="Dining Hall" onerror="this.src='https://via.placeholder.com/400x300?text=Image+16'">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-search-plus"></i>
+                            <span>Click to enlarge</span>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Row 5 - Images 17-20 -->
+                <div class="gallery-item" data-category="academics">
+                    <a href="../../assets/images/seeta3.png" data-lightbox="school-gallery" data-title="Art Class">
+                        <img src="../../assets/images/seeta3.png" alt="Art Class" onerror="this.src='https://via.placeholder.com/400x300?text=Image+17'">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-search-plus"></i>
+                            <span>Click to enlarge</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="gallery-item" data-category="sports">
+                    <a href="../../assets/images/seeta3.png" data-lightbox="school-gallery" data-title="Basketball">
+                        <img src="../../assets/images/seeta3.png" alt="Basketball" onerror="this.src='https://via.placeholder.com/400x300?text=Image+18'">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-search-plus"></i>
+                            <span>Click to enlarge</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="gallery-item" data-category="events">
+                    <a href="../../assets/images/seeta3.png" data-lightbox="school-gallery" data-title="Parents Day">
+                        <img src="../../assets/images/seeta3.png" alt="Parents Day" onerror="this.src='https://via.placeholder.com/400x300?text=Image+19'">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-search-plus"></i>
+                            <span>Click to enlarge</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="gallery-item" data-category="students">
+                    <a href="../../assets/images/seeta3.png" data-lightbox="school-gallery" data-title="Student Council">
+                        <img src="../../assets/images/seeta3.png" alt="Student Council" onerror="this.src='https://via.placeholder.com/400x300?text=Image+20'">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-search-plus"></i>
+                            <span>Click to enlarge</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3><i class="fas fa-phone-alt"></i> Contact Us</h3>
+                    <p><i class="fas fa-phone"></i> 0754645377 / 0778654311</p>
+                    <p><i class="fas fa-envelope"></i> info@gloryhighschool.ac.ug</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Busimbi Hill, Mityana</p>
+                </div>
+                <div class="footer-section">
+                    <h3><i class="fas fa-link"></i> Quick Links</h3>
+                    <ul>
+                        <li><a href="../../admissions.html"><i class="fas fa-chevron-right"></i> Apply Now</a></li>
+                        <li><a href="../academics/calendar.html"><i class="fas fa-chevron-right"></i> Academic Calendar</a></li>
+                        <li><a href="events.html"><i class="fas fa-chevron-right"></i> Upcoming Events</a></li>
+                        <li><a href="../../contacts.html"><i class="fas fa-chevron-right"></i> Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3><i class="fas fa-share-alt"></i> Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Glory High School. All rights reserved. <i class="fas fa-heart" style="color: #e74c3c;"></i></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Chat Widget -->
+    <div class="chat-widget" id="chatWidget">
+        <button class="chat-toggle" aria-label="Open chat">
+            <i class="fas fa-comment"></i>
+        </button>
+        <div class="chat-box">
+            <div class="chat-header">
+                <h4><i class="fas fa-comment-dots"></i> Chat with us</h4>
+                <button class="close-chat" aria-label="Close chat"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="chat-messages">
+                <p class="bot-message"><i class="fas fa-robot"></i> Hello! How can we help you today?</p>
+            </div>
+            <div class="chat-input">
+                <input type="text" placeholder="Type your message...">
+                <button><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Lightbox JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+    <!-- JavaScript Files -->
+    <script src="../../js/main.js"></script>
+    <script src="../../js/header-scroll.js"></script>
+    <script src="../../js/navigation.js"></script>
+    <script src="../../js/darkMode.js"></script>
+    <script src="../../js/scroll-animations.js"></script>
+    <script src="../../js/backToTop.js"></script>
+    <script src="../../js/chatWidget.js"></script>
+</body>
+</html>

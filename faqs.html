@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>FAQs - Glory High School</title>
+    <!-- Core CSS Files -->
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/header.css">
+    <link rel="stylesheet" href="../../css/navigation.css">
+    <link rel="stylesheet" href="../../css/animations.css">
+    <link rel="stylesheet" href="../../css/dark-mode.css">
+    <link rel="stylesheet" href="../../css/portrait-mode.css">
+    <link rel="stylesheet" href="../../css/responsive.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Top Header with Contact Info -->
+    <div class="top-header" id="topHeader">
+        <div class="container">
+            <div class="contact-info">
+                <div class="phone-numbers">
+                    <i class="fas fa-phone-alt"></i>
+                    <a href="tel:0754645377">0754645377</a>
+                    <span class="separator">|</span>
+                    <a href="tel:0778654311">0778654311</a>
+                </div>
+                <div class="email">
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:info@gloryhighschool.ac.ug">info@gloryhighschool.ac.ug</a>
+                </div>
+                <div class="location">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Church of Uganda Busimbi Hill, Mityana</span>
+                </div>
+            </div>
+            <div class="dark-mode-toggle">
+                <button id="darkModeBtn" class="dark-mode-btn">🌓 Dark Mode</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Header -->
+    <header class="main-header" id="mainHeader">
+        <div class="container">
+            <a href="../../index.html" class="logo-link">
+                <div class="logo-section">
+                    <img src="../../assets/images/seeta3.png" alt="Glory High School Logo" class="logo" onerror="this.src='https://via.placeholder.com/60x60?text=GHS'">
+                    <div class="school-info">
+                        <h1>Glory High School</h1>
+                        <p class="motto">Excellence, Integrity, Service</p>
+                    </div>
+                </div>
+            </a>
+            
+            <nav class="main-nav">
+                <ul class="nav-menu">
+                    <!-- Home Dropdown -->
+                    <li class="dropdown">
+                        <a href="../../index.html">Home</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../../index.html">Home Overview</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- About Dropdown -->
+                    <li class="dropdown">
+                        <a href="../../about.html">About</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../about/history.html">History</a></li>
+                            <li><a href="../about/mission-vision.html">Mission & Vision</a></li>
+                            <li><a href="../about/leadership.html">Leadership</a></li>
+                            <li><a href="../about/staff.html">Staff Directory</a></li>
+                            <li><a href="../about/accreditation.html">Accreditation</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Academics Dropdown -->
+                    <li class="dropdown">
+                        <a href="../../academics.html">Academics</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../academics/curriculum.html">Curriculum</a></li>
+                            <li><a href="../academics/departments.html">Departments</a></li>
+                            <li><a href="../academics/calendar.html">Academic Calendar</a></li>
+                            <li><a href="../academics/results.html">Examination Results</a></li>
+                            <li><a href="../academics/apply-now.html" class="apply-btn">Apply Now</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Admissions Dropdown - Active -->
+                    <li class="dropdown active">
+                        <a href="../../admissions.html">Admission</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="requirements.html">Requirements</a></li>
+                            <li><a href="fees-structure.html">Fees Structure</a></li>
+                            <li><a href="application-form.html">Application Form</a></li>
+                            <li><a href="scholarships.html">Scholarships</a></li>
+                            <li><a href="faqs.html" class="active">FAQs</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- School Life Dropdown -->
+                    <li class="dropdown">
+                        <a href="../../school-life.html">School Life</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../school-life/sports.html">Sports</a></li>
+                            <li><a href="../school-life/clubs.html">Clubs & Societies</a></li>
+                            <li><a href="../school-life/events.html">Events</a></li>
+                            <li><a href="../school-life/gallery.html">Gallery</a></li>
+                            <li><a href="../school-life/student-council.html">Student Council</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Contacts Dropdown -->
+                    <li class="dropdown">
+                        <a href="../../contacts.html">Contacts</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../contacts/contact-form.html">Contact Form</a></li>
+                            <li><a href="../contacts/directory.html">Staff Directory</a></li>
+                            <li><a href="../contacts/visit-us.html">Visit Us</a></li>
+                            <li><a href="../contacts/career.html">Careers</a></li>
+                            <li><a href="../contacts/support.html">Support</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Large Hero Image with FAQs Title -->
+    <section class="faqs-hero">
+        <div class="faqs-hero-image">
+            <img src="../../assets/images/seeta6.png" alt="Frequently Asked Questions" class="hero-img">
+            <div class="hero-overlay">
+                <div class="container">
+                    <h1 class="slide-down">Frequently Asked Questions</h1>
+                    <p class="fade-in-up">Find Answers • Get Information • Quick Help</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Search Section -->
+    <section class="faqs-search">
+        <div class="container">
+            <div class="search-box scroll-animate zoom-in">
+                <i class="fas fa-search"></i>
+                <input type="text" id="faqSearch" placeholder="Search for questions... (e.g., fees, admission, uniform)">
+                <button id="searchBtn"><i class="fas fa-arrow-right"></i></button>
+            </div>
+            <p class="search-hint">Popular searches: fees, admission, uniform, boarding, results</p>
+        </div>
+    </section>
+
+    <!-- Quick Categories -->
+    <section class="faq-categories">
+        <div class="container">
+            <div class="categories-grid">
+                <div class="category-card scroll-animate slide-left" data-category="all">
+                    <i class="fas fa-globe"></i>
+                    <span>All Questions</span>
+                </div>
+                <div class="category-card scroll-animate slide-left" data-category="admission" style="animation-delay: 0.1s;">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>Admission</span>
+                </div>
+                <div class="category-card scroll-animate slide-left" data-category="fees" style="animation-delay: 0.2s;">
+                    <i class="fas fa-money-bill"></i>
+                    <span>Fees & Payments</span>
+                </div>
+                <div class="category-card scroll-animate slide-left" data-category="academics" style="animation-delay: 0.3s;">
+                    <i class="fas fa-book"></i>
+                    <span>Academics</span>
+                </div>
+                <div class="category-card scroll-animate slide-left" data-category="boarding" style="animation-delay: 0.4s;">
+                    <i class="fas fa-bed"></i>
+                    <span>Boarding</span>
+                </div>
+                <div class="category-card scroll-animate slide-left" data-category="uniform" style="animation-delay: 0.5s;">
+                    <i class="fas fa-tshirt"></i>
+                    <span>Uniform</span>
+                </div>
+                <div class="category-card scroll-animate slide-left" data-category="sports" style="animation-delay: 0.6s;">
+                    <i class="fas fa-futbol"></i>
+                    <span>Sports & Clubs</span>
+                </div>
+                <div class="category-card scroll-animate slide-left" data-category="general" style="animation-delay: 0.7s;">
+                    <i class="fas fa-question"></i>
+                    <span>General</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQs Accordion Section -->
+    <section class="faqs-main">
+        <div class="container">
+            <!-- Admission FAQs -->
+            <div class="faq-category-section" id="admission">
+                <h2 class="category-title scroll-animate fade-in"><i class="fas fa-graduation-cap"></i> Admission Questions</h2>
+                
+                <div class="faq-list">
+                    <!-- Question 1 -->
+                    <div class="faq-item scroll-animate slide-left" data-category="admission">
+                        <div class="faq-question">
+                            <h3>When does the admission process start?</h3>
+                            <span class="toggle-icon"><i class="fas fa-plus"></i></span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Admission for the next academic year typically starts in September of the previous year. For the 2026 academic year, applications will open on September 1st, 2025. We encourage parents to apply early as places fill up quickly, especially for popular classes like S.1 and S.5.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Question 2 -->
+                    <div class="faq-item scroll-animate slide-right" data-category="admission" style="animation-delay: 0.1s;">
+                        <div class="faq-question">
+                            <h3>What are the age requirements for S.1?</h3>
+                            <span class="toggle-icon"><i class="fas fa-plus"></i></span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>For admission to Senior One (S.1), a student should be between 13 and 15 years old by December 31st of the admission year. For S.5, the age range is 17-19 years. Exceptions may be considered on a case-by-case basis.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Question 3 -->
+                    <div class="faq-item scroll-animate slide-left" data-category="admission" style="animation-delay: 0.2s;">
+                        <div class="faq-question">
+                            <h3>Can I apply for transfer in the middle of the term?</h3>
+                            <span class="toggle-icon"><i class="fas fa-plus"></i></span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>While we prefer admissions at the beginning of a term, mid-term transfers may be accepted depending on space availability. However, the student must sit for placement exams and provide transfer letters from the previous school. Fees will be prorated accordingly.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Question 4 -->
+                    <div class="faq-item scroll-animate slide-right" data-category="admission" style="animation-delay: 0.3s;">
+                        <div class="faq-question">
+                            <h3>Is there an entrance examination?</h3>
+                            <span class="toggle-icon"><i class="fas fa-plus"></i></span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes, all new students (except those joining S.1 with Division 1 and S.5 with Division 1) are required to sit for entrance examinations in English, Mathematics, and General Paper. The exams are held every Saturday at 9:00 AM at the main campus. Please bring your own writing materials.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Fees & Payments FAQs -->
+            <div class="faq-category-section" id="fees">
+                <h2 class="category-title scroll-animate fade-in"><i class="fas fa-money-bill"></i> Fees & Payments</h2>
+                
+                <div class="faq-list">
+                    <!-- Question 5 -->
+                    <div class="faq-item scroll-animate slide-left" data-category="fees">
+                        <div class="faq-question">
+                            <h3>How much are school fees per term?</h3>
+                            <span class="toggle-icon"><i class="fas fa-plus"></i></span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Fees vary by class and category (day vs. boarding). For O-Level (S.1-S.4): Day scholars pay UGX 350,600 (continuing) and UGX 411,600 (new), while boarders pay UGX 670,600 (continuing) and UGX 731,600 (new). For A-Level (S.5-S.6): Day scholars pay UGX 365,600 (continuing) and UGX 426,600 (new), while boarders pay UGX 685,600 (continuing) and UGX 746,600 (new). Please see our <a href="fees-structure.html">Fees Structure</a> page for details.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Question 6 -->
+                    <div class="faq-item scroll-animate slide-right" data-category="fees" style="animation-delay: 0.1s;">
+                        <div class="faq-question">
+                            <h3>What payment methods are accepted?</h3>
+                            <span class="toggle-icon"><i class="fas fa-plus"></i></span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>We accept payments through multiple channels:
+                            <ul>
+                                <li><strong>Bank:</strong> Centenary Bank, Account: 3216549870</li>
+                                <li><strong>Mobile Money:</strong> MTN 0754645377, Airtel 0778654311</li>
+                                <li><strong>School Bursar's Office:</strong> Cash or cheque (receipt issued immediately)</li>
+                            </ul>
+                            Always request an official receipt for any payment made.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Question 7 -->
+                    <div class="faq-item scroll-animate slide-left" data-category="fees" style="animation-delay: 0.2s;">
+                        <div class="faq-question">
+                            <h3>Is the uniform fee included in school fees?</h3>
+                            <span class="toggle-icon"><i class="fas fa-plus"></i></span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Uniform fees are separate and paid once upon admission. For new students, uniform fees are: Boys UGX 140,000 (O-Level) / 120,000 (A-Level), Girls UGX 120,000, and Hostel Uniform UGX 40,000. Continuing students only pay for uniform if they need replacements.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Question 8 -->
+                    <div class="faq-item scroll-animate slide-right" data-category="fees" style="animation-delay: 0.3s;">
+                        <div class="faq-question">
+                            <h3>Are there any discounts for siblings?</h3>
+                            <span class="toggle-icon"><i class="fas fa-plus"></i></span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes, we offer sibling discounts: 15% for two siblings, 20% for three siblings, and 25% for four or more siblings. The discount is applied to the total fees before other scholarships. This does not apply to uniform fees.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Question 9 -->
+                    <div class="faq-item scroll-animate slide-left" data-category="fees" style="animation-delay: 0.4s;">
+                        <div class="faq-question">
+                            <h3>What is the deadline for fee payment?</h3>
+                            <span class="toggle-icon"><i class="fas fa-plus"></i></span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Fees should be paid in full on or before the opening day of each term. For Term I, payment is due on opening day. For Term II and III, payment should be made at least one week before the term begins. Late payment attracts a penalty of UGX 20,000 per week.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Academics FAQs -->
+            <div class="faq-category-section" id="academics">
+                <h2 class="category-title scroll-animate fade-in"><i class="fas fa-book"></i> Academics</h2>
+                
+                <div class="faq-list">
+                    <!-- Question 10 -->
+                    <div class="faq-item scroll-animate slide-left" data-category="academics">
+                        <div class="faq-question">
+                            <h3>What subjects are offered at O-Level?</h3>
+                            <span class="toggle-icon"><i class="fas fa-plus"></i></span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>We offer a comprehensive range of subjects at O-Level including:
+                            <ul>
+                                <li><strong>Sciences:</strong> Mathematics, Physics, Chemistry, Biology</li>
+                                <li><strong>Humanities:</strong> History, Geography, CRE, Literature</li>
+                                <li><strong>Languages:</strong> English, French, Kiswahili, Luganda</li>
+                                <li><strong>Vocational:</strong> Entrepreneurship, ICT, Art & Design, Technical Drawing, Physical Education</li>
+                            </ul>
+                            Students take a minimum of 8 and maximum of 10 subjects.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Question 11 -->
+                    <div class="faq-item scroll-animate slide-right" data-category="academics" style="animation-delay: 0.1s;">
+                        <div class="faq-question">
+                            <h3>What A-Level combinations are available?</h3>
+                            <span class="toggle-icon"><i class="fas fa-plus"></i></span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>We offer both Science and Arts combinations:
+                            <ul>
+                                <li><strong>Sciences:</strong> PCM (Physics, Chemistry, Mathematics), BCM (Biology, Chemistry, Mathematics), PCB (Physics, Chemistry, Biology), MCB (Mathematics, Chemistry, Biology)</li>
+                                <li><strong>Arts:</strong> HED (History, Economics, Divinity), LEG (Literature, Economics, Geography), HEG (History, Economics, Geography), FEG (French, Economics, Geography)</li>
+                            </ul>
+                            Selection is based on UCE results and subject grades.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Question 12 -->
+                    <div class="faq-item scroll-animate slide-left" data-category="academics" style="animation-delay: 0.2s;">
+                        <div class="faq-question">
+                            <h3>When are the national examinations?</h3>
+                            <span class="toggle-icon"><i class="fas fa-plus"></i></span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>PLE (Primary Leaving Exam) is usually in November, UCE (O-Level) in October-November, and UACE (A-Level) in November-December. Specific dates are announced by UNEB (Uganda National Examinations Board) at the beginning of each year. Our <a href="../academics/calendar.html">Academic Calendar</a> includes all exam dates.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Question 13 -->
+                    <div class="faq-item scroll-animate slide-right" data-category="academics" style="animation-delay: 0.3s;">
+                        <div class="faq-question">
+                            <h3>Do you offer extra lessons or remedial classes?</h3>
+                            <span class="toggle-icon"><i class="fas fa-plus"></i></span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes, we offer remedial classes for students who need extra help, especially in core subjects like Mathematics, English, and Sciences. These are conducted after regular school hours and on Saturdays. There is a small additional fee for remedial classes, but some are offered free of charge for struggling students.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Boarding FAQs -->
+            <div class="faq-category-section" id="boarding">
+                <h2 class="category-title scroll-animate fade-in"><i class="fas fa-bed"></i> Boarding Life</h2>
+                
+                <div class="faq-list">
+                    <!-- Question 14 -->
+                    <div class="faq-item scroll-animate slide-left" data-category="boarding">
+                        <div class="faq-question">
+                            <h3>What are the dormitory arrangements?</h3>
+                            <span class="toggle-icon"><i class="fas fa-plus"></i></span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>We have separate dormitories for boys and girls, each supervised by resident wardens. Dormitories are spacious with adequate lighting and ventilation. Each student is provided with a bed, mattress, locker, and study desk. Students are grouped by age and class to ensure proper care and supervision.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Question 15 -->
+                    <div class="faq-item scroll-animate slide-right" data-category="boarding" style="animation-delay: 0.1s;">
+                        <div class="faq-question">
+                            <h3>What meals are provided for boarders?</h3>
+                            <span class="toggle-icon"><i class="fas fa-plus"></i></span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Boarders receive three balanced meals daily: breakfast (tea with bread/mandazi/porridge), lunch (matooke/rice/posho with beans/meat/fish and vegetables), and supper (similar to lunch with variety). Evening tea is also provided at 4:30 PM. Special diets are catered for students with medical conditions upon notification.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Question 16 -->
+                    <div class="faq-item scroll-animate slide-left" data-category="boarding" style="animation-delay: 0.2s;">
+                        <div class="faq-question">
+                            <h3>Can parents visit their children during the term?</h3>
+                            <span class="toggle-icon"><i class="fas fa-plus"></i></span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes, parents are welcome to visit on designated visiting days, which are usually the last Sunday of every month from 10:00 AM to 4:00 PM. For emergency visits, please contact the school administration in advance. During examination periods, visits may be restricted to allow students to concentrate.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Question 17 -->
+                    <div class="faq-item scroll-animate slide-right" data-category="boarding" style="animation-delay: 0.3s;">
+                        <div class="faq-question">
+                            <h3>What items should a boarder bring?</h3>
+                            <span class="toggle-icon"><i class="fas fa-plus"></i></span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Boarders should bring:
+                            <ul>
+                                <li>Bed sheets (2 pairs), blanket, pillow</li>
+                                <li>Towels, soap, toothpaste, toothbrush</li>
+                                <li>Plate, cup, spoon, knife, fork</li>
+                                <li>School uniform, P.E. kit, sweater, raincoat</li>
+                                <li>Books, stationery, mathematical set</li>
+                                <li>Torch, padlock, box/trunk</li>
+                            </ul>
+                            Prohibited items include phones, smart devices, expensive jewelry, and illegal substances.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Uniform FAQs -->
+            <div class="faq-category-section" id="uniform">
+                <h2 class="category-title scroll-animate fade-in"><i class="fas fa-tshirt"></i> Uniform & Dress Code</h2>
+                
+                <div class="faq-list">
+                    <!-- Question 18 -->
+                    <div class="faq-item scroll-animate slide-left" data-category="uniform">
+                        <div class="faq-question">
+                            <h3>Where can I buy the school uniform?</h3>
+                            <span class="toggle-icon"><i class="fas fa-plus"></i></span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>School uniforms are available at the school's uniform shop, open Monday to Friday from 8:00 AM to 4:00 PM. You can also purchase from approved vendors in Mityana town. All uniforms must meet the school's specifications. New students receive their uniform after paying the uniform fee.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Question 19 -->
+                    <div class="faq-item scroll-animate slide-right" data-category="uniform" style="animation-delay: 0.1s;">
+                        <div class="faq-question">
+                            <h3>What is the complete uniform for boys and girls?</h3>
+                            <span class="toggle-icon"><i class="fas fa-plus"></i></span>
+                        </div>
+                        <div class="faq-answer">
+                            <p><strong>Boys:</strong> Khaki shorts (O-Level) / Grey trousers (A-Level), light blue shirt, school tie, black shoes, white socks, navy blue sweater (optional).
+                            <strong>Girls:</strong> Light blue dress (O-Level) / Navy blue skirt and light blue blouse (A-Level), school tie, black shoes, white socks, navy blue sweater (optional).
+                            <strong>P.E. Kit:</strong> White t-shirt, navy blue shorts, white canvas shoes.
+                            All uniforms must be clearly labeled with the student's name.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Question 20 -->
+                    <div class="faq-item scroll-animate slide-left" data-category="uniform" style="animation-delay: 0.2s;">
+                        <div class="faq-question">
+                            <h3>Are there specific requirements for hairstyle?</h3>
+                            <span class="toggle-icon"><i class="fas fa-plus"></i></span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes, we maintain a neat and modest appearance. Boys must have short, well-groomed hair (no dreadlocks, braids, or dyed hair). Girls with natural hair must keep it neat and tidy; if relaxed, it should be of moderate length. Weaving, extensive braiding, and colored hair are not permitted. Extreme or trendy hairstyles are discouraged.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Sports & Clubs FAQs -->
+            <div class="faq-category-section" id="sports">
+                <h2 class="category-title scroll-animate fade-in"><i class="fas fa-futbol"></i> Sports & Co-curricular Activities</h2>
+                
+                <div class="faq-list">
+                    <!-- Question 21 -->
+                    <div class="faq-item scroll-animate slide-left" data-category="sports">
+                        <div class="faq-question">
+                            <h3>What sports are offered at the school?</h3>
+                            <span class="toggle-icon"><i class="fas fa-plus"></i></span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>We offer a wide range of sports including football (boys and girls), netball, basketball, volleyball, athletics (track and field), swimming, badminton, table tennis, and chess. Our students participate in inter-house, inter-school, and national competitions. We have professional coaches for each sport.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Question 22 -->
+                    <div class="faq-item scroll-animate slide-right" data-category="sports" style="animation-delay: 0.1s;">
+                        <div class="faq-question">
+                            <h3>Are there clubs and societies students can join?</h3>
+                            <span class="toggle-icon"><i class="fas fa-plus"></i></span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes, we have numerous clubs including: Debate Club, Science Club, Wildlife Club, Journalism Club, Drama Club, Music & Choir, Scripture Union, Scouts & Guides, Red Cross, and Rotaract. Students are encouraged to join at least one club to develop leadership and social skills.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Question 23 -->
+                    <div class="faq-item scroll-animate slide-left" data-category="sports" style="animation-delay: 0.2s;">
+                        <div class="faq-question">
+                            <h3>Is participation in sports compulsory?</h3>
+                            <span class="toggle-icon"><i class="fas fa-plus"></i></span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes, every student is required to participate in at least one sport or club activity. We believe in holistic education and developing both mind and body. Students with medical conditions that prevent physical activity are excused with a doctor's note and assigned alternative activities.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- General FAQs -->
+            <div class="faq-category-section" id="general">
+                <h2 class="category-title scroll-animate fade-in"><i class="fas fa-question"></i> General Questions</h2>
+                
+                <div class="faq-list">
+                    <!-- Question 24 -->
+                    <div class="faq-item scroll-animate slide-left" data-category="general">
+                        <div class="faq-question">
+                            <h3>What are the school hours?</h3>
+                            <span class="toggle-icon"><i class="fas fa-plus"></i></span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>School hours are from 8:00 AM to 4:30 PM, Monday to Friday. Lessons begin at 8:30 AM after assembly. There is a break from 10:30 AM to 11:00 AM and lunch from 1:00 PM to 2:00 PM. Day scholars should arrive by 7:45 AM and be picked up by 4:45 PM. Boarders follow a structured schedule including evening preps from 7:00 PM to 9:30 PM.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Question 25 -->
+                    <div class="faq-item scroll-animate slide-right" data-category="general" style="animation-delay: 0.1s;">
+                        <div class="faq-question">
+                            <h3>How does the school handle discipline?</h3>
+                            <span class="toggle-icon"><i class="fas fa-plus"></i></span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>We follow a restorative discipline approach focusing on positive reinforcement and character development. Minor offenses are handled through counseling and guidance by class teachers. Serious offenses are managed by the Discipline Committee following the school's code of conduct. Corporal punishment is not used; instead, we emphasize correction, counseling, and community service.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Question 26 -->
+                    <div class="faq-item scroll-animate slide-left" data-category="general" style="animation-delay: 0.2s;">
+                        <div class="faq-question">
+                            <h3>Is there a school clinic?</h3>
+                            <span class="toggle-icon"><i class="fas fa-plus"></i></span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes, we have a well-equipped school clinic staffed by a qualified nurse and a visiting doctor. Minor ailments are treated at the clinic. For serious cases, students are referred to Mityana Hospital. Parents are contacted immediately in case of emergencies. Boarders contribute to a medical fund included in their fees.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Question 27 -->
+                    <div class="faq-item scroll-animate slide-right" data-category="general" style="animation-delay: 0.3s;">
+                        <div class="faq-question">
+                            <h3>How can I contact my child during school hours?</h3>
+                            <span class="toggle-icon"><i class="fas fa-plus"></i></span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>For emergencies, you can call the school office at 0754645377, and the message will be relayed to your child. Boarders have access to the school phone at designated times. Personal mobile phones are not allowed for students. Parents are encouraged to communicate through the class teacher or house warden.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Question 28 -->
+                    <div class="faq-item scroll-animate slide-left" data-category="general" style="animation-delay: 0.4s;">
+                        <div class="faq-question">
+                            <h3>Does the school offer transport services?</h3>
+                            <span class="toggle-icon"><i class="fas fa-plus"></i></span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes, we have school buses that transport day scholars from designated pick-up points in Mityana town and surrounding areas. Transport is optional and costs an additional fee. Pick-up and drop-off schedules are shared at the beginning of each term. Boarders are transported to and from the bus park at the beginning and end of term.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Still Have Questions -->
+            <div class="still-questions scroll-animate zoom-in">
+                <i class="fas fa-question-circle"></i>
+                <h3>Still Have Questions?</h3>
+                <p>Can't find the answer you're looking for? Please contact our admissions office.</p>
+                <div class="contact-options">
+                    <a href="tel:0754645377" class="contact-btn"><i class="fas fa-phone"></i> Call Us</a>
+                    <a href="contact-form.html" class="contact-btn"><i class="fas fa-envelope"></i> Send Message</a>
+                    <a href="visit-us.html" class="contact-btn"><i class="fas fa-map-marker-alt"></i> Visit Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3><i class="fas fa-phone-alt"></i> Contact Us</h3>
+                    <p><i class="fas fa-phone"></i> 0754645377 / 0778654311</p>
+                    <p><i class="fas fa-envelope"></i> info@gloryhighschool.ac.ug</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Busimbi Hill, Mityana</p>
+                </div>
+                <div class="footer-section">
+                    <h3><i class="fas fa-link"></i> Quick Links</h3>
+                    <ul>
+                        <li><a href="application-form.html"><i class="fas fa-chevron-right"></i> Apply Now</a></li>
+                        <li><a href="../academics/calendar.html"><i class="fas fa-chevron-right"></i> Academic Calendar</a></li>
+                        <li><a href="../school-life/events.html"><i class="fas fa-chevron-right"></i> Upcoming Events</a></li>
+                        <li><a href="faqs.html"><i class="fas fa-chevron-right"></i> FAQs</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3><i class="fas fa-share-alt"></i> Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Glory High School. All rights reserved. <i class="fas fa-heart" style="color: #e74c3c;"></i></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Chat Widget -->
+    <div class="chat-widget" id="chatWidget">
+        <button class="chat-toggle" aria-label="Open chat">
+            <i class="fas fa-comment"></i>
+        </button>
+        <div class="chat-box">
+            <div class="chat-header">
+                <h4><i class="fas fa-comment-dots"></i> Chat with us</h4>
+                <button class="close-chat" aria-label="Close chat"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="chat-messages">
+                <p class="bot-message"><i class="fas fa-robot"></i> Hello! How can we help you today?</p>
+            </div>
+            <div class="chat-input">
+                <input type="text" placeholder="Type your message...">
+                <button><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript Files -->
+    <script src="../../js/main.js"></script>
+    <script src="../../js/header-scroll.js"></script>
+    <script src="../../js/navigation.js"></script>
+    <script src="../../js/darkMode.js"></script>
+    <script src="../../js/scroll-animations.js"></script>
+    <script src="../../js/backToTop.js"></script>
+    <script src="../../js/chatWidget.js"></script>
+</body>
+</html>

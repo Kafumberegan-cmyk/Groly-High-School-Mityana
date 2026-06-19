@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Scholarships - Glory High School</title>
+    <!-- Core CSS Files -->
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/header.css">
+    <link rel="stylesheet" href="../../css/navigation.css">
+    <link rel="stylesheet" href="../../css/animations.css">
+    <link rel="stylesheet" href="../../css/dark-mode.css">
+    <link rel="stylesheet" href="../../css/portrait-mode.css">
+    <link rel="stylesheet" href="../../css/responsive.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Top Header with Contact Info -->
+    <div class="top-header" id="topHeader">
+        <div class="container">
+            <div class="contact-info">
+                <div class="phone-numbers">
+                    <i class="fas fa-phone-alt"></i>
+                    <a href="tel:0754645377">0754645377</a>
+                    <span class="separator">|</span>
+                    <a href="tel:0778654311">0778654311</a>
+                </div>
+                <div class="email">
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:info@gloryhighschool.ac.ug">info@gloryhighschool.ac.ug</a>
+                </div>
+                <div class="location">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Church of Uganda Busimbi Hill, Mityana</span>
+                </div>
+            </div>
+            <div class="dark-mode-toggle">
+                <button id="darkModeBtn" class="dark-mode-btn">🌓 Dark Mode</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Header -->
+    <header class="main-header" id="mainHeader">
+        <div class="container">
+            <a href="../../index.html" class="logo-link">
+                <div class="logo-section">
+                    <img src="../../assets/images/seeta3.png" alt="Glory High School Logo" class="logo" onerror="this.src='https://via.placeholder.com/60x60?text=GHS'">
+                    <div class="school-info">
+                        <h1>Glory High School</h1>
+                        <p class="motto">Excellence, Integrity, Service</p>
+                    </div>
+                </div>
+            </a>
+            
+            <nav class="main-nav">
+                <ul class="nav-menu">
+                    <!-- Home Dropdown -->
+                    <li class="dropdown">
+                        <a href="../../index.html">Home</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../../index.html">Home Overview</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- About Dropdown -->
+                    <li class="dropdown">
+                        <a href="../../about.html">About</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../about/history.html">History</a></li>
+                            <li><a href="../about/mission-vision.html">Mission & Vision</a></li>
+                            <li><a href="../about/leadership.html">Leadership</a></li>
+                            <li><a href="../about/staff.html">Staff Directory</a></li>
+                            <li><a href="../about/accreditation.html">Accreditation</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Academics Dropdown -->
+                    <li class="dropdown">
+                        <a href="../../academics.html">Academics</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../academics/curriculum.html">Curriculum</a></li>
+                            <li><a href="../academics/departments.html">Departments</a></li>
+                            <li><a href="../academics/calendar.html">Academic Calendar</a></li>
+                            <li><a href="../academics/results.html">Examination Results</a></li>
+                            <li><a href="../academics/apply-now.html" class="apply-btn">Apply Now</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Admissions Dropdown - Active -->
+                    <li class="dropdown active">
+                        <a href="../../admissions.html">Admission</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="requirements.html">Requirements</a></li>
+                            <li><a href="fees-structure.html">Fees Structure</a></li>
+                            <li><a href="application-form.html">Application Form</a></li>
+                            <li><a href="scholarships.html" class="active">Scholarships</a></li>
+                            <li><a href="faqs.html">FAQs</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- School Life Dropdown -->
+                    <li class="dropdown">
+                        <a href="../../school-life.html">School Life</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../school-life/sports.html">Sports</a></li>
+                            <li><a href="../school-life/clubs.html">Clubs & Societies</a></li>
+                            <li><a href="../school-life/events.html">Events</a></li>
+                            <li><a href="../school-life/gallery.html">Gallery</a></li>
+                            <li><a href="../school-life/student-council.html">Student Council</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Contacts Dropdown -->
+                    <li class="dropdown">
+                        <a href="../../contacts.html">Contacts</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../contacts/contact-form.html">Contact Form</a></li>
+                            <li><a href="../contacts/directory.html">Staff Directory</a></li>
+                            <li><a href="../contacts/visit-us.html">Visit Us</a></li>
+                            <li><a href="../contacts/career.html">Careers</a></li>
+                            <li><a href="../contacts/support.html">Support</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Large Hero Image with Scholarships Title -->
+    <section class="scholarships-hero">
+        <div class="scholarships-hero-image">
+            <img src="../../assets/images/seeta2.png" alt="Scholarships" class="hero-img">
+            <div class="hero-overlay">
+                <div class="container">
+                    <h1 class="slide-down">Scholarships & Bursaries</h1>
+                    <p class="fade-in-up">Unlock Your Potential • Merit-Based • Need-Based • Talent Recognition</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Introduction Section -->
+    <section class="scholarships-intro">
+        <div class="container">
+            <div class="intro-content scroll-animate slide-left">
+                <h2>Investing in Bright Futures</h2>
+                <p>At Glory High School, we believe that every deserving student should have access to quality education regardless of their financial circumstances. Our scholarship and bursary programs are designed to recognize excellence, support talent, and assist those in need. We offer a variety of opportunities for both new and continuing students.</p>
+            </div>
+            
+            <div class="scholarship-stats">
+                <div class="stat-card scroll-animate zoom-in">
+                    <i class="fas fa-trophy"></i>
+                    <div class="stat-number">50+</div>
+                    <div class="stat-label">Scholarships Awarded</div>
+                </div>
+                <div class="stat-card scroll-animate zoom-in" style="animation-delay: 0.2s;">
+                    <i class="fas fa-star"></i>
+                    <div class="stat-number">100M+</div>
+                    <div class="stat-label">UGX Awarded Yearly</div>
+                </div>
+                <div class="stat-card scroll-animate zoom-in" style="animation-delay: 0.4s;">
+                    <i class="fas fa-users"></i>
+                    <div class="stat-number">30%</div>
+                    <div class="stat-label">Students on Scholarship</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Merit Scholarships -->
+    <section class="scholarship-section merit-section">
+        <div class="container">
+            <div class="section-header scroll-animate fade-in">
+                <i class="fas fa-crown"></i>
+                <h2>Merit-Based Scholarships</h2>
+                <p>Rewarding academic excellence and outstanding achievement</p>
+            </div>
+            
+            <div class="scholarships-grid">
+                <!-- Presidential Scholarship -->
+                <div class="scholarship-card scroll-animate slide-left">
+                    <div class="card-ribbon">Top Award</div>
+                    <div class="card-icon">
+                        <i class="fas fa-crown"></i>
+                    </div>
+                    <h3>Presidential Scholarship</h3>
+                    <div class="scholarship-value">100% Fee Waiver</div>
+                    <ul class="scholarship-details">
+                        <li><i class="fas fa-check"></i> Aggregate 4-8 in PLE</li>
+                        <li><i class="fas fa-check"></i> Division I with 20 points in UACE</li>
+                        <li><i class="fas fa-check"></i> Top 1% in entrance exam</li>
+                        <li><i class="fas fa-check"></i> Full boarding & tuition</li>
+                    </ul>
+                    <div class="scholarship-deadline">
+                        <i class="fas fa-clock"></i>
+                        <span>Applications close: August 30, 2025</span>
+                    </div>
+                    <a href="application-form.html" class="scholarship-apply">Apply Now →</a>
+                </div>
+                
+                <!-- Excellence Scholarship -->
+                <div class="scholarship-card scroll-animate zoom-in" style="animation-delay: 0.2s;">
+                    <div class="card-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>Excellence Scholarship</h3>
+                    <div class="scholarship-value">75% Fee Waiver</div>
+                    <ul class="scholarship-details">
+                        <li><i class="fas fa-check"></i> Aggregate 9-12 in PLE</li>
+                        <li><i class="fas fa-check"></i> Division I with 18-19 points in UACE</li>
+                        <li><i class="fas fa-check"></i> Top 5% in entrance exam</li>
+                        <li><i class="fas fa-check"></i> Full tuition + partial boarding</li>
+                    </ul>
+                    <div class="scholarship-deadline">
+                        <i class="fas fa-clock"></i>
+                        <span>Applications close: September 15, 2025</span>
+                    </div>
+                    <a href="application-form.html" class="scholarship-apply">Apply Now →</a>
+                </div>
+                
+                <!-- High Achiever -->
+                <div class="scholarship-card scroll-animate slide-right" style="animation-delay: 0.4s;">
+                    <div class="card-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3>High Achiever Award</h3>
+                    <div class="scholarship-value">50% Fee Waiver</div>
+                    <ul class="scholarship-details">
+                        <li><i class="fas fa-check"></i> Aggregate 13-16 in PLE</li>
+                        <li><i class="fas fa-check"></i> Division I with 16-17 points in UACE</li>
+                        <li><i class="fas fa-check"></i> Top 10% in entrance exam</li>
+                        <li><i class="fas fa-check"></i> 50% tuition waiver</li>
+                    </ul>
+                    <div class="scholarship-deadline">
+                        <i class="fas fa-clock"></i>
+                        <span>Applications close: October 1, 2025</span>
+                    </div>
+                    <a href="application-form.html" class="scholarship-apply">Apply Now →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Talent-Based Scholarships -->
+    <section class="scholarship-section talent-section">
+        <div class="container">
+            <div class="section-header scroll-animate fade-in">
+                <i class="fas fa-medal"></i>
+                <h2>Talent-Based Scholarships</h2>
+                <p>Recognizing exceptional abilities in sports, arts, and leadership</p>
+            </div>
+            
+            <div class="talents-grid">
+                <!-- Sports Scholarship -->
+                <div class="talent-card scroll-animate slide-left">
+                    <div class="talent-icon">
+                        <i class="fas fa-futbol"></i>
+                    </div>
+                    <h3>Sports Excellence</h3>
+                    <div class="talent-value">Up to 70% Waiver</div>
+                    <p>For exceptional athletes in football, netball, basketball, athletics, and swimming.</p>
+                    <ul class="talent-criteria">
+                        <li><i class="fas fa-check-circle"></i> Regional/National representation</li>
+                        <li><i class="fas fa-check-circle"></i> Trial performance evaluation</li>
+                        <li><i class="fas fa-check-circle"></i> Minimum academic requirements</li>
+                    </ul>
+                    <a href="#" class="talent-link">Learn More →</a>
+                </div>
+                
+                <!-- Arts Scholarship -->
+                <div class="talent-card scroll-animate zoom-in" style="animation-delay: 0.2s;">
+                    <div class="talent-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3>Creative Arts</h3>
+                    <div class="talent-value">Up to 60% Waiver</div>
+                    <p>For talented artists, musicians, dancers, and drama performers.</p>
+                    <ul class="talent-criteria">
+                        <li><i class="fas fa-check-circle"></i> Portfolio submission required</li>
+                        <li><i class="fas fa-check-circle"></i> Audition/performance review</li>
+                        <li><i class="fas fa-check-circle"></i> Competition achievements</li>
+                    </ul>
+                    <a href="#" class="talent-link">Learn More →</a>
+                </div>
+                
+                <!-- Leadership Scholarship -->
+                <div class="talent-card scroll-animate slide-right" style="animation-delay: 0.4s;">
+                    <div class="talent-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Leadership & Community</h3>
+                    <div class="talent-value">Up to 50% Waiver</div>
+                    <p>For students with proven leadership and community service record.</p>
+                    <ul class="talent-criteria">
+                        <li><i class="fas fa-check-circle"></i> Head prefect/leadership roles</li>
+                        <li><i class="fas fa-check-circle"></i> Community service involvement</li>
+                        <li><i class="fas fa-check-circle"></i> Recommendation letters</li>
+                    </ul>
+                    <a href="#" class="talent-link">Learn More →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Need-Based Bursaries -->
+    <section class="scholarship-section bursary-section">
+        <div class="container">
+            <div class="section-header scroll-animate fade-in">
+                <i class="fas fa-heart"></i>
+                <h2>Need-Based Bursaries</h2>
+                <p>Supporting students from disadvantaged backgrounds</p>
+            </div>
+            
+            <div class="bursary-grid">
+                <!-- Orphan Support -->
+                <div class="bursary-card scroll-animate slide-left">
+                    <i class="fas fa-heartbeat"></i>
+                    <h3>Orphan Support Program</h3>
+                    <div class="bursary-value">Full Scholarship</div>
+                    <p>For orphaned students with proven academic potential and financial need.</p>
+                    <div class="bursary-requirements">
+                        <strong>Requirements:</strong>
+                        <ul>
+                            <li><i class="fas fa-circle"></i> Death certificates of parents</li>
+                            <li><i class="fas fa-circle"></i> Recommendation from LC1</li>
+                            <li><i class="fas fa-circle"></i> Minimum aggregate of 20 in PLE</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Vulnerable Child -->
+                <div class="bursary-card scroll-animate zoom-in" style="animation-delay: 0.2s;">
+                    <i class="fas fa-hand-holding-heart"></i>
+                    <h3>Vulnerable Child Bursary</h3>
+                    <div class="bursary-value">Partial Scholarship</div>
+                    <p>For children from extremely vulnerable and low-income households.</p>
+                    <div class="bursary-requirements">
+                        <strong>Requirements:</strong>
+                        <ul>
+                            <li><i class="fas fa-circle"></i> Income assessment</li>
+                            <li><i class="fas fa-circle"></i> Social worker report</li>
+                            <li><i class="fas fa-circle"></i> School performance review</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Sibling Discount -->
+                <div class="bursary-card scroll-animate slide-right" style="animation-delay: 0.4s;">
+                    <i class="fas fa-users"></i>
+                    <h3>Sibling Discount</h3>
+                    <div class="bursary-value">15-25% Discount</div>
+                    <p>For families with multiple children enrolled at Glory High School.</p>
+                    <div class="bursary-requirements">
+                        <strong>Discount Structure:</strong>
+                        <ul>
+                            <li><i class="fas fa-circle"></i> 2 siblings: 15% off total fees</li>
+                            <li><i class="fas fa-circle"></i> 3 siblings: 20% off total fees</li>
+                            <li><i class="fas fa-circle"></i> 4+ siblings: 25% off total fees</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Special Category Scholarships -->
+    <section class="scholarship-section special-section">
+        <div class="container">
+            <div class="section-header scroll-animate fade-in">
+                <i class="fas fa-flag"></i>
+                <h2>Special Category Scholarships</h2>
+            </div>
+            
+            <div class="special-grid">
+                <!-- Best Girl Award -->
+                <div class="special-card scroll-animate slide-left">
+                    <i class="fas fa-female"></i>
+                    <h3>Best Girl Student Award</h3>
+                    <p>Encouraging girls' education - Full scholarship for the top-performing girl in entrance exams.</p>
+                    <span class="special-badge">Annual Award</span>
+                </div>
+                
+                <!-- Science Talent -->
+                <div class="special-card scroll-animate zoom-in" style="animation-delay: 0.2s;">
+                    <i class="fas fa-flask"></i>
+                    <h3>STEM Excellence Award</h3>
+                    <p>For students excelling in sciences and mathematics competitions.</p>
+                    <span class="special-badge">50% Waiver</span>
+                </div>
+                
+                <!-- Pastors/Clergy -->
+                <div class="special-card scroll-animate slide-right" style="animation-delay: 0.4s;">
+                    <i class="fas fa-church"></i>
+                    <h3>Clergy Children Support</h3>
+                    <p>For children of ordained clergy in the Church of Uganda.</p>
+                    <span class="special-badge">30% Waiver</span>
+                </div>
+                
+                <!-- Staff Children -->
+                <div class="special-card scroll-animate slide-left" style="animation-delay: 0.6s;">
+                    <i class="fas fa-chalkboard-teacher"></i>
+                    <h3>Staff Children Benefit</h3>
+                    <p>For children of Glory High School staff members.</p>
+                    <span class="special-badge">50% Waiver</span>
+                </div>
+                
+                <!-- National Merit -->
+                <div class="special-card scroll-animate zoom-in" style="animation-delay: 0.8s;">
+                    <i class="fas fa-map-marked-alt"></i>
+                    <h3>District Representative</h3>
+                    <p>For top student from each district in Uganda.</p>
+                    <span class="special-badge">Full Scholarship</span>
+                </div>
+                
+                <!-- Alumni Legacy -->
+                <div class="special-card scroll-animate slide-right" style="animation-delay: 1s;">
+                    <i class="fas fa-graduation-cap"></i>
+                    <h3>Alumni Legacy Award</h3>
+                    <p>For children of Glory High School alumni.</p>
+                    <span class="special-badge">20% Waiver</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Application Process -->
+    <section class="application-process">
+        <div class="container">
+            <div class="section-header scroll-animate fade-in">
+                <i class="fas fa-tasks"></i>
+                <h2>Scholarship Application Process</h2>
+            </div>
+            
+            <div class="process-steps">
+                <div class="step scroll-animate slide-left">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h4>Check Eligibility</h4>
+                        <p>Review scholarship requirements and ensure you meet the criteria</p>
+                    </div>
+                </div>
+                
+                <div class="step scroll-animate slide-right" style="animation-delay: 0.2s;">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h4>Gather Documents</h4>
+                        <p>Collect academic records, recommendation letters, and supporting documents</p>
+                    </div>
+                </div>
+                
+                <div class="step scroll-animate slide-left" style="animation-delay: 0.4s;">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h4>Submit Application</h4>
+                        <p>Complete the scholarship application form before the deadline</p>
+                    </div>
+                </div>
+                
+                <div class="step scroll-animate slide-right" style="animation-delay: 0.6s;">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h4>Interview/Assessment</h4>
+                        <p>Attend interviews or talent assessments as required</p>
+                    </div>
+                </div>
+                
+                <div class="step scroll-animate slide-left" style="animation-delay: 0.8s;">
+                    <div class="step-number">5</div>
+                    <div class="step-content">
+                        <h4>Award Notification</h4>
+                        <p>Successful applicants will be notified within 2 weeks</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="scholarship-testimonials">
+        <div class="container">
+            <div class="section-header scroll-animate fade-in">
+                <i class="fas fa-quote-right"></i>
+                <h2>Scholar Success Stories</h2>
+            </div>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card scroll-animate slide-left">
+                    <i class="fas fa-quote-left quote-icon"></i>
+                    <p class="testimonial-text">"The Presidential Scholarship changed my life. I graduated with distinction and now I'm studying medicine at Makerere University."</p>
+                    <div class="testimonial-author">
+                        <strong>Nakato Sarah</strong>
+                        <span>Presidential Scholar 2020-2023</span>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card scroll-animate zoom-in" style="animation-delay: 0.2s;">
+                    <i class="fas fa-quote-left quote-icon"></i>
+                    <p class="testimonial-text">"As an orphan, the bursary program gave me hope. I'm now in Senior 5 and performing excellently in sciences."</p>
+                    <div class="testimonial-author">
+                        <strong>Okello James</strong>
+                        <span>Bursary Recipient</span>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card scroll-animate slide-right" style="animation-delay: 0.4s;">
+                    <i class="fas fa-quote-left quote-icon"></i>
+                    <p class="testimonial-text">"The sports scholarship recognized my football talent. I've represented the school nationally and my academics have improved."</p>
+                    <div class="testimonial-author">
+                        <strong>Mukasa David</strong>
+                        <span>Sports Scholar</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="scholarship-faq">
+        <div class="container">
+            <div class="section-header scroll-animate fade-in">
+                <i class="fas fa-question-circle"></i>
+                <h2>Frequently Asked Questions</h2>
+            </div>
+            
+            <div class="faq-grid">
+                <div class="faq-item scroll-animate slide-left">
+                    <h4>Can I apply for multiple scholarships?</h4>
+                    <p>Yes, you can apply for multiple scholarships, but you will only be awarded the highest value scholarship for which you qualify.</p>
+                </div>
+                
+                <div class="faq-item scroll-animate slide-right" style="animation-delay: 0.2s;">
+                    <h4>When are scholarship deadlines?</h4>
+                    <p>Most scholarships close between August and October for the following academic year. Check each scholarship for specific dates.</p>
+                </div>
+                
+                <div class="faq-item scroll-animate slide-left" style="animation-delay: 0.4s;">
+                    <h4>Are scholarships renewable?</h4>
+                    <p>Yes, most scholarships are renewable annually based on maintaining good academic standing and conduct.</p>
+                </div>
+                
+                <div class="faq-item scroll-animate slide-right" style="animation-delay: 0.6s;">
+                    <h4>Do I need to submit separate applications?</h4>
+                    <p>Yes, scholarship applications are separate from the general admission application. Both must be completed.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="scholarships-cta">
+        <div class="container">
+            <h2 class="slide-down">Don't Miss This Opportunity</h2>
+            <p class="fade-in-up">Apply for a scholarship today and secure your future at Glory High School</p>
+            <div class="cta-buttons">
+                <a href="application-form.html" class="cta-button pulse"><i class="fas fa-file-alt"></i> Apply for Scholarship</a>
+                <a href="faqs.html" class="cta-button outline"><i class="fas fa-question-circle"></i> Read FAQs</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3><i class="fas fa-phone-alt"></i> Contact Us</h3>
+                    <p><i class="fas fa-phone"></i> 0754645377 / 0778654311</p>
+                    <p><i class="fas fa-envelope"></i> info@gloryhighschool.ac.ug</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Busimbi Hill, Mityana</p>
+                </div>
+                <div class="footer-section">
+                    <h3><i class="fas fa-link"></i> Quick Links</h3>
+                    <ul>
+                        <li><a href="application-form.html"><i class="fas fa-chevron-right"></i> Apply Now</a></li>
+                        <li><a href="../academics/calendar.html"><i class="fas fa-chevron-right"></i> Academic Calendar</a></li>
+                        <li><a href="../school-life/events.html"><i class="fas fa-chevron-right"></i> Upcoming Events</a></li>
+                        <li><a href="faqs.html"><i class="fas fa-chevron-right"></i> FAQs</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3><i class="fas fa-share-alt"></i> Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Glory High School. All rights reserved. <i class="fas fa-heart" style="color: #e74c3c;"></i></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Chat Widget -->
+    <div class="chat-widget" id="chatWidget">
+        <button class="chat-toggle" aria-label="Open chat">
+            <i class="fas fa-comment"></i>
+        </button>
+        <div class="chat-box">
+            <div class="chat-header">
+                <h4><i class="fas fa-comment-dots"></i> Chat with us</h4>
+                <button class="close-chat" aria-label="Close chat"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="chat-messages">
+                <p class="bot-message"><i class="fas fa-robot"></i> Hello! How can we help you today?</p>
+            </div>
+            <div class="chat-input">
+                <input type="text" placeholder="Type your message...">
+                <button><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript Files -->
+    <script src="../../js/main.js"></script>
+    <script src="../../js/header-scroll.js"></script>
+    <script src="../../js/navigation.js"></script>
+    <script src="../../js/darkMode.js"></script>
+    <script src="../../js/scroll-animations.js"></script>
+    <script src="../../js/backToTop.js"></script>
+    <script src="../../js/chatWidget.js"></script>
+</body>
+</html>

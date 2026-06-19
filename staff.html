@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GHS - Staff Directory</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/header.css">
+    <link rel="stylesheet" href="../../css/navigation.css">
+    <link rel="stylesheet" href="../../css/animations.css">
+    <link rel="stylesheet" href="../../css/dark-mode.css">
+    <link rel="stylesheet" href="../../css/portrait-mode.css">
+    <link rel="stylesheet" href="../../css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Top Header -->
+    <div class="top-header" id="topHeader">
+        <div class="container">
+            <div class="contact-info">
+                <div class="phone-numbers">
+                    <i class="fas fa-phone-alt"></i>
+                    <a href="tel:0754645377">0754645377</a>
+                    <span class="separator">|</span>
+                    <a href="tel:0778654311">0778654311</a>
+                </div>
+                <div class="email">
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:info@gloryhighschool.ac.ug">info@gloryhighschool.ac.ug</a>
+                </div>
+                <div class="location">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Church of Uganda Busimbi Hill, Mityana</span>
+                </div>
+            </div>
+            <div class="dark-mode-toggle">
+                <button id="darkModeBtn" class="dark-mode-btn">🌓 Dark Mode</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navigation with Clickable Logo -->
+    <header class="main-header" id="mainHeader">
+        <div class="container">
+            <a href="../../index.html" class="logo-link">
+                <div class="logo-section">
+                    <img src="../../assets/images/seeta3.png" alt="Glory High School Logo" class="logo" onerror="this.src='https://via.placeholder.com/60x60?text=GHS'">
+                    <div class="school-info">
+                        <h1>Glory High School</h1>
+                        <p class="motto">Excellence, Integrity, Service</p>
+                    </div>
+                </div>
+            </a>
+            
+            <nav class="main-nav">
+                <ul class="nav-menu">
+                    <!-- Home Dropdown -->
+                    <li class="dropdown">
+                        <a href="../../index.html">Home</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../../index.html">Home Overview</a></li>
+                        </ul>
+                    </li>
+                    <!-- About Dropdown -->
+                    <li class="dropdown">
+                        <a href="../../about.html">About</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="history.html">History</a></li>
+                            <li><a href="mission-vision.html">Mission & Vision</a></li>
+                            <li><a href="leadership.html">Leadership</a></li>
+                            <li><a href="staff.html">Staff Directory</a></li>
+                            <li><a href="accreditation.html">Accreditation</a></li>
+                        </ul>
+                    </li>
+                    <!-- Academics Dropdown -->
+                    <li class="dropdown">
+                        <a href="../../academics.html">Academics</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../academics/curriculum.html">Curriculum</a></li>
+                            <li><a href="../academics/departments.html">Departments</a></li>
+                            <li><a href="../academics/calendar.html">Academic Calendar</a></li>
+                            <li><a href="../academics/results.html">Examination Results</a></li>
+                            <li><a href="../academics/apply-now.html" class="apply-btn">Apply Now</a></li>
+                        </ul>
+                    </li>
+                    <!-- Admissions Dropdown -->
+                    <li class="dropdown">
+                        <a href="../../admissions.html">Admission</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../admissions/requirements.html">Requirements</a></li>
+                            <li><a href="../admissions/fees-structure.html">Fees Structure</a></li>
+                            <li><a href="../admissions/application-form.html">Application Form</a></li>
+                            <li><a href="../admissions/scholarships.html">Scholarships</a></li>
+                            <li><a href="../admissions/faqs.html">FAQs</a></li>
+                        </ul>
+                    </li>
+                    <!-- School Life Dropdown -->
+                    <li class="dropdown">
+                        <a href="../../school-life.html">School Life</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../school-life/sports.html">Sports</a></li>
+                            <li><a href="../school-life/clubs.html">Clubs & Societies</a></li>
+                            <li><a href="../school-life/events.html">Events</a></li>
+                            <li><a href="../school-life/gallery.html">Gallery</a></li>
+                            <li><a href="../school-life/student-council.html">Student Council</a></li>
+                        </ul>
+                    </li>
+                    <!-- Contacts Dropdown -->
+                    <li class="dropdown">
+                        <a href="../../contacts.html">Contacts</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../contacts/contact-form.html">Contact Form</a></li>
+                            <li><a href="../contacts/directory.html">Staff Directory</a></li>
+                            <li><a href="../contacts/visit-us.html">Visit Us</a></li>
+                            <li><a href="../contacts/career.html">Careers</a></li>
+                            <li><a href="../contacts/support.html">Support</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+<!-- Big Banner with Text Overlay -->
+<section class="leadership-banner">
+    <div class="banner-container">
+        <img src="../../assets/images/seeta6.png" alt="Glory High School Leadership" class="banner-bg-image">
+        <div class="banner-overlay">
+            <div class="container">
+                <h1 class="banner-title">School Leadership</h1>
+                <p class="banner-subtitle">This is the team spearheading the progress of the mighty school.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Staff Grid Section -->
+    <section class="staff-section">
+        <div class="container">
+            <h2 class="section-title">Our Teaching Staff</h2>
+            
+            <div class="staff-grid">
+                <!-- Staff 1 - Senior Teacher -->
+                <div class="staff-card slide-left" data-aos="slide-left">
+                    <div class="staff-image" onclick="openModal(this)">
+                        <img src="../../assets/images/staff1.jpg" alt="Mrs. Nakato Sarah - Senior Teacher Mathematics" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="image-placeholder" style="display: none;">
+                            <span>Nakato Sarah</span>
+                        </div>
+                    </div>
+                    <div class="staff-info">
+                        <h3>Mrs. Nakato Sarah</h3>
+                        <p class="staff-title">Senior Teacher - Mathematics</p>
+                        <p class="staff-subtitle">B.Sc. Mathematics, M.Ed</p>
+                        <p class="staff-qualification">15 years experience</p>
+                        <div class="staff-contacts">
+                            <a href="tel:+256701234567" class="contact-icon"><i class="fas fa-phone"></i></a>
+                            <a href="tel:+256701234568" class="contact-icon"><i class="fas fa-phone-alt"></i></a>
+                            <a href="mailto:s.nakato@gloryhighschool.ac.ug" class="contact-icon"><i class="fas fa-envelope"></i></a>
+                            <a href="#" class="contact-icon"><i class="fab fa-whatsapp"></i></a>
+                            <a href="#" class="contact-icon"><i class="fab fa-x-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Staff 2 - English Department -->
+                <div class="staff-card zoom-in" data-aos="zoom-in">
+                    <div class="staff-image" onclick="openModal(this)">
+                        <img src="../../assets/images/staff2.jpg" alt="Mr. Okello James - Head of English" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="image-placeholder" style="display: none;">
+                            <span>Okello James</span>
+                        </div>
+                    </div>
+                    <div class="staff-info">
+                        <h3>Mr. Okello James</h3>
+                        <p class="staff-title">Head of English Department</p>
+                        <p class="staff-subtitle">BA English, MA Literature</p>
+                        <p class="staff-qualification">12 years experience</p>
+                        <div class="staff-contacts">
+                            <a href="tel:+256701234569" class="contact-icon"><i class="fas fa-phone"></i></a>
+                            <a href="tel:+256701234570" class="contact-icon"><i class="fas fa-phone-alt"></i></a>
+                            <a href="mailto:j.okello@gloryhighschool.ac.ug" class="contact-icon"><i class="fas fa-envelope"></i></a>
+                            <a href="#" class="contact-icon"><i class="fab fa-whatsapp"></i></a>
+                            <a href="#" class="contact-icon"><i class="fab fa-x-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Staff 3 - Science Department -->
+                <div class="staff-card slide-right" data-aos="slide-right">
+                    <div class="staff-image" onclick="openModal(this)">
+                        <img src="../../assets/images/staff3.jpg" alt="Dr. Aisha Nabatanzi - Head of Science" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="image-placeholder" style="display: none;">
+                            <span>Aisha Nabatanzi</span>
+                        </div>
+                    </div>
+                    <div class="staff-info">
+                        <h3>Dr. Aisha Nabatanzi</h3>
+                        <p class="staff-title">Head of Science Department</p>
+                        <p class="staff-subtitle">PhD Chemistry, MSc</p>
+                        <p class="staff-qualification">10 years experience</p>
+                        <div class="staff-contacts">
+                            <a href="tel:+256701234571" class="contact-icon"><i class="fas fa-phone"></i></a>
+                            <a href="tel:+256701234572" class="contact-icon"><i class="fas fa-phone-alt"></i></a>
+                            <a href="mailto:a.nabatanzi@gloryhighschool.ac.ug" class="contact-icon"><i class="fas fa-envelope"></i></a>
+                            <a href="#" class="contact-icon"><i class="fab fa-whatsapp"></i></a>
+                            <a href="#" class="contact-icon"><i class="fab fa-x-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Staff 4 - Humanities -->
+                <div class="staff-card slide-left" data-aos="slide-left">
+                    <div class="staff-image" onclick="openModal(this)">
+                        <img src="../../assets/images/staff4.jpg" alt="Mr. Ssemwanga David - Head of Humanities" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="image-placeholder" style="display: none;">
+                            <span>Ssemwanga David</span>
+                        </div>
+                    </div>
+                    <div class="staff-info">
+                        <h3>Mr. Ssemwanga David</h3>
+                        <p class="staff-title">Head of Humanities</p>
+                        <p class="staff-subtitle">BA History, MA Geography</p>
+                        <p class="staff-qualification">14 years experience</p>
+                        <div class="staff-contacts">
+                            <a href="tel:+256701234573" class="contact-icon"><i class="fas fa-phone"></i></a>
+                            <a href="tel:+256701234574" class="contact-icon"><i class="fas fa-phone-alt"></i></a>
+                            <a href="mailto:d.ssemwanga@gloryhighschool.ac.ug" class="contact-icon"><i class="fas fa-envelope"></i></a>
+                            <a href="#" class="contact-icon"><i class="fab fa-whatsapp"></i></a>
+                            <a href="#" class="contact-icon"><i class="fab fa-x-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Staff 5 - Languages -->
+                <div class="staff-card zoom-in" data-aos="zoom-in">
+                    <div class="staff-image" onclick="openModal(this)">
+                        <img src="../../assets/images/staff5.jpg" alt="Madam Kyomugisha Grace - Languages" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="image-placeholder" style="display: none;">
+                            <span>Kyomugisha Grace</span>
+                        </div>
+                    </div>
+                    <div class="staff-info">
+                        <h3>Madam Kyomugisha Grace</h3>
+                        <p class="staff-title">Languages Department</p>
+                        <p class="staff-subtitle">BA French, Dip. Education</p>
+                        <p class="staff-qualification">8 years experience</p>
+                        <div class="staff-contacts">
+                            <a href="tel:+256701234575" class="contact-icon"><i class="fas fa-phone"></i></a>
+                            <a href="tel:+256701234576" class="contact-icon"><i class="fas fa-phone-alt"></i></a>
+                            <a href="mailto:g.kyomugisha@gloryhighschool.ac.ug" class="contact-icon"><i class="fas fa-envelope"></i></a>
+                            <a href="#" class="contact-icon"><i class="fab fa-whatsapp"></i></a>
+                            <a href="#" class="contact-icon"><i class="fab fa-x-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Staff 6 - ICT Department -->
+                <div class="staff-card slide-right" data-aos="slide-right">
+                    <div class="staff-image" onclick="openModal(this)">
+                        <img src="../../assets/images/staff6.jpg" alt="Mr. Tumusiime Brian - ICT Head" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="image-placeholder" style="display: none;">
+                            <span>Tumusiime Brian</span>
+                        </div>
+                    </div>
+                    <div class="staff-info">
+                        <h3>Mr. Tumusiime Brian</h3>
+                        <p class="staff-title">ICT Department Head</p>
+                        <p class="staff-subtitle">BSc Computer Science, MSc IT</p>
+                        <p class="staff-qualification">7 years experience</p>
+                        <div class="staff-contacts">
+                            <a href="tel:+256701234577" class="contact-icon"><i class="fas fa-phone"></i></a>
+                            <a href="tel:+256701234578" class="contact-icon"><i class="fas fa-phone-alt"></i></a>
+                            <a href="mailto:b.tumusiime@gloryhighschool.ac.ug" class="contact-icon"><i class="fas fa-envelope"></i></a>
+                            <a href="#" class="contact-icon"><i class="fab fa-whatsapp"></i></a>
+                            <a href="#" class="contact-icon"><i class="fab fa-x-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Staff 7 - Sports Department -->
+                <div class="staff-card slide-left" data-aos="slide-left">
+                    <div class="staff-image" onclick="openModal(this)">
+                        <img src="../../assets/images/staff7.jpg" alt="Coach Mukasa Peter - Sports Director" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="image-placeholder" style="display: none;">
+                            <span>Mukasa Peter</span>
+                        </div>
+                    </div>
+                    <div class="staff-info">
+                        <h3>Coach Mukasa Peter</h3>
+                        <p class="staff-title">Director of Sports</p>
+                        <p class="staff-subtitle">Diploma in Sports Science</p>
+                        <p class="staff-qualification">11 years experience</p>
+                        <div class="staff-contacts">
+                            <a href="tel:+256701234579" class="contact-icon"><i class="fas fa-phone"></i></a>
+                            <a href="tel:+256701234580" class="contact-icon"><i class="fas fa-phone-alt"></i></a>
+                            <a href="mailto:p.mukasa@gloryhighschool.ac.ug" class="contact-icon"><i class="fas fa-envelope"></i></a>
+                            <a href="#" class="contact-icon"><i class="fab fa-whatsapp"></i></a>
+                            <a href="#" class="contact-icon"><i class="fab fa-x-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Staff 8 - Counseling -->
+                <div class="staff-card zoom-in" data-aos="zoom-in">
+                    <div class="staff-image" onclick="openModal(this)">
+                        <img src="../../assets/images/staff8.jpg" alt="Ms. Nambi Florence - Counselor" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="image-placeholder" style="display: none;">
+                            <span>Nambi Florence</span>
+                        </div>
+                    </div>
+                    <div class="staff-info">
+                        <h3>Ms. Nambi Florence</h3>
+                        <p class="staff-title">Guidance & Counseling</p>
+                        <p class="staff-subtitle">BA Psychology, MA Counseling</p>
+                        <p class="staff-qualification">9 years experience</p>
+                        <div class="staff-contacts">
+                            <a href="tel:+256701234581" class="contact-icon"><i class="fas fa-phone"></i></a>
+                            <a href="tel:+256701234582" class="contact-icon"><i class="fas fa-phone-alt"></i></a>
+                            <a href="mailto:f.nambi@gloryhighschool.ac.ug" class="contact-icon"><i class="fas fa-envelope"></i></a>
+                            <a href="#" class="contact-icon"><i class="fab fa-whatsapp"></i></a>
+                            <a href="#" class="contact-icon"><i class="fab fa-x-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Staff 9 - Librarian -->
+                <div class="staff-card slide-right" data-aos="slide-right">
+                    <div class="staff-image" onclick="openModal(this)">
+                        <img src="../../assets/images/staff9.jpg" alt="Mrs. Akello Josephine - Librarian" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="image-placeholder" style="display: none;">
+                            <span>Akello Josephine</span>
+                        </div>
+                    </div>
+                    <div class="staff-info">
+                        <h3>Mrs. Akello Josephine</h3>
+                        <p class="staff-title">Head Librarian</p>
+                        <p class="staff-subtitle">BLIS, MA Information Science</p>
+                        <p class="staff-qualification">13 years experience</p>
+                        <div class="staff-contacts">
+                            <a href="tel:+256701234583" class="contact-icon"><i class="fas fa-phone"></i></a>
+                            <a href="tel:+256701234584" class="contact-icon"><i class="fas fa-phone-alt"></i></a>
+                            <a href="mailto:j.akello@gloryhighschool.ac.ug" class="contact-icon"><i class="fas fa-envelope"></i></a>
+                            <a href="#" class="contact-icon"><i class="fab fa-whatsapp"></i></a>
+                            <a href="#" class="contact-icon"><i class="fab fa-x-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Image Modal -->
+    <div id="imageModal" class="modal">
+        <span class="close-modal" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage">
+        <div id="modalCaption" class="modal-caption"></div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3><i class="fas fa-phone-alt"></i> Contact Us</h3>
+                    <p><i class="fas fa-phone"></i> 0754645377 / 0778654311</p>
+                    <p><i class="fas fa-envelope"></i> info@gloryhighschool.ac.ug</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Busimbi Hill, Mityana</p>
+                </div>
+                <div class="footer-section">
+                    <h3><i class="fas fa-link"></i> Quick Links</h3>
+                    <ul>
+                        <li><a href="../../admissions.html"><i class="fas fa-chevron-right"></i> Apply Now</a></li>
+                        <li><a href="../academics/calendar.html"><i class="fas fa-chevron-right"></i> Academic Calendar</a></li>
+                        <li><a href="../school-life/events.html"><i class="fas fa-chevron-right"></i> Upcoming Events</a></li>
+                        <li><a href="../../contacts.html"><i class="fas fa-chevron-right"></i> Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3><i class="fas fa-share-alt"></i> Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Glory High School. All rights reserved. <i class="fas fa-heart" style="color: #e74c3c;"></i></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- JavaScript -->
+    <script src="../../js/staff.js"></script>
+</body>
+</html>

@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Curriculum - Glory High School</title>
+    <!-- Core CSS Files -->
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/header.css">
+    <link rel="stylesheet" href="../../css/navigation.css">
+    <link rel="stylesheet" href="../../css/animations.css">
+    <link rel="stylesheet" href="../../css/dark-mode.css">
+    <link rel="stylesheet" href="../../css/portrait-mode.css">
+    <link rel="stylesheet" href="../../css/responsive.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Top Header with Contact Info -->
+    <div class="top-header" id="topHeader">
+        <div class="container">
+            <div class="contact-info">
+                <div class="phone-numbers">
+                    <i class="fas fa-phone-alt"></i>
+                    <a href="tel:0754645377">0754645377</a>
+                    <span class="separator">|</span>
+                    <a href="tel:0778654311">0778654311</a>
+                </div>
+                <div class="email">
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:info@gloryhighschool.ac.ug">info@gloryhighschool.ac.ug</a>
+                </div>
+                <div class="location">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Church of Uganda Busimbi Hill, Mityana</span>
+                </div>
+            </div>
+            <div class="dark-mode-toggle">
+                <button id="darkModeBtn" class="dark-mode-btn">🌓 Dark Mode</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Header -->
+    <header class="main-header" id="mainHeader">
+        <div class="container">
+            <a href="../../index.html" class="logo-link">
+                <div class="logo-section">
+                    <img src="../../assets/images/seeta3.png" alt="Glory High School Logo" class="logo" onerror="this.src='https://via.placeholder.com/60x60?text=GHS'">
+                    <div class="school-info">
+                        <h1>Glory High School</h1>
+                        <p class="motto">Excellence, Integrity, Service</p>
+                    </div>
+                </div>
+            </a>
+            
+            <nav class="main-nav">
+                <ul class="nav-menu">
+                    <!-- Home Dropdown -->
+                    <li class="dropdown">
+                        <a href="../../index.html">Home</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../../index.html">Home Overview</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- About Dropdown -->
+                    <li class="dropdown">
+                        <a href="../../about.html">About</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../about/history.html">History</a></li>
+                            <li><a href="../about/mission-vision.html">Mission & Vision</a></li>
+                            <li><a href="../about/leadership.html">Leadership</a></li>
+                            <li><a href="../about/staff.html">Staff Directory</a></li>
+                            <li><a href="../about/accreditation.html">Accreditation</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Academics Dropdown - Active -->
+                    <li class="dropdown active">
+                        <a href="../../academics.html">Academics</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="curriculum.html" class="active">Curriculum</a></li>
+                            <li><a href="departments.html">Departments</a></li>
+                            <li><a href="calendar.html">Academic Calendar</a></li>
+                            <li><a href="results.html">Examination Results</a></li>
+                            <li><a href="apply-now.html" class="apply-btn">Apply Now</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Admissions Dropdown -->
+                    <li class="dropdown">
+                        <a href="../../admissions.html">Admission</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../admissions/requirements.html">Requirements</a></li>
+                            <li><a href="../admissions/fees-structure.html">Fees Structure</a></li>
+                            <li><a href="../admissions/application-form.html">Application Form</a></li>
+                            <li><a href="../admissions/scholarships.html">Scholarships</a></li>
+                            <li><a href="../admissions/faqs.html">FAQs</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- School Life Dropdown -->
+                    <li class="dropdown">
+                        <a href="../../school-life.html">School Life</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../school-life/sports.html">Sports</a></li>
+                            <li><a href="../school-life/clubs.html">Clubs & Societies</a></li>
+                            <li><a href="../school-life/events.html">Events</a></li>
+                            <li><a href="../school-life/gallery.html">Gallery</a></li>
+                            <li><a href="../school-life/student-council.html">Student Council</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Contacts Dropdown -->
+                    <li class="dropdown">
+                        <a href="../../contacts.html">Contacts</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../contacts/contact-form.html">Contact Form</a></li>
+                            <li><a href="../contacts/directory.html">Staff Directory</a></li>
+                            <li><a href="../contacts/visit-us.html">Visit Us</a></li>
+                            <li><a href="../contacts/career.html">Careers</a></li>
+                            <li><a href="../contacts/support.html">Support</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Curriculum Hero Section -->
+    <section class="curriculum-hero">
+        <div class="container">
+            <h1 class="slide-down">Our Curriculum</h1>
+            <p class="fade-in-up">Comprehensive Education • Academic Excellence • Holistic Development</p>
+        </div>
+    </section>
+
+    <!-- O Level Section with Big Image -->
+    <section class="curriculum-section o-level-section">
+        <!-- Big Image with Text Overlay -->
+        <div class="curriculum-image-container scroll-animate zoom-in">
+            <img src="../../assets/images/seeta3.png" alt="O Level Students" class="curriculum-big-image">
+            <div class="image-overlay-text">
+                <h2>O Level Subject List</h2>
+                <p class="level-badge">Ordinary Level</p>
+            </div>
+        </div>
+
+        <!-- O Level Content -->
+        <div class="container">
+            <div class="curriculum-content scroll-animate slide-left">
+                <h2>Ordinary Level Curriculum</h2>
+                <p class="curriculum-intro">We teach a variety of subjects at Ordinary Level which are chosen to mold our students in an all-round manner and prepare them for any A-level combination whether sciences or arts and can apply for any professional course at University and institutions of higher learning and successfully get enrolled. The subjects we offer keep changing with time as we review our students' needs and abilities. We have embraced hands on training. This is spear headed by our Principal and headteachers of the Campuses.</p>
+            </div>
+
+            <div class="subjects-grid">
+                <!-- Sciences -->
+                <div class="subject-category scroll-animate slide-left">
+                    <div class="category-header sciences">
+                        <i class="fas fa-flask"></i>
+                        <h3>Sciences Subjects</h3>
+                    </div>
+                    <ul class="subject-list">
+                        <li><i class="fas fa-calculator"></i> Mathematics</li>
+                        <li><i class="fas fa-dna"></i> Chemistry</li>
+                        <li><i class="fas fa-leaf"></i> Biology</li>
+                        <li><i class="fas fa-magnet"></i> Physics</li>
+                    </ul>
+                </div>
+
+                <!-- Vocational -->
+                <div class="subject-category scroll-animate slide-right">
+                    <div class="category-header vocational">
+                        <i class="fas fa-tools"></i>
+                        <h3>Vocational Subjects</h3>
+                    </div>
+                    <ul class="subject-list">
+                        <li><i class="fas fa-chart-line"></i> Entrepreneurship</li>
+                        <li><i class="fas fa-laptop"></i> ICT</li>
+                        <li><i class="fas fa-paint-brush"></i> Art and Design</li>
+                        <li><i class="fas fa-draw-polygon"></i> Technical Drawing</li>
+                        <li><i class="fas fa-futbol"></i> Physical Education</li>
+                    </ul>
+                </div>
+
+                <!-- Languages -->
+                <div class="subject-category scroll-animate slide-left">
+                    <div class="category-header languages">
+                        <i class="fas fa-language"></i>
+                        <h3>Languages Subjects</h3>
+                    </div>
+                    <ul class="subject-list">
+                        <li><i class="fas fa-flag-fr"></i> French</li>
+                        <li><i class="fas fa-flag-tz"></i> Kiswahili</li>
+                        <li><i class="fas fa-comments"></i> Luganda</li>
+                        <li><i class="fas fa-book"></i> Literature</li>
+                        <li><i class="fas fa-spell-check"></i> English</li>
+                    </ul>
+                </div>
+
+                <!-- Others -->
+                <div class="subject-category scroll-animate slide-right">
+                    <div class="category-header others">
+                        <i class="fas fa-ellipsis-h"></i>
+                        <h3>Other Subjects</h3>
+                    </div>
+                    <ul class="subject-list">
+                        <li><i class="fas fa-church"></i> Religious Education</li>
+                        <li><i class="fas fa-globe-africa"></i> Geography</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Divider with Animation -->
+    <div class="curriculum-divider">
+        <div class="container">
+            <div class="divider-line"></div>
+        </div>
+    </div>
+
+    <!-- A Level Section with Big Image -->
+    <section class="curriculum-section a-level-section">
+        <!-- Big Image with Text Overlay -->
+        <div class="curriculum-image-container scroll-animate zoom-in">
+            <img src="../../assets/images/seeta3.png" alt="A Level Students" class="curriculum-big-image">
+            <div class="image-overlay-text">
+                <h2>A Level Subject List</h2>
+                <p class="level-badge">Advanced Level</p>
+            </div>
+        </div>
+
+        <!-- A Level Content -->
+        <div class="container">
+            <div class="curriculum-content scroll-animate slide-right">
+                <h2>Advanced Level Curriculum</h2>
+                <p class="curriculum-intro">As one of the top schools for Government admissions each year, we offer a diverse range of A-level subjects designed to shape well-rounded students, preparing them for any combination—sciences or arts—and ensuring they qualify for professional courses at universities and other institutions. Our subjects evolve to meet the needs and strengths of our students, and we've embraced hands-on training. The Principal oversees supervision and upholds educational standards across campuses to ensure quality compliance.</p>
+            </div>
+
+            <div class="subjects-grid advanced">
+                <!-- Advanced Level Subjects -->
+                <div class="subject-category scroll-animate slide-left">
+                    <ul class="subject-list advanced-list">
+                        <li><i class="fas fa-magnet"></i> Physics</li>
+                        <li><i class="fas fa-dna"></i> Chemistry</li>
+                        <li><i class="fas fa-leaf"></i> Biology</li>
+                        <li><i class="fas fa-calculator"></i> Math</li>
+                        <li><i class="fas fa-globe-africa"></i> Geography</li>
+                        <li><i class="fas fa-landmark"></i> History</li>
+                        <li><i class="fas fa-church"></i> CRE / Divinity</li>
+                        <li><i class="fas fa-draw-polygon"></i> Technical Drawing</li>
+                        <li><i class="fas fa-flag-fr"></i> French</li>
+                        <li><i class="fas fa-comments"></i> Luganda</li>
+                        <li><i class="fas fa-chart-line"></i> Entrepreneurship</li>
+                        <li><i class="fas fa-book"></i> Literature</li>
+                        <li><i class="fas fa-paint-brush"></i> Fine Art</li>
+                        <li><i class="fas fa-chart-pie"></i> Economics</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Career Guidance Section -->
+            <div class="career-guidance scroll-animate zoom-in">
+                <div class="guidance-icon">
+                    <i class="fas fa-compass"></i>
+                </div>
+                <div class="guidance-content">
+                    <h3><i class="fas fa-bullseye"></i> Career Guidance</h3>
+                    <p>We place great emphasis on career guidance to help students choose competitive courses. Each campus has a Head of Careers Department who runs various programs to assist students in selecting the right subjects that align with their interests.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="curriculum-cta">
+        <div class="container">
+            <h2 class="slide-down">Ready to Start Your Journey?</h2>
+            <p class="fade-in-up">Choose your path with our comprehensive curriculum</p>
+            <a href="apply-now.html" class="cta-button pulse">Apply Now <i class="fas fa-arrow-right"></i></a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3><i class="fas fa-phone-alt"></i> Contact Us</h3>
+                    <p><i class="fas fa-phone"></i> 0754645377 / 0778654311</p>
+                    <p><i class="fas fa-envelope"></i> info@gloryhighschool.ac.ug</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Busimbi Hill, Mityana</p>
+                </div>
+                <div class="footer-section">
+                    <h3><i class="fas fa-link"></i> Quick Links</h3>
+                    <ul>
+                        <li><a href="../../admissions.html"><i class="fas fa-chevron-right"></i> Apply Now</a></li>
+                        <li><a href="calendar.html"><i class="fas fa-chevron-right"></i> Academic Calendar</a></li>
+                        <li><a href="../school-life/events.html"><i class="fas fa-chevron-right"></i> Upcoming Events</a></li>
+                        <li><a href="../../contacts.html"><i class="fas fa-chevron-right"></i> Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3><i class="fas fa-share-alt"></i> Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Glory High School. All rights reserved. <i class="fas fa-heart" style="color: #e74c3c;"></i></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Chat Widget -->
+    <div class="chat-widget" id="chatWidget">
+        <button class="chat-toggle" aria-label="Open chat">
+            <i class="fas fa-comment"></i>
+        </button>
+        <div class="chat-box">
+            <div class="chat-header">
+                <h4><i class="fas fa-comment-dots"></i> Chat with us</h4>
+                <button class="close-chat" aria-label="Close chat"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="chat-messages">
+                <p class="bot-message"><i class="fas fa-robot"></i> Hello! How can we help you today?</p>
+            </div>
+            <div class="chat-input">
+                <input type="text" placeholder="Type your message...">
+                <button><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript Files -->
+    <script src="../../js/main.js"></script>
+    <script src="../../js/header-scroll.js"></script>
+    <script src="../../js/navigation.js"></script>
+    <script src="../../js/darkMode.js"></script>
+    <script src="../../js/scroll-animations.js"></script>
+    <script src="../../js/backToTop.js"></script>
+    <script src="../../js/chatWidget.js"></script>
+</body>
+</html>

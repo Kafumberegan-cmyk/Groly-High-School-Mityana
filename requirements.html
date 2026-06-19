@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Admission Requirements - Glory High School</title>
+    <!-- Core CSS Files -->
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/header.css">
+    <link rel="stylesheet" href="../../css/navigation.css">
+    <link rel="stylesheet" href="../../css/animations.css">
+    <link rel="stylesheet" href="../../css/dark-mode.css">
+    <link rel="stylesheet" href="../../css/portrait-mode.css">
+    <link rel="stylesheet" href="../../css/responsive.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Top Header with Contact Info -->
+    <div class="top-header" id="topHeader">
+        <div class="container">
+            <div class="contact-info">
+                <div class="phone-numbers">
+                    <i class="fas fa-phone-alt"></i>
+                    <a href="tel:0754645377">0754645377</a>
+                    <span class="separator">|</span>
+                    <a href="tel:0778654311">0778654311</a>
+                </div>
+                <div class="email">
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:info@gloryhighschool.ac.ug">info@gloryhighschool.ac.ug</a>
+                </div>
+                <div class="location">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Church of Uganda Busimbi Hill, Mityana</span>
+                </div>
+            </div>
+            <div class="dark-mode-toggle">
+                <button id="darkModeBtn" class="dark-mode-btn">🌓 Dark Mode</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Header -->
+    <header class="main-header" id="mainHeader">
+        <div class="container">
+            <a href="../../index.html" class="logo-link">
+                <div class="logo-section">
+                    <img src="../../assets/images/seeta3.png" alt="Glory High School Logo" class="logo" onerror="this.src='https://via.placeholder.com/60x60?text=GHS'">
+                    <div class="school-info">
+                        <h1>Glory High School</h1>
+                        <p class="motto">Excellence, Integrity, Service</p>
+                    </div>
+                </div>
+            </a>
+            
+            <nav class="main-nav">
+                <ul class="nav-menu">
+                    <!-- Home Dropdown -->
+                    <li class="dropdown">
+                        <a href="../../index.html">Home</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../../index.html">Home Overview</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- About Dropdown -->
+                    <li class="dropdown">
+                        <a href="../../about.html">About</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../about/history.html">History</a></li>
+                            <li><a href="../about/mission-vision.html">Mission & Vision</a></li>
+                            <li><a href="../about/leadership.html">Leadership</a></li>
+                            <li><a href="../about/staff.html">Staff Directory</a></li>
+                            <li><a href="../about/accreditation.html">Accreditation</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Academics Dropdown -->
+                    <li class="dropdown">
+                        <a href="../../academics.html">Academics</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../academics/curriculum.html">Curriculum</a></li>
+                            <li><a href="../academics/departments.html">Departments</a></li>
+                            <li><a href="../academics/calendar.html">Academic Calendar</a></li>
+                            <li><a href="../academics/results.html">Examination Results</a></li>
+                            <li><a href="../academics/apply-now.html" class="apply-btn">Apply Now</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Admissions Dropdown - Active -->
+                    <li class="dropdown active">
+                        <a href="../../admissions.html">Admission</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="requirements.html" class="active">Requirements</a></li>
+                            <li><a href="fees-structure.html">Fees Structure</a></li>
+                            <li><a href="application-form.html">Application Form</a></li>
+                            <li><a href="scholarships.html">Scholarships</a></li>
+                            <li><a href="faqs.html">FAQs</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- School Life Dropdown -->
+                    <li class="dropdown">
+                        <a href="../../school-life.html">School Life</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../school-life/sports.html">Sports</a></li>
+                            <li><a href="../school-life/clubs.html">Clubs & Societies</a></li>
+                            <li><a href="../school-life/events.html">Events</a></li>
+                            <li><a href="../school-life/gallery.html">Gallery</a></li>
+                            <li><a href="../school-life/student-council.html">Student Council</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Contacts Dropdown -->
+                    <li class="dropdown">
+                        <a href="../../contacts.html">Contacts</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../contacts/contact-form.html">Contact Form</a></li>
+                            <li><a href="../contacts/directory.html">Staff Directory</a></li>
+                            <li><a href="../contacts/visit-us.html">Visit Us</a></li>
+                            <li><a href="../contacts/career.html">Careers</a></li>
+                            <li><a href="../contacts/support.html">Support</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Large Hero Image with Requirements Title -->
+    <section class="requirements-hero">
+        <div class="requirements-hero-image">
+            <img src="../../assets/images/seeta3.png" alt="Admission Requirements" class="hero-img">
+            <div class="hero-overlay">
+                <div class="container">
+                    <h1 class="slide-down">Admission Requirements</h1>
+                    <p class="fade-in-up">Your Path to Excellence • Clear Guidelines • Easy Process</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Introduction Section -->
+    <section class="requirements-intro">
+        <div class="container">
+            <div class="intro-content scroll-animate slide-left">
+                <h2>Welcome to Glory High School Admissions</h2>
+                <p>We are delighted that you are considering Glory High School for your child's education. Below you will find comprehensive information about our admission requirements for different levels of study. Our admission process is transparent, fair, and designed to identify students who will thrive in our academic environment.</p>
+            </div>
+            
+            <div class="quick-stats">
+                <div class="stat-bubble scroll-animate zoom-in">
+                    <div class="stat-number">500+</div>
+                    <div class="stat-label">Students Enrolled</div>
+                </div>
+                <div class="stat-bubble scroll-animate zoom-in" style="animation-delay: 0.2s;">
+                    <div class="stat-number">1:25</div>
+                    <div class="stat-label">Teacher-Student Ratio</div>
+                </div>
+                <div class="stat-bubble scroll-animate zoom-in" style="animation-delay: 0.4s;">
+                    <div class="stat-number">98%</div>
+                    <div class="stat-label">Pass Rate</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- General Requirements -->
+    <section class="requirements-section general-requirements">
+        <div class="container">
+            <div class="section-header scroll-animate fade-in">
+                <i class="fas fa-clipboard-list"></i>
+                <h2>General Admission Requirements</h2>
+            </div>
+            
+            <div class="requirements-grid">
+                <div class="requirement-card scroll-animate slide-left">
+                    <div class="card-icon">
+                        <i class="fas fa-id-card"></i>
+                    </div>
+                    <h3>Age Requirements</h3>
+                    <ul>
+                        <li><i class="fas fa-check-circle"></i> S.1: 13-15 years</li>
+                        <li><i class="fas fa-check-circle"></i> S.2: 14-16 years</li>
+                        <li><i class="fas fa-check-circle"></i> S.3: 15-17 years</li>
+                        <li><i class="fas fa-check-circle"></i> S.4: 16-18 years</li>
+                        <li><i class="fas fa-check-circle"></i> S.5: 17-19 years</li>
+                    </ul>
+                </div>
+                
+                <div class="requirement-card scroll-animate zoom-in" style="animation-delay: 0.2s;">
+                    <div class="card-icon">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <h3>Academic Documents</h3>
+                    <ul>
+                        <li><i class="fas fa-check-circle"></i> PLE Results Slip (for S.1)</li>
+                        <li><i class="fas fa-check-circle"></i> UCE Results Slip (for S.5)</li>
+                        <li><i class="fas fa-check-circle"></i> Last School Report</li>
+                        <li><i class="fas fa-check-circle"></i> Transfer Letter</li>
+                        <li><i class="fas fa-check-circle"></i> Leaving Certificate</li>
+                    </ul>
+                </div>
+                
+                <div class="requirement-card scroll-animate slide-right" style="animation-delay: 0.4s;">
+                    <div class="card-icon">
+                        <i class="fas fa-passport"></i>
+                    </div>
+                    <h3>Personal Documents</h3>
+                    <ul>
+                        <li><i class="fas fa-check-circle"></i> Birth Certificate</li>
+                        <li><i class="fas fa-check-circle"></i> Passport Photos (4 copies)</li>
+                        <li><i class="fas fa-check-circle"></i> Immunization Card</li>
+                        <li><i class="fas fa-check-circle"></i> National ID (if available)</li>
+                        <li><i class="fas fa-check-circle"></i> Parent/Guardian ID</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- O-Level Requirements -->
+    <section class="requirements-section olevel-requirements">
+        <div class="container">
+            <div class="section-header scroll-animate fade-in">
+                <i class="fas fa-book-open"></i>
+                <h2>O-Level (Senior 1 - 4) Requirements</h2>
+            </div>
+            
+            <div class="content-wrapper">
+                <div class="content-image scroll-animate slide-left">
+                    <img src="../../assets/images/seeta5.png" alt="O-Level Students" onerror="this.src='https://via.placeholder.com/500x400?text=O-Level+Students'">
+                </div>
+                
+                <div class="content-text scroll-animate slide-right">
+                    <h3>For Senior One Admission</h3>
+                    <div class="requirement-list">
+                        <div class="req-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <div>
+                                <strong>PLE Results:</strong>
+                                <p>Minimum aggregate of 12 in best four subjects including English and Mathematics.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="req-item">
+                            <i class="fas fa-star"></i>
+                            <div>
+                                <strong>Division Requirements:</strong>
+                                <ul>
+                                    <li>Division 1: Direct admission (Aggregate 4-12)</li>
+                                    <li>Division 2: Interview required (Aggregate 13-24)</li>
+                                    <li>Division 3: Entrance exam required (Aggregate 25-28)</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="req-item">
+                            <i class="fas fa-flag"></i>
+                            <div>
+                                <strong>English Proficiency:</strong>
+                                <p>Minimum grade of 5 in English language.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="req-item">
+                            <i class="fas fa-calculator"></i>
+                            <div>
+                                <strong>Mathematics:</strong>
+                                <p>Minimum grade of 5 in Mathematics.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="note-box">
+                        <i class="fas fa-info-circle"></i>
+                        <p>Students transferring from other schools at S.2, S.3, or S.4 must provide transfer letters and sit for placement exams.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- O-Level Subject Combinations -->
+            <div class="combinations-section scroll-animate zoom-in">
+                <h3>Available Subject Combinations (S.1-S.4)</h3>
+                <div class="combinations-grid">
+                    <div class="combo-card">
+                        <h4>Sciences</h4>
+                        <p>Physics, Chemistry, Biology, Mathematics</p>
+                    </div>
+                    <div class="combo-card">
+                        <h4>Arts</h4>
+                        <p>History, Geography, CRE, Literature</p>
+                    </div>
+                    <div class="combo-card">
+                        <h4>Languages</h4>
+                        <p>English, French, Kiswahili, Luganda</p>
+                    </div>
+                    <div class="combo-card">
+                        <h4>Vocational</h4>
+                        <p>Entrepreneurship, ICT, Art & Design</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- A-Level Requirements -->
+    <section class="requirements-section alevel-requirements">
+        <div class="container">
+            <div class="section-header scroll-animate fade-in">
+                <i class="fas fa-university"></i>
+                <h2>A-Level (Senior 5 - 6) Requirements</h2>
+            </div>
+            
+            <div class="content-wrapper reverse">
+                <div class="content-text scroll-animate slide-left">
+                    <h3>For Senior Five Admission</h3>
+                    <div class="requirement-list">
+                        <div class="req-item">
+                            <i class="fas fa-chart-line"></i>
+                            <div>
+                                <strong>UCE Results:</strong>
+                                <p>Minimum of 5 passes including English and Mathematics.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="req-item">
+                            <i class="fas fa-flask"></i>
+                            <div>
+                                <strong>Science Combinations:</strong>
+                                <p>At least a credit in the subjects you wish to take at A-Level.</p>
+                                <ul>
+                                    <li>BCM: Credit in Biology, Chemistry, Mathematics</li>
+                                    <li>PCM: Credit in Physics, Chemistry, Mathematics</li>
+                                    <li>PCB: Credit in Physics, Chemistry, Biology</li>
+                                    <li>MCB: Credit in Mathematics, Chemistry, Biology</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="req-item">
+                            <i class="fas fa-landmark"></i>
+                            <div>
+                                <strong>Arts Combinations:</strong>
+                                <p>At least a credit in the subjects you wish to take at A-Level.</p>
+                                <ul>
+                                    <li>HED: Credit in History, Economics, Divinity</li>
+                                    <li>LEG: Credit in Literature, Economics, Geography</li>
+                                    <li>HEG: Credit in History, Economics, Geography</li>
+                                    <li>FEG: Credit in French, Economics, Geography</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="req-item">
+                            <i class="fas fa-trophy"></i>
+                            <div>
+                                <strong>Minimum Requirements:</strong>
+                                <ul>
+                                    <li>Division I or II in UCE</li>
+                                    <li>At least 5 credits in relevant subjects</li>
+                                    <li>Pass in English and Mathematics</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="note-box warning">
+                        <i class="fas fa-exclamation-triangle"></i>
+                        <p>Selection for competitive combinations (BCM, PCM) is based on merit and subject grades.</p>
+                    </div>
+                </div>
+                
+                <div class="content-image scroll-animate slide-right">
+                    <img src="../../assets/images/seeta6.png" alt="A-Level Students" onerror="this.src='https://via.placeholder.com/500x400?text=A-Level+Students'">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Age Calculator Section -->
+    <section class="requirements-section age-calculator-section">
+        <div class="container">
+            <div class="section-header scroll-animate fade-in">
+                <i class="fas fa-calculator"></i>
+                <h2>Age Eligibility Calculator</h2>
+                <p>Check which class your child is eligible for based on age</p>
+            </div>
+            
+            <div class="calculator-box scroll-animate zoom-in">
+                <div class="calculator-form">
+                    <label for="dob-calculator">Date of Birth:</label>
+                    <input type="date" id="dob-calculator" class="age-input">
+                    <div id="age-result" class="age-result"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Document Checklist -->
+    <section class="requirements-section checklist-section">
+        <div class="container">
+            <div class="section-header scroll-animate fade-in">
+                <i class="fas fa-check-double"></i>
+                <h2>Document Checklist</h2>
+                <p>Make sure you have all these documents ready before applying</p>
+            </div>
+            
+            <div class="checklist-grid">
+                <div class="checklist-card scroll-animate slide-left">
+                    <h3><i class="fas fa-file"></i> Academic Documents</h3>
+                    <ul>
+                        <li>
+                            <input type="checkbox" id="doc1">
+                            <label for="doc1">PLE Results Slip (Original & Copy)</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="doc2">
+                            <label for="doc2">UCE Results Slip (Original & Copy)</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="doc3">
+                            <label for="doc3">Last School Report (Termly)</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="doc4">
+                            <label for="doc4">Transfer Letter from Previous School</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="doc5">
+                            <label for="doc5">Leaving Certificate</label>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="checklist-card scroll-animate zoom-in" style="animation-delay: 0.2s;">
+                    <h3><i class="fas fa-id-card"></i> Personal Documents</h3>
+                    <ul>
+                        <li>
+                            <input type="checkbox" id="doc6">
+                            <label for="doc6">Birth Certificate (Original & Copy)</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="doc7">
+                            <label for="doc7">4 Passport Size Photos</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="doc8">
+                            <label for="doc8">Immunization Card</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="doc9">
+                            <label for="doc9">National ID (Student/Parent)</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="doc10">
+                            <label for="doc10">Medical Report (If applicable)</label>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="checklist-card scroll-animate slide-right" style="animation-delay: 0.4s;">
+                    <h3><i class="fas fa-file-signature"></i> Application Forms</h3>
+                    <ul>
+                        <li>
+                            <input type="checkbox" id="doc11">
+                            <label for="doc11">Completed Application Form</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="doc12">
+                            <label for="doc12">Application Fee Receipt</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="doc13">
+                            <label for="doc13">Recommendation Letter (Optional)</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="doc14">
+                            <label for="doc14">Sponsorship Letter (If applicable)</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="doc15">
+                            <label for="doc15">Special Needs Assessment (If applicable)</label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="checklist-actions scroll-animate fade-in">
+                <button class="btn-checklist" id="checkAll"><i class="fas fa-check-double"></i> Check All</button>
+                <button class="btn-checklist" id="uncheckAll"><i class="fas fa-times"></i> Uncheck All</button>
+                <button class="btn-checklist" id="printChecklist"><i class="fas fa-print"></i> Print Checklist</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Admission Process -->
+    <section class="requirements-section process-section">
+        <div class="container">
+            <div class="section-header scroll-animate fade-in">
+                <i class="fas fa-tasks"></i>
+                <h2>Admission Process</h2>
+            </div>
+            
+            <div class="process-timeline">
+                <div class="timeline-step scroll-animate slide-left">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h4>Submit Application</h4>
+                        <p>Complete the application form and submit with required documents</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-step scroll-animate slide-right" style="animation-delay: 0.2s;">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h4>Pay Application Fee</h4>
+                        <p>Pay non-refundable application fee of UGX 50,000</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-step scroll-animate slide-left" style="animation-delay: 0.4s;">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h4>Entrance Exam (if required)</h4>
+                        <p>Sit for entrance examinations (for certain grades)</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-step scroll-animate slide-right" style="animation-delay: 0.6s;">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h4>Interview</h4>
+                        <p>Attend an interview with the admissions committee</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-step scroll-animate slide-left" style="animation-delay: 0.8s;">
+                    <div class="step-number">5</div>
+                    <div class="step-content">
+                        <h4>Admission Letter</h4>
+                        <p>Receive admission letter if accepted</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-step scroll-animate slide-right" style="animation-delay: 1s;">
+                    <div class="step-number">6</div>
+                    <div class="step-content">
+                        <h4>Pay Fees</h4>
+                        <p>Pay required fees to secure your place</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Special Programs -->
+    <section class="requirements-section special-programs">
+        <div class="container">
+            <div class="section-header scroll-animate fade-in">
+                <i class="fas fa-award"></i>
+                <h2>Special Programs & Scholarships</h2>
+            </div>
+            
+            <div class="programs-grid">
+                <div class="program-card scroll-animate zoom-in">
+                    <i class="fas fa-trophy"></i>
+                    <h3>Merit Scholarship</h3>
+                    <p>For students with outstanding PLE/UCE results (Division I with aggregate less than 10)</p>
+                    <span class="program-badge">50% Fee Waiver</span>
+                </div>
+                
+                <div class="program-card scroll-animate zoom-in" style="animation-delay: 0.2s;">
+                    <i class="fas fa-running"></i>
+                    <h3>Sports Bursary</h3>
+                    <p>For talented athletes in football, netball, athletics, and swimming</p>
+                    <span class="program-badge">Partial Scholarship</span>
+                </div>
+                
+                <div class="program-card scroll-animate zoom-in" style="animation-delay: 0.4s;">
+                    <i class="fas fa-music"></i>
+                    <h3>Arts & Music</h3>
+                    <p>For students with exceptional talent in music, drama, or fine art</p>
+                    <span class="program-badge">Partial Scholarship</span>
+                </div>
+                
+                <div class="program-card scroll-animate zoom-in" style="animation-delay: 0.6s;">
+                    <i class="fas fa-heart"></i>
+                    <h3>Orphan Support</h3>
+                    <p>For orphaned students with proven academic potential</p>
+                    <span class="program-badge">Full Scholarship</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="requirements-cta">
+        <div class="container">
+            <h2 class="slide-down">Ready to Join Glory High School?</h2>
+            <p class="fade-in-up">Start your application today and take the first step towards excellence</p>
+            <div class="cta-buttons">
+                <a href="application-form.html" class="cta-button pulse"><i class="fas fa-file-alt"></i> Apply Now</a>
+                <a href="fees-structure.html" class="cta-button outline"><i class="fas fa-money-bill"></i> View Fees</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3><i class="fas fa-phone-alt"></i> Contact Us</h3>
+                    <p><i class="fas fa-phone"></i> 0754645377 / 0778654311</p>
+                    <p><i class="fas fa-envelope"></i> info@gloryhighschool.ac.ug</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Busimbi Hill, Mityana</p>
+                </div>
+                <div class="footer-section">
+                    <h3><i class="fas fa-link"></i> Quick Links</h3>
+                    <ul>
+                        <li><a href="application-form.html"><i class="fas fa-chevron-right"></i> Apply Now</a></li>
+                        <li><a href="../academics/calendar.html"><i class="fas fa-chevron-right"></i> Academic Calendar</a></li>
+                        <li><a href="../school-life/events.html"><i class="fas fa-chevron-right"></i> Upcoming Events</a></li>
+                        <li><a href="faqs.html"><i class="fas fa-chevron-right"></i> FAQs</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3><i class="fas fa-share-alt"></i> Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Glory High School. All rights reserved. <i class="fas fa-heart" style="color: #e74c3c;"></i></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Chat Widget -->
+    <div class="chat-widget" id="chatWidget">
+        <button class="chat-toggle" aria-label="Open chat">
+            <i class="fas fa-comment"></i>
+        </button>
+        <div class="chat-box">
+            <div class="chat-header">
+                <h4><i class="fas fa-comment-dots"></i> Chat with us</h4>
+                <button class="close-chat" aria-label="Close chat"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="chat-messages">
+                <p class="bot-message"><i class="fas fa-robot"></i> Hello! How can we help you today?</p>
+            </div>
+            <div class="chat-input">
+                <input type="text" placeholder="Type your message...">
+                <button><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript Files (only main.js - requirements.js removed) -->
+    <script src="../../js/main.js"></script>
+    <script src="../../js/header-scroll.js"></script>
+    <script src="../../js/navigation.js"></script>
+    <script src="../../js/darkMode.js"></script>
+    <script src="../../js/scroll-animations.js"></script>
+    <script src="../../js/backToTop.js"></script>
+    <script src="../../js/chatWidget.js"></script>
+</body>
+</html>

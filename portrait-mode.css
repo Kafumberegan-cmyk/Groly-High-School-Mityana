@@ -1,0 +1,460 @@
+/* portrait-mode.css - Complete Mobile Portrait Support */
+
+/* Base Portrait Styles */
+@media (max-width: 768px) and (orientation: portrait) {
+    :root {
+        --header-padding: 10px;
+        --font-size-mobile: 14px;
+    }
+
+    /* Container Adjustments */
+    .container {
+        width: 100%;
+        padding: 0 15px;
+        overflow-x: hidden;
+    }
+
+    /* Top Header Portrait Mode */
+    .top-header {
+        padding: 8px 0;
+    }
+
+    .top-header .container {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .contact-info {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        gap: 8px;
+    }
+
+    .contact-info div {
+        width: 100%;
+        justify-content: flex-start;
+        font-size: 13px;
+    }
+
+    .contact-info img {
+        width: 16px;
+        height: 16px;
+        margin-right: 8px;
+    }
+
+    .phone-numbers {
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+
+    .phone-numbers span {
+        display: none;
+    }
+
+    /* Main Header Portrait Mode */
+    .main-header {
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+    }
+
+    .main-header .container {
+        padding: 10px 15px;
+        flex-wrap: wrap;
+    }
+
+    .logo-section {
+        width: auto;
+        max-width: 70%;
+    }
+
+    .logo {
+        width: 45px;
+        height: 45px;
+    }
+
+    .school-info h1 {
+        font-size: 1.1rem;
+        line-height: 1.2;
+    }
+
+    .motto {
+        font-size: 0.75rem;
+    }
+
+    /* Mobile Menu Button */
+    .mobile-menu-toggle {
+        display: block !important;
+        background: var(--primary-blue);
+        color: white;
+        border: none;
+        padding: 10px 15px;
+        border-radius: 5px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    /* Navigation Portrait Mode */
+    .main-nav {
+        width: 100%;
+        order: 3;
+        margin-top: 10px;
+    }
+
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        gap: 0;
+        background: white;
+        border-radius: 5px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        max-height: 70vh;
+        overflow-y: auto;
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+    .dropdown {
+        width: 100%;
+        border-bottom: 1px solid #eee;
+    }
+
+    .dropdown > a {
+        padding: 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .dropdown > a::after {
+        content: '▼';
+        font-size: 12px;
+        transition: transform 0.3s ease;
+    }
+
+    .dropdown.active > a::after {
+        transform: rotate(180deg);
+    }
+
+    .dropdown-menu {
+        position: static;
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+        box-shadow: none;
+        display: none;
+        width: 100%;
+        background: #f8f9fa;
+    }
+
+    .dropdown.active .dropdown-menu {
+        display: block;
+    }
+
+    .dropdown-menu li a {
+        padding: 12px 25px;
+        font-size: 14px;
+    }
+
+    /* Banner Slider Portrait Mode */
+    .banner-slider {
+        height: 250px;
+        margin-top: 0;
+    }
+
+    .slider-container {
+        height: 100%;
+    }
+
+    .slide {
+        background-size: cover;
+        background-position: center;
+    }
+
+    .slider-controls button {
+        padding: 8px 12px;
+        font-size: 16px;
+        opacity: 0.7;
+    }
+
+    .slider-dots {
+        bottom: 15px;
+    }
+
+    .dot {
+        width: 10px;
+        height: 10px;
+    }
+
+    /* Apply Button - Centered in Portrait */
+    .apply-banner-btn {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        bottom: auto;
+        right: auto;
+        padding: 12px 25px;
+        font-size: 16px;
+        white-space: nowrap;
+        z-index: 20;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+        border: 2px solid white;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    /* Welcome Section Portrait */
+    .welcome-section {
+        padding: 40px 0;
+    }
+
+    .welcome-section h2 {
+        font-size: 1.8rem;
+    }
+
+    .welcome-section p {
+        font-size: 14px;
+        padding: 0 10px;
+    }
+
+    /* Core Values Portrait */
+    .core-values {
+        padding: 40px 0;
+    }
+
+    .core-values h2 {
+        font-size: 1.8rem;
+        margin-bottom: 30px;
+    }
+
+    .values-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .value-card {
+        padding: 20px;
+    }
+
+    .value-card h3 {
+        font-size: 1.3rem;
+    }
+
+    /* Map Section Portrait */
+    .map-section {
+        padding: 40px 0;
+    }
+
+    .map-section h2 {
+        font-size: 1.8rem;
+    }
+
+    .map-container {
+        height: 300px;
+    }
+
+    .map-address {
+        font-size: 13px;
+        padding: 0 10px;
+    }
+
+    /* News Section Portrait */
+    .news-section {
+        padding: 40px 0;
+    }
+
+    .news-section h2 {
+        font-size: 1.8rem;
+        margin-bottom: 30px;
+    }
+
+    .news-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .news-item {
+        padding: 20px;
+    }
+
+    .news-item h3 {
+        font-size: 1.2rem;
+    }
+
+    .news-item .date {
+        font-size: 0.8rem;
+    }
+
+    /* Footer Portrait */
+    .main-footer {
+        padding: 30px 0 0;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .footer-section {
+        text-align: center;
+    }
+
+    .footer-section p {
+        justify-content: center;
+    }
+
+    .social-links {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .social-links a {
+        padding: 8px 20px;
+        font-size: 14px;
+    }
+
+    /* Chat Widget Portrait */
+    .chat-widget {
+        bottom: 20px;
+        left: 20px;
+    }
+
+    .chat-toggle {
+        width: 50px;
+        height: 50px;
+    }
+
+    .chat-toggle img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .chat-box {
+        width: 280px;
+        bottom: 70px;
+    }
+
+    .chat-messages {
+        height: 180px;
+    }
+
+    /* Back to Top Button Portrait */
+    #backToTop {
+        bottom: 20px;
+        right: 20px;
+        width: 45px;
+        height: 45px;
+        font-size: 18px;
+    }
+
+    /* Dark Mode Toggle */
+    .dark-mode-toggle {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    #darkModeBtn {
+        padding: 5px 10px;
+        font-size: 12px;
+    }
+}
+
+/* Extra Small Devices (phones, 480px and down) */
+@media (max-width: 480px) and (orientation: portrait) {
+    .banner-slider {
+        height: 200px;
+    }
+
+    .apply-banner-btn {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    .logo {
+        width: 40px;
+        height: 40px;
+    }
+
+    .school-info h1 {
+        font-size: 1rem;
+    }
+
+    .contact-info div {
+        font-size: 12px;
+    }
+
+    .contact-info img {
+        width: 14px;
+        height: 14px;
+    }
+
+    .welcome-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .core-values h2,
+    .map-section h2,
+    .news-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .value-card {
+        padding: 15px;
+    }
+
+    .value-card h3 {
+        font-size: 1.1rem;
+    }
+
+    .map-container {
+        height: 250px;
+    }
+
+    .chat-box {
+        width: 260px;
+    }
+}
+
+/* Fix for devices with notches */
+@supports (padding: max(0px)) {
+    .top-header {
+        padding-left: max(10px, env(safe-area-inset-left));
+        padding-right: max(10px, env(safe-area-inset-right));
+    }
+    
+    .main-header .container {
+        padding-left: max(15px, env(safe-area-inset-left));
+        padding-right: max(15px, env(safe-area-inset-right));
+    }
+}
+
+/* Touch-friendly improvements for portrait */
+@media (orientation: portrait) {
+    .dropdown > a,
+    .dropdown-menu li a,
+    .mobile-menu-toggle,
+    .social-links a,
+    .read-more,
+    .apply-banner-btn,
+    .slider-controls button {
+        min-height: 44px; /* Apple's recommended touch target size */
+    }
+
+    /* Prevent text overflow */
+    h1, h2, h3, p, a, span {
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+    }
+
+    /* Smooth scrolling */
+    .nav-menu.active {
+        -webkit-overflow-scrolling: touch;
+    }
+}

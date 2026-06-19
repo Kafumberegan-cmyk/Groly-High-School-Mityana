@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Clubs & Societies - Glory High School</title>
+    <!-- Core CSS Files -->
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/header.css">
+    <link rel="stylesheet" href="../../css/navigation.css">
+    <link rel="stylesheet" href="../../css/animations.css">
+    <link rel="stylesheet" href="../../css/dark-mode.css">
+    <link rel="stylesheet" href="../../css/portrait-mode.css">
+    <link rel="stylesheet" href="../../css/responsive.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Top Header with Contact Info -->
+    <div class="top-header" id="topHeader">
+        <div class="container">
+            <div class="contact-info">
+                <div class="phone-numbers">
+                    <i class="fas fa-phone-alt"></i>
+                    <a href="tel:0754645377">0754645377</a>
+                    <span class="separator">|</span>
+                    <a href="tel:0778654311">0778654311</a>
+                </div>
+                <div class="email">
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:info@gloryhighschool.ac.ug">info@gloryhighschool.ac.ug</a>
+                </div>
+                <div class="location">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Church of Uganda Busimbi Hill, Mityana</span>
+                </div>
+            </div>
+            <div class="dark-mode-toggle">
+                <button id="darkModeBtn" class="dark-mode-btn">🌓 Dark Mode</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Header -->
+    <header class="main-header" id="mainHeader">
+        <div class="container">
+            <a href="../../index.html" class="logo-link">
+                <div class="logo-section">
+                    <img src="../../assets/images/seeta3.png" alt="Glory High School Logo" class="logo" onerror="this.src='https://via.placeholder.com/60x60?text=GHS'">
+                    <div class="school-info">
+                        <h1>Glory High School</h1>
+                        <p class="motto">Excellence, Integrity, Service</p>
+                    </div>
+                </div>
+            </a>
+            
+            <nav class="main-nav">
+                <ul class="nav-menu">
+                    <!-- Home Dropdown -->
+                    <li class="dropdown">
+                        <a href="../../index.html">Home</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../../index.html">Home Overview</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- About Dropdown -->
+                    <li class="dropdown">
+                        <a href="../../about.html">About</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../about/history.html">History</a></li>
+                            <li><a href="../about/mission-vision.html">Mission & Vision</a></li>
+                            <li><a href="../about/leadership.html">Leadership</a></li>
+                            <li><a href="../about/staff.html">Staff Directory</a></li>
+                            <li><a href="../about/accreditation.html">Accreditation</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Academics Dropdown -->
+                    <li class="dropdown">
+                        <a href="../../academics.html">Academics</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../academics/curriculum.html">Curriculum</a></li>
+                            <li><a href="../academics/departments.html">Departments</a></li>
+                            <li><a href="../academics/calendar.html">Academic Calendar</a></li>
+                            <li><a href="../academics/results.html">Examination Results</a></li>
+                            <li><a href="../academics/apply-now.html" class="apply-btn">Apply Now</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Admissions Dropdown -->
+                    <li class="dropdown">
+                        <a href="../../admissions.html">Admission</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../admissions/requirements.html">Requirements</a></li>
+                            <li><a href="../admissions/fees-structure.html">Fees Structure</a></li>
+                            <li><a href="../admissions/scholarships.html">Scholarships</a></li>
+                            <li><a href="../admissions/faqs.html">FAQs</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- School Life Dropdown - Active -->
+                    <li class="dropdown active">
+                        <a href="../../school-life.html">School Life</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="sports.html">Sports</a></li>
+                            <li><a href="clubs.html" class="active">Clubs & Societies</a></li>
+                            <li><a href="events.html">Events</a></li>
+                            <li><a href="gallery.html">Gallery</a></li>
+                            <li><a href="student-council.html">Student Council</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Contacts Dropdown -->
+                    <li class="dropdown">
+                        <a href="../../contacts.html">Contacts</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../contacts/contact-form.html">Contact Form</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Clubs Hero Section -->
+    <section class="clubs-hero">
+        <div class="container">
+            <h1 class="slide-down">Clubs & Societies</h1>
+            <p class="fade-in-up">Discover Your Passion • Make Friends • Build Skills</p>
+        </div>
+    </section>
+
+    <!-- Introduction Section -->
+    <section class="clubs-intro">
+        <div class="container">
+            <div class="intro-wrapper">
+                <div class="intro-image scroll-animate slide-left">
+                    <img src="../../assets/images/seeta5.png" alt="Clubs Activities" onerror="this.src='https://via.placeholder.com/600x400?text=Clubs+Activities'">
+                </div>
+                <div class="intro-text scroll-animate slide-right">
+                    <h2>Beyond the Classroom</h2>
+                    <p>At Glory High School, we believe education extends beyond textbooks. Our clubs and societies provide students with opportunities to explore interests, develop leadership skills, and build lasting friendships.</p>
+                    <p>Every student is encouraged to join at least one club. With over 15 active clubs, there's something for everyone!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clubs Grid -->
+    <section class="clubs-grid-section">
+        <div class="container">
+            <h2 class="section-title scroll-animate fade-in">Our Clubs & Societies</h2>
+            
+            <div class="clubs-grid">
+                <!-- Science Club -->
+                <div class="club-card scroll-animate zoom-in">
+                    <div class="club-icon">
+                        <i class="fas fa-flask"></i>
+                    </div>
+                    <h3>Science Club</h3>
+                    <p class="club-motto">"Discover, Experiment, Innovate"</p>
+                    <p class="club-description">Hands-on experiments, science fairs, and field trips to scientific institutions.</p>
+                    <div class="club-details">
+                        <span><i class="fas fa-user-tie"></i> Patron: Mr. Robert Ssebunya</span>
+                        <span><i class="fas fa-users"></i> Members: 45</span>
+                        <span><i class="fas fa-calendar"></i> Wednesdays 4:00 PM</span>
+                    </div>
+                </div>
+
+                <!-- Debate Club -->
+                <div class="club-card scroll-animate zoom-in" style="animation-delay: 0.1s;">
+                    <div class="club-icon">
+                        <i class="fas fa-gavel"></i>
+                    </div>
+                    <h3>Debate Club</h3>
+                    <p class="club-motto">"Articulate, Persuade, Lead"</p>
+                    <p class="club-description">Develop public speaking and critical thinking skills through regular debates and competitions.</p>
+                    <div class="club-details">
+                        <span><i class="fas fa-user-tie"></i> Patron: Ms. Susan Akello</span>
+                        <span><i class="fas fa-users"></i> Members: 38</span>
+                        <span><i class="fas fa-calendar"></i> Tuesdays 4:00 PM</span>
+                    </div>
+                </div>
+
+                <!-- Journalism Club -->
+                <div class="club-card scroll-animate zoom-in" style="animation-delay: 0.2s;">
+                    <div class="club-icon">
+                        <i class="fas fa-newspaper"></i>
+                    </div>
+                    <h3>Journalism Club</h3>
+                    <p class="club-motto">"Truth, Voice, Impact"</p>
+                    <p class="club-description">Publish the school newsletter, learn photography, and report on school events.</p>
+                    <div class="club-details">
+                        <span><i class="fas fa-user-tie"></i> Patron: Mr. David Okello</span>
+                        <span><i class="fas fa-users"></i> Members: 25</span>
+                        <span><i class="fas fa-calendar"></i> Thursdays 4:00 PM</span>
+                    </div>
+                </div>
+
+                <!-- Wildlife Club -->
+                <div class="club-card scroll-animate zoom-in" style="animation-delay: 0.3s;">
+                    <div class="club-icon">
+                        <i class="fas fa-tree"></i>
+                    </div>
+                    <h3>Wildlife Club</h3>
+                    <p class="club-motto">"Conserve, Protect, Sustain"</p>
+                    <p class="club-description">Environmental conservation, tree planting, and trips to national parks.</p>
+                    <div class="club-details">
+                        <span><i class="fas fa-user-tie"></i> Patron: Mr. James Kato</span>
+                        <span><i class="fas fa-users"></i> Members: 32</span>
+                        <span><i class="fas fa-calendar"></i> Fridays 3:30 PM</span>
+                    </div>
+                </div>
+
+                <!-- Drama Club -->
+                <div class="club-card scroll-animate zoom-in" style="animation-delay: 0.4s;">
+                    <div class="club-icon">
+                        <i class="fas fa-mask"></i>
+                    </div>
+                    <h3>Drama Club</h3>
+                    <p class="club-motto">"Act, Express, Inspire"</p>
+                    <p class="club-description">Theater performances, drama competitions, and annual school productions.</p>
+                    <div class="club-details">
+                        <span><i class="fas fa-user-tie"></i> Patron: Ms. Grace Nakanwagi</span>
+                        <span><i class="fas fa-users"></i> Members: 40</span>
+                        <span><i class="fas fa-calendar"></i> Mondays & Wednesdays 4:00 PM</span>
+                    </div>
+                </div>
+
+                <!-- Music Club -->
+                <div class="club-card scroll-animate zoom-in" style="animation-delay: 0.5s;">
+                    <div class="club-icon">
+                        <i class="fas fa-music"></i>
+                    </div>
+                    <h3>Music Club</h3>
+                    <p class="club-motto">"Harmony, Rhythm, Soul"</p>
+                    <p class="club-description">Choir, instrumental music, and performances at school events.</p>
+                    <div class="club-details">
+                        <span><i class="fas fa-user-tie"></i> Patron: Mr. Charles Lugya</span>
+                        <span><i class="fas fa-users"></i> Members: 55</span>
+                        <span><i class="fas fa-calendar"></i> Tuesdays & Thursdays 3:30 PM</span>
+                    </div>
+                </div>
+
+                <!-- Scripture Union -->
+                <div class="club-card scroll-animate zoom-in" style="animation-delay: 0.6s;">
+                    <div class="club-icon">
+                        <i class="fas fa-church"></i>
+                    </div>
+                    <h3>Scripture Union</h3>
+                    <p class="club-motto">"Faith, Fellowship, Service"</p>
+                    <p class="club-description">Weekly fellowship, Bible study, and community outreach programs.</p>
+                    <div class="club-details">
+                        <span><i class="fas fa-user-tie"></i> Patron: Pastor John Mukasa</span>
+                        <span><i class="fas fa-users"></i> Members: 60</span>
+                        <span><i class="fas fa-calendar"></i> Sundays 9:00 AM</span>
+                    </div>
+                </div>
+
+                <!-- Scouts & Guides -->
+                <div class="club-card scroll-animate zoom-in" style="animation-delay: 0.7s;">
+                    <div class="club-icon">
+                        <i class="fas fa-campground"></i>
+                    </div>
+                    <h3>Scouts & Guides</h3>
+                    <p class="club-motto">"Be Prepared, Serve Others"</p>
+                    <p class="club-description">Outdoor activities, camping, first aid training, and community service.</p>
+                    <div class="club-details">
+                        <span><i class="fas fa-user-tie"></i> Patron: Mr. Joseph Mukasa</span>
+                        <span><i class="fas fa-users"></i> Members: 48</span>
+                        <span><i class="fas fa-calendar"></i> Saturdays 9:00 AM</span>
+                    </div>
+                </div>
+
+                <!-- Red Cross -->
+                <div class="club-card scroll-animate zoom-in" style="animation-delay: 0.8s;">
+                    <div class="club-icon">
+                        <i class="fas fa-plus-circle"></i>
+                    </div>
+                    <h3>Red Cross Society</h3>
+                    <p class="club-motto">"Humanity, Impartiality, Neutrality"</p>
+                    <p class="club-description">First aid training, blood donation drives, and health awareness campaigns.</p>
+                    <div class="club-details">
+                        <span><i class="fas fa-user-tie"></i> Patron: Sr. Grace Nakanwagi</span>
+                        <span><i class="fas fa-users"></i> Members: 35</span>
+                        <span><i class="fas fa-calendar"></i> Wednesdays 4:00 PM</span>
+                    </div>
+                </div>
+
+                <!-- ICT Club -->
+                <div class="club-card scroll-animate zoom-in" style="animation-delay: 0.9s;">
+                    <div class="club-icon">
+                        <i class="fas fa-laptop"></i>
+                    </div>
+                    <h3>ICT Club</h3>
+                    <p class="club-motto">"Innovate, Create, Transform"</p>
+                    <p class="club-description">Coding, web design, robotics, and digital skills development.</p>
+                    <div class="club-details">
+                        <span><i class="fas fa-user-tie"></i> Patron: Mr. Ivan Ssekitoleko</span>
+                        <span><i class="fas fa-users"></i> Members: 30</span>
+                        <span><i class="fas fa-calendar"></i> Tuesdays 3:30 PM</span>
+                    </div>
+                </div>
+
+                <!-- Art Club -->
+                <div class="club-card scroll-animate zoom-in" style="animation-delay: 1s;">
+                    <div class="club-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3>Art & Design Club</h3>
+                    <p class="club-motto">"Create, Inspire, Express"</p>
+                    <p class="club-description">Painting, drawing, sculpture, and art exhibitions.</p>
+                    <div class="club-details">
+                        <span><i class="fas fa-user-tie"></i> Patron: Ms. Margaret Namuli</span>
+                        <span><i class="fas fa-users"></i> Members: 28</span>
+                        <span><i class="fas fa-calendar"></i> Thursdays 4:00 PM</span>
+                    </div>
+                </div>
+
+                <!-- Entrepreneurship Club -->
+                <div class="club-card scroll-animate zoom-in" style="animation-delay: 1.1s;">
+                    <div class="club-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Entrepreneurship Club</h3>
+                    <p class="club-motto">"Innovate, Invest, Succeed"</p>
+                    <p class="club-description">Business skills, small projects, and financial literacy.</p>
+                    <div class="club-details">
+                        <span><i class="fas fa-user-tie"></i> Patron: Mr. John Bosco</span>
+                        <span><i class="fas fa-users"></i> Members: 42</span>
+                        <span><i class="fas fa-calendar"></i> Fridays 4:00 PM</span>
+                    </div>
+                </div>
+
+                <!-- Rotaract Club -->
+                <div class="club-card scroll-animate zoom-in" style="animation-delay: 1.2s;">
+                    <div class="club-icon">
+                        <i class="fas fa-rotate"></i>
+                    </div>
+                    <h3>Rotaract Club</h3>
+                    <p class="club-motto">"Service Above Self"</p>
+                    <p class="club-description">Community service, leadership development, and networking.</p>
+                    <div class="club-details">
+                        <span><i class="fas fa-user-tie"></i> Patron: Ms. Florence Nambi</span>
+                        <span><i class="fas fa-users"></i> Members: 25</span>
+                        <span><i class="fas fa-calendar"></i> Wednesdays 4:30 PM</span>
+                    </div>
+                </div>
+
+                <!-- French Club -->
+                <div class="club-card scroll-animate zoom-in" style="animation-delay: 1.3s;">
+                    <div class="club-icon">
+                        <i class="fas fa-language"></i>
+                    </div>
+                    <h3>French Club</h3>
+                    <p class="club-motto">"Parlez-vous Français?"</p>
+                    <p class="club-description">French language practice, cultural exchange, and conversation sessions.</p>
+                    <div class="club-details">
+                        <span><i class="fas fa-user-tie"></i> Patron: Mr. Pierre Mugisha</span>
+                        <span><i class="fas fa-users"></i> Members: 22</span>
+                        <span><i class="fas fa-calendar"></i> Mondays 4:00 PM</span>
+                    </div>
+                </div>
+
+                <!-- Chess Club -->
+                <div class="club-card scroll-animate zoom-in" style="animation-delay: 1.4s;">
+                    <div class="club-icon">
+                        <i class="fas fa-chess-queen"></i>
+                    </div>
+                    <h3>Chess Club</h3>
+                    <p class="club-motto">"Strategy, Patience, Victory"</p>
+                    <p class="club-description">Chess tournaments, strategy sessions, and friendly competitions.</p>
+                    <div class="club-details">
+                        <span><i class="fas fa-user-tie"></i> Patron: Mr. Paul Ssenyonga</span>
+                        <span><i class="fas fa-users"></i> Members: 20</span>
+                        <span><i class="fas fa-calendar"></i> Fridays 4:00 PM</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Activities Gallery -->
+    <section class="activities-gallery">
+        <div class="container">
+            <h2 class="section-title scroll-animate fade-in">Club Activities</h2>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item scroll-animate zoom-in">
+                    <img src="../../assets/images/seeta3.png" alt="Activity 1" onerror="this.src='https://via.placeholder.com/400x300?text=Activity+1'">
+                    <div class="gallery-overlay">Science Fair 2024</div>
+                </div>
+                <div class="gallery-item scroll-animate zoom-in" style="animation-delay: 0.1s;">
+                    <img src="../../assets/images/seeta3.png" alt="Activity 2" onerror="this.src='https://via.placeholder.com/400x300?text=Activity+2'">
+                    <div class="gallery-overlay">Debate Competition</div>
+                </div>
+                <div class="gallery-item scroll-animate zoom-in" style="animation-delay: 0.2s;">
+                    <img src="../../assets/images/seeta3.png" alt="Activity 3" onerror="this.src='https://via.placeholder.com/400x300?text=Activity+3'">
+                    <div class="gallery-overlay">Music Festival</div>
+                </div>
+                <div class="gallery-item scroll-animate zoom-in" style="animation-delay: 0.3s;">
+                    <img src="../../assets/images/seeta3.png" alt="Activity 4" onerror="this.src='https://via.placeholder.com/400x300?text=Activity+4'">
+                    <div class="gallery-overlay">Tree Planting</div>
+                </div>
+                <div class="gallery-item scroll-animate zoom-in" style="animation-delay: 0.4s;">
+                    <img src="../../assets/images/seeta3.png" alt="Activity 5" onerror="this.src='https://via.placeholder.com/400x300?text=Activity+5'">
+                    <div class="gallery-overlay">Drama Performance</div>
+                </div>
+                <div class="gallery-item scroll-animate zoom-in" style="animation-delay: 0.5s;">
+                    <img src="../../assets/images/seeta3.png" alt="Activity 6" onerror="this.src='https://via.placeholder.com/400x300?text=Activity+6'">
+                    <div class="gallery-overlay">First Aid Training</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Join Club Section -->
+    <section class="join-club-section">
+        <div class="container">
+            <div class="join-wrapper">
+                <div class="join-text scroll-animate slide-left">
+                    <h2>How to Join a Club</h2>
+                    <p>All students are welcome to join any club of their choice. Club activities are held after school hours and on weekends.</p>
+                    
+                    <div class="join-steps">
+                        <div class="step">
+                            <span class="step-number">1</span>
+                            <div class="step-content">
+                                <h3>Choose Your Club</h3>
+                                <p>Review the list of clubs and select one that matches your interests.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="step">
+                            <span class="step-number">2</span>
+                            <div class="step-content">
+                                <h3>Meet the Patron</h3>
+                                <p>Speak with the club patron during the designated meeting time.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="step">
+                            <span class="step-number">3</span>
+                            <div class="step-content">
+                                <h3>Register</h3>
+                                <p>Fill out the registration form and pay the annual club subscription fee.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="step">
+                            <span class="step-number">4</span>
+                            <div class="step-content">
+                                <h3>Start Participating</h3>
+                                <p>Attend meetings regularly and participate in club activities.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="registration-fee">
+                        <i class="fas fa-tag"></i>
+                        <span>Annual club subscription: UGX 5,000 per club</span>
+                    </div>
+                </div>
+                
+                <div class="join-image scroll-animate slide-right">
+                    <img src="../../assets/images/seeta6.png" alt="Join a Club" onerror="this.src='https://via.placeholder.com/500x400?text=Join+a+Club'">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3><i class="fas fa-phone-alt"></i> Contact Us</h3>
+                    <p><i class="fas fa-phone"></i> 0754645377 / 0778654311</p>
+                    <p><i class="fas fa-envelope"></i> info@gloryhighschool.ac.ug</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Busimbi Hill, Mityana</p>
+                </div>
+                <div class="footer-section">
+                    <h3><i class="fas fa-link"></i> Quick Links</h3>
+                    <ul>
+                        <li><a href="../../admissions.html"><i class="fas fa-chevron-right"></i> Apply Now</a></li>
+                        <li><a href="../academics/calendar.html"><i class="fas fa-chevron-right"></i> Academic Calendar</a></li>
+                        <li><a href="events.html"><i class="fas fa-chevron-right"></i> Upcoming Events</a></li>
+                        <li><a href="../../contacts.html"><i class="fas fa-chevron-right"></i> Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3><i class="fas fa-share-alt"></i> Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Glory High School. All rights reserved. <i class="fas fa-heart" style="color: #e74c3c;"></i></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Chat Widget -->
+    <div class="chat-widget" id="chatWidget">
+        <button class="chat-toggle" aria-label="Open chat">
+            <i class="fas fa-comment"></i>
+        </button>
+        <div class="chat-box">
+            <div class="chat-header">
+                <h4><i class="fas fa-comment-dots"></i> Chat with us</h4>
+                <button class="close-chat" aria-label="Close chat"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="chat-messages">
+                <p class="bot-message"><i class="fas fa-robot"></i> Hello! How can we help you today?</p>
+            </div>
+            <div class="chat-input">
+                <input type="text" placeholder="Type your message...">
+                <button><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript Files -->
+    <script src="../../js/main.js"></script>
+    <script src="../../js/header-scroll.js"></script>
+    <script src="../../js/navigation.js"></script>
+    <script src="../../js/darkMode.js"></script>
+    <script src="../../js/scroll-animations.js"></script>
+    <script src="../../js/backToTop.js"></script>
+    <script src="../../js/chatWidget.js"></script>
+</body>
+</html>
