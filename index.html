@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Glory High School - Home</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/navigation.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/dark-mode.css">
+    <link rel="stylesheet" href="css/portrait-mode.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Top Header with Contact Info -->
+    <div class="top-header" id="topHeader">
+        <div class="container">
+            <div class="contact-info">
+                <div class="phone-numbers">
+                    <i class="fas fa-phone-alt"></i>
+                    <a href="tel:0754645377">0754645377</a>
+                    <span class="separator">|</span>
+                    <a href="tel:0778654311">0778654311</a>
+                </div>
+                <div class="email">
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:@fivestarsaloon3@gmail.com">fivestarsaloon3@gmail.com</a>
+                </div>
+                <div class="location">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Church of Uganda Busimbi Hill, Mityana</span>
+                </div>
+            </div>
+            <div class="dark-mode-toggle">
+                <button id="darkModeBtn" class="dark-mode-btn">🌓 Dark Mode</button>
+            </div>
+        </div>
+    </div>
+
+    <header class="main-header" id="mainHeader">
+    <div class="container">
+        <a href="index.html" class="logo-link">
+            <div class="logo-section">
+                <img src="assets/images/seeta3.png" alt="Glory High School Logo" class="logo" onerror="this.src='https://via.placeholder.com/60x60?text=GHS'">
+                <div class="school-info">
+                    <h1>Glory High School</h1>
+                    <p class="motto">Excellence, Integrity, Service</p>
+                </div>
+            </div>
+        </a>
+        
+            
+            <nav class="main-nav">
+                <ul class="nav-menu">
+                    <!-- Home Dropdown - UPDATED (Welcome Message removed) -->
+                    <li class="dropdown">
+                        <a href="index.html">Home</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="index.html">Home Overview</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- About Dropdown -->
+                    <li class="dropdown">
+                        <a href="about.html">About</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="dropdown-pages/about/history.html">History</a></li>
+                            <li><a href="dropdown-pages/about/mission-vision.html">Mission & Vision</a></li>
+                            <li><a href="dropdown-pages/about/leadership.html">Leadership</a></li>
+                            <li><a href="dropdown-pages/about/staff.html">Staff Directory</a></li>
+                            <li><a href="dropdown-pages/about/accreditation.html">Accreditation</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Academics Dropdown -->
+                    <li class="dropdown">
+                        <a href="academics.html">Academics</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="dropdown-pages/academics/curriculum.html">Curriculum</a></li>
+                            <li><a href="dropdown-pages/academics/departments.html">Departments</a></li>
+                            <li><a href="dropdown-pages/academics/calendar.html">Academic Calendar</a></li>
+                            <li><a href="dropdown-pages/academics/results.html">Examination Results</a></li>
+                            <li><a href="dropdown-pages/academics/apply-now.html" class="apply-btn">Apply Now</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Admissions Dropdown -->
+                    <li class="dropdown">
+                        <a href="admissions.html">Admission</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="dropdown-pages/admissions/requirements.html">Requirements</a></li>
+                            <li><a href="dropdown-pages/admissions/fees-structure.html">Fees Structure</a></li>
+                            <li><a href="dropdown-pages/admissions/scholarships.html">Scholarships</a></li>
+                            <li><a href="dropdown-pages/admissions/faqs.html">FAQs</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- School Life Dropdown -->
+                    <li class="dropdown">
+                        <a href="school-life.html">School Life</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="dropdown-pages/school-life/sports.html">Sports</a></li>
+                            <li><a href="dropdown-pages/school-life/clubs.html">Clubs & Societies</a></li>
+                            <li><a href="dropdown-pages/school-life/events.html">Events</a></li>
+                            <li><a href="dropdown-pages/school-life/gallery.html">Gallery</a></li>
+                            <li><a href="dropdown-pages/school-life/student-council.html">Student Council</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Contacts Dropdown -->
+                    <li class="dropdown">
+                        <a href="contacts.html">Contacts</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="dropdown-pages/contacts/contact-form.html">Contact Form</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Banner Slider Section -->
+    <section class="banner-slider">
+        <div class="slider-container">
+            <div class="slider">
+                <h1 id="message">If this text changes, JS is working!</h1>
+                <!-- Slide 1 - Parallax Effect -->
+                <div class="slide active" data-effect="parallax">
+                    <img src="assets/images/seeta3.png" alt="Glory High School - Image 1" class="slide-img">
+                    <div class="slide-overlay"></div>
+                    <div class="slide-content">
+                        <h2>Welcome to Glory High School</h2>
+                        <p>Excellence, Integrity, Service</p>
+                    </div>
+                </div>
+
+                <!-- Slide 2 - Slide Right Effect -->
+                <div class="slide" data-effect="slide-right">
+                    <img src="assets/images/seeta5.png" alt="Glory High School - Image 2" class="slide-img">
+                    <div class="slide-overlay"></div>
+                    <div class="slide-content">
+                        <h2>Quality Education</h2>
+                        <p>Nurturing Future Leaders</p>
+                    </div>
+                </div>
+
+                <!-- Slide 3 - Split Effect -->
+                <div class="slide" data-effect="split">
+                    <img src="assets/images/seeta6.png" alt="Glory High School - Image 3" class="slide-img">
+                    <div class="slide-overlay"></div>
+                    <div class="slide-content">
+                        <h2>Modern Facilities</h2>
+                        <p>State-of-the-art Learning Environment</p>
+                    </div>
+                </div>
+
+                <!-- Slide 4 - Zoom In Effect -->
+                <div class="slide" data-effect="zoom-in">
+                    <img src="assets/images/seeta2.png" alt="Glory High School - Image 4" class="slide-img">
+                    <div class="slide-overlay"></div>
+                    <div class="slide-content">
+                        <h2>Sports & Recreation</h2>
+                        <p>Holistic Development</p>
+                    </div>
+                </div>
+
+                <!-- Slide 5 - Slide Left Effect -->
+                <div class="slide" data-effect="slide-left">
+                    <img src="assets/images/seeta6.png" alt="Glory High School - Image 5" class="slide-img">
+                    <div class="slide-overlay"></div>
+                    <div class="slide-content">
+                        <h2>Extracurricular Activities</h2>
+                        <p>Clubs & Societies</p>
+                    </div>
+                </div>
+
+                <!-- Slide 6 - Flip Effect -->
+                <div class="slide" data-effect="flip">
+                    <img src="assets/images/seeta3.png" alt="Glory High School - Image 6" class="slide-img">
+                    <div class="slide-overlay"></div>
+                    <div class="slide-content">
+                        <h2>Join Us Today</h2>
+                        <p>Apply Now for 2024</p>
+                    </div>
+                </div>
+
+                <!-- Slide 7 - Blur Effect -->
+                <div class="slide" data-effect="blur">
+                    <img src="assets/images/seeta5.png" alt="Glory High School - Image 7" class="slide-img">
+                    <div class="slide-overlay"></div>
+                    <div class="slide-content">
+                        <h2>Community</h2>
+                        <p>Together We Grow</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Apply Button - Perfectly Centered -->
+            <a href="dropdown-pages/academics/apply-now.html" class="apply-banner-btn">
+                <span class="btn-text">Apply Now</span>
+                <span class="btn-icon">→</span>
+            </a>
+            
+            <!-- Slider Controls -->
+            <div class="slider-controls">
+                <button class="prev" aria-label="Previous slide">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="next" aria-label="Next slide">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+            
+            <!-- Slider Dots -->
+            <div class="slider-dots"></div>
+            
+            <!-- Slider Progress Bar -->
+            <div class="slider-progress">
+                <div class="progress-bar"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Welcome Message - Enhanced -->
+<section class="welcome-section scroll-animate">
+    <div class="container">
+        <div class="welcome-content">
+            <!-- Image on Left -->
+            <div class="welcome-image scroll-animate zoom-out">
+                <img src="assets/images/seeta2.png" alt="Glory High School Campus" onerror="this.style.display='none'">
+            </div>
+            
+            <!-- Text on Right -->
+            <div class="welcome-text scroll-animate slide-right">
+                <h2>WELCOME TO GLORY HIGH SCHOOL</h2>
+                <p>Welcome to Glory High School, an institution dedicated to academic excellence and holistic student development. Our mission is to nurture young minds, equipping them with the knowledge, skills, and values they need to succeed in today's fast-changing world. With a team of passionate educators, state-of-the-art facilities, and a vibrant learning environment, we are committed to fostering both personal and academic growth.</p>
+                <p>Since our first school opened in 2000, we have expanded into a network of four campuses—Main, Mukono, Green, and A-Level—focused on developing innovative leaders and well-rounded students. We now also offer Nursery and Junior sections (www.seetajnrsch.net), ensuring a complete learning cycle, while delivering exceptional educational experiences.</p>
+                <p class="closing-message">I look forward to partnering with you to provide your child with the best education and support throughout their time with us.</p>
+                
+                <!-- Learn More Button -->
+                <a href="about.html" class="btn btn-primary">
+                    Learn More About Us <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Core Values -->
+<section class="core-values scroll-animate">
+    <div class="container">
+        <div class="values-grid">
+            <!-- Left Column - Core Values -->
+            <div class="value-card left-card scroll-animate slide-from-right">
+                <i class="fas fa-star value-icon"></i>
+                <h3>Our Core Values</h3>
+                <ul class="value-list">
+                    <li>Excellence</li>
+                    <li>Eloquence and smartness</li>
+                    <li>Honesty</li>
+                    <li>Integrity and Openness</li>
+                    <li>Zero Tolerance to Corruption</li>
+                    <li>Corporate, Social & Responsibility</li>
+                    <li>Respect and Value our Customers / Clients</li>
+                    <li>God Fearing</li>
+                </ul>
+            </div>
+            
+            <!-- Middle Column - Our Students Must Be -->
+            <div class="value-card middle-card scroll-animate zoom-out">
+                <i class="fas fa-users value-icon"></i>
+                <h3>Our Students Must Be</h3>
+                <ul class="value-list">
+                    <li>Excellent</li>
+                    <li>Morally Upright</li>
+                    <li>Confident</li>
+                    <li>Articulate</li>
+                    <li>God Fearing</li>
+                    <li>Humble Leaders yet assertive</li>
+                    <li>Honest</li>
+                    <li>Respectful & Obedient</li>
+                </ul>
+            </div>
+            
+            <!-- Right Column - Our Chants -->
+            <div class="value-card right-card scroll-animate slide-from-left">
+                <i class="fas fa-microphone-alt value-icon"></i>
+                <h3>Our Chants</h3>
+                <ul class="value-list">
+                    <li>Plan, plan, plan your day</li>
+                    <li>Our security is our responsibility</li>
+                    <li>Total obedience is important for our success</li>
+                    <li>We should all strive to take a good report back home</li>
+                    <li>Our school is our pride</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Term Dates Section -->
+<section class="term-dates-section">
+    <div class="term-dates-banner">
+        <div class="term-dates-overlay">
+            <div class="container">
+                <div class="term-dates-grid">
+                    <!-- Closing Term Section -->
+                    <div class="term-card closing-term scroll-animate slide-left">
+                        <div class="term-icon">
+                            <i class="fas fa-door-closed"></i>
+                        </div>
+                        <h3>Closing of Term One (1) 2026!</h3>
+                        <div class="term-date">
+                            <span class="date-number">01st</span>
+                            <span class="date-month">MAY 2026</span>
+                        </div>
+                        <div class="term-details">
+                            <p>When TERM One (1) CLOSES, endeavour to pick up your child early enough from school</p>
+                            <p class="school-closes">School will close promptly at <strong>10:00 AM</strong></p>
+                        </div>
+                    </div>
+                    
+                    <!-- Opening Term Section -->
+                    <div class="term-card opening-term scroll-animate slide-right">
+                        <div class="term-icon">
+                            <i class="fas fa-door-open"></i>
+                        </div>
+                        <h3>Opening of Term Two (2) 2026!</h3>
+                        <div class="term-date">
+                            <span class="date-number">25th</span>
+                            <span class="date-month">MAY 2026</span>
+                        </div>
+                        <div class="term-details">
+                            <p>Reporting date back to school for all <strong>HOSTEL</strong> students is expected during day time in the hours of:</p>
+                            <p class="school-time"><strong>7:20 AM - 4:40 PM</strong></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Shaping Young Leaders Section -->
+<section class="leaders-section scroll-animate">
+    <div class="container">
+        <div class="leaders-wrapper">
+            <!-- Video on Left -->
+            <div class="leaders-video scroll-animate slide-left">
+                <div class="video-container">
+                    <iframe 
+                        width="100%" 
+                        height="400" 
+                        src="https://www.youtube.com/embed/j8yrA_VqIx4?autoplay=0&rel=0" 
+                        title="Glory High School - Shaping Young Leaders" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+            
+            <!-- Text on Right -->
+            <div class="leaders-text scroll-animate slide-right">
+                <h2>Shaping Young Leaders</h2>
+                <p>As pillars of the community, Glory High School plays a pivotal role in shaping the future leaders of Uganda. With a steadfast commitment to excellence and a relentless pursuit of innovation, these schools continue to inspire generations of young minds, empowering them to reach their full potential and make meaningful contributions to society.</p>
+                <a href="dropdown-pages/academics/apply-now.html" class="apply-leader-btn">
+                    Apply Now <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Modal for Image Expansion -->
+<div id="imageModal" class="image-modal">
+    <div class="modal-overlay"></div>
+    <div class="modal-container">
+        <button class="modal-close">&times;</button>
+        <button class="modal-prev">&#10094;</button>
+        <button class="modal-next">&#10095;</button>
+        <div class="modal-image-wrapper">
+            <img class="modal-image" id="modalImage" alt="Expanded view">
+        </div>
+        <div class="modal-caption" id="modalCaption">School Gallery</div>
+    </div>
+</div>
+
+<script>
+(function() {
+    // Wait for DOM to be fully loaded
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initGallery);
+    } else {
+        initGallery();
+    }
+    
+    function initGallery() {
+        console.log('Gallery script loaded');
+        
+        // Gallery images array (15 images)
+        const galleryImagesList = [
+            "../../assets/images/seeta5.png",
+            "../../assets/images/seeta5.png",
+            "../../assets/images/seeta5.png",
+            "../../assets/images/seeta5.png",
+            "../../assets/images/seeta5.png",
+            "../../assets/images/seeta5.png",
+            "../../assets/images/seeta5.png",
+            "../../assets/images/seeta5.png",
+            "../../assets/images/seeta5.png",
+            "../../assets/images/seeta5.png",
+            "../../assets/images/seeta5.png",
+            "../../assets/images/seeta5.png",
+            "../../assets/images/seeta5.png",
+            "../../assets/images/seeta5.png",
+            "../../assets/images/seeta5.png"
+        ];
+        
+        // Gallery captions
+        const galleryCaptionsList = [
+            "School Campus - Main Building",
+            "Students in Classroom - Active Learning",
+            "Sports Day Celebration",
+            "Science Laboratory - Hands-on Learning",
+            "School Library - Reading Corner",
+            "Music and Arts - Creative Expression",
+            "Graduation Ceremony - Class of 2024",
+            "Cultural Day Event - Traditional Dance",
+            "Sports Team - Football Champions",
+            "Art Exhibition - Student Showcase",
+            "School Assembly - Morning Gathering",
+            "Community Service - Outreach Program",
+            "Computer Lab - Modern Technology",
+            "School Facilities - Modern Classrooms",
+            "Campus Life - Beautiful Environment"
+        ];
+        
+        let currentIndex = 0;
+        
+        // Get modal elements
+        const modal = document.getElementById('imageModal');
+        const modalImage = document.getElementById('modalImage');
+        const modalCaption = document.getElementById('modalCaption');
+        const closeBtn = document.querySelector('.modal-close');
+        const prevBtn = document.querySelector('.modal-prev');
+        const nextBtn = document.querySelector('.modal-next');
+        const overlay = document.querySelector('.modal-overlay');
+        
+        // Get all gallery items
+        const galleryItems = document.querySelectorAll('.gallery-preview-item');
+        
+        console.log('Found gallery items:', galleryItems.length);
+        
+        // Function to open modal
+        function openModal(index) {
+            if (!modal || !modalImage) {
+                console.error('Modal elements not found');
+                return;
+            }
+            
+            currentIndex = index;
+            
+            // Update modal content
+            modalImage.src = galleryImagesList[currentIndex];
+            modalImage.alt = galleryCaptionsList[currentIndex];
+            modalCaption.textContent = galleryCaptionsList[currentIndex];
+            
+            // Show modal
+            modal.style.display = 'flex';
+            document.body.style.overflow = 'hidden';
+            
+            // Add animation
+            const wrapper = document.querySelector('.modal-image-wrapper');
+            if (wrapper) {
+                wrapper.style.animation = 'none';
+                setTimeout(() => {
+                    wrapper.style.animation = 'modalZoomIn 0.4s cubic-bezier(0.34, 1.2, 0.64, 1)';
+                }, 10);
+            }
+            
+            console.log('Modal opened for index:', index);
+        }
+        
+        // Function to close modal
+        function closeModal() {
+            if (!modal) return;
+            
+            modal.style.display = 'none';
+            document.body.style.overflow = '';
+            console.log('Modal closed');
+        }
+        
+        // Function to next image
+        function nextImage() {
+            currentIndex = (currentIndex + 1) % galleryImagesList.length;
+            
+            // Add fade effect
+            modalImage.style.opacity = '0';
+            
+            setTimeout(() => {
+                modalImage.src = galleryImagesList[currentIndex];
+                modalImage.alt = galleryCaptionsList[currentIndex];
+                modalCaption.textContent = galleryCaptionsList[currentIndex];
+                modalImage.style.opacity = '1';
+            }, 150);
+            
+            // Add animation to wrapper
+            const wrapper = document.querySelector('.modal-image-wrapper');
+            if (wrapper) {
+                wrapper.style.animation = 'none';
+                setTimeout(() => {
+                    wrapper.style.animation = 'modalZoomIn 0.3s cubic-bezier(0.34, 1.2, 0.64, 1)';
+                }, 10);
+            }
+            
+            console.log('Next image:', currentIndex);
+        }
+        
+        // Function to previous image
+        function prevImage() {
+            currentIndex = (currentIndex - 1 + galleryImagesList.length) % galleryImagesList.length;
+            
+            // Add fade effect
+            modalImage.style.opacity = '0';
+            
+            setTimeout(() => {
+                modalImage.src = galleryImagesList[currentIndex];
+                modalImage.alt = galleryCaptionsList[currentIndex];
+                modalCaption.textContent = galleryCaptionsList[currentIndex];
+                modalImage.style.opacity = '1';
+            }, 150);
+            
+            // Add animation to wrapper
+            const wrapper = document.querySelector('.modal-image-wrapper');
+            if (wrapper) {
+                wrapper.style.animation = 'none';
+                setTimeout(() => {
+                    wrapper.style.animation = 'modalZoomIn 0.3s cubic-bezier(0.34, 1.2, 0.64, 1)';
+                }, 10);
+            }
+            
+            console.log('Previous image:', currentIndex);
+        }
+        
+        // Add click event to each gallery item
+        if (galleryItems.length > 0) {
+            galleryItems.forEach((item, idx) => {
+                // Set data-index
+                item.setAttribute('data-index', idx);
+                
+                // Add click event
+                item.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    const index = parseInt(this.getAttribute('data-index'));
+                    console.log('Gallery item clicked:', index);
+                    openModal(index);
+                });
+                
+                // Add touch event for mobile
+                item.addEventListener('touchstart', function(e) {
+                    e.preventDefault();
+                    const index = parseInt(this.getAttribute('data-index'));
+                    console.log('Gallery item touched:', index);
+                    openModal(index);
+                });
+            });
+            console.log('Click events attached to', galleryItems.length, 'gallery items');
+        } else {
+            console.error('No gallery items found! Check your HTML structure.');
+        }
+        
+        // Add close button event
+        if (closeBtn) {
+            closeBtn.addEventListener('click', function(e) {
+                e.stopPropagation();
+                closeModal();
+            });
+        }
+        
+        // Add prev button event
+        if (prevBtn) {
+            prevBtn.addEventListener('click', function(e) {
+                e.stopPropagation();
+                prevImage();
+            });
+        }
+        
+        // Add next button event
+        if (nextBtn) {
+            nextBtn.addEventListener('click', function(e) {
+                e.stopPropagation();
+                nextImage();
+            });
+        }
+        
+        // Add overlay click event
+        if (overlay) {
+            overlay.addEventListener('click', function(e) {
+                e.stopPropagation();
+                closeModal();
+            });
+        }
+        
+        // Keyboard navigation
+        document.addEventListener('keydown', function(e) {
+            if (modal && modal.style.display === 'flex') {
+                if (e.key === 'ArrowLeft') {
+                    e.preventDefault();
+                    prevImage();
+                } else if (e.key === 'ArrowRight') {
+                    e.preventDefault();
+                    nextImage();
+                } else if (e.key === 'Escape') {
+                    e.preventDefault();
+                    closeModal();
+                }
+            }
+        });
+        
+        // Prevent modal close when clicking inside container
+        const modalContainer = document.querySelector('.modal-container');
+        if (modalContainer) {
+            modalContainer.addEventListener('click', function(e) {
+                e.stopPropagation();
+            });
+        }
+        
+        // Add scroll animation for gallery grid
+        const galleryGrid = document.querySelector('.gallery-preview-grid');
+        if (galleryGrid) {
+            galleryGrid.style.opacity = '0';
+            galleryGrid.style.transform = 'translateY(30px)';
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.transition = 'all 0.6s ease';
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.1 });
+            
+            observer.observe(galleryGrid);
+        }
+        
+        console.log('Gallery initialization complete');
+    }
+})();
+</script>
+
+<!-- END OF -->
+
+<!-- Newsletter Section -->
+<section class="newsletter-section scroll-animate">
+    <div class="container">
+        <div class="newsletter-wrapper">
+            <div class="newsletter-content scroll-animate slide-left">
+                <h2>Subscribe to Our Newsletter</h2>
+                <p>Stay updated with the latest news, events, and announcements from Glory High School. Get exclusive updates delivered straight to your inbox.</p>
+                
+                <form id="newsletterForm" class="newsletter-form" action="javascript:void(0);">
+                    <div class="form-group">
+                        <input type="text" id="newsletterName" name="name" placeholder="Your Full Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="newsletterEmail" name="email" placeholder="Your Email Address" required>
+                    </div>
+                    <div class="form-group checkbox-group">
+                        <input type="checkbox" id="newsletterConsent" name="consent" required>
+                        <label for="newsletterConsent">I agree to receive email updates from Glory High School</label>
+                    </div>
+                    <button type="submit" class="newsletter-btn">
+                        <i class="fas fa-paper-plane"></i> Subscribe Now
+                    </button>
+                </form>
+                
+                <p class="newsletter-note">
+                    <i class="fas fa-lock"></i> We respect your privacy. No spam, ever.
+                </p>
+            </div>
+            
+            <div class="newsletter-image scroll-animate slide-right">
+                <img src="assets/images/seeta6.png" alt="Newsletter" onerror="this.src='https://via.placeholder.com/500x400?text=Newsletter'">
+                <div class="image-badge">
+                    <i class="fas fa-envelope-open-text"></i>
+                    <span>Weekly Updates</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- News Section -->
+<section class="news-section scroll-animate">
+    <div class="container">
+        <!-- Header -->
+        <h2 class="news-section-header scroll-animate slide-down">Latest News</h2>
+        
+        <!-- Hero Image with Overlay Text -->
+        <div class="news-hero-image scroll-animate zoom-in">
+            <img src="../../assets/images/seeta3.png" alt="Glory High School News">
+            <div class="hero-overlay">
+                <div class="hero-text scroll-animate fade-in-up">
+                    <h1>Glory High School News</h1>
+                    <p>Stay connected with the heartbeat of Glory High School through our vibrant news portal. From academic achievements and co-curricular triumphs to exciting events and community projects, we bring you timely updates and stories that celebrate the excellence and spirit of our school community. Dive in to discover the latest happenings and be part of the journey that shapes future leaders.</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Large Image with 2px spacing -->
+        <div class="news-large-image scroll-animate zoom-out">
+            <img src="../../assets/images/seeta2.png" alt="School Event">
+        </div>
+        
+        <!-- News Article Preview -->
+        <div class="news-article-preview scroll-animate slide-up">
+            <div class="article-meta">
+                <h3>Daimond Platinum, renowned Tanzanian Musician, graced Glory High School's A campus</h3>
+                <p class="article-date">by see | Apr 10, 2024 | Uncategorized</p>
+            </div>
+            <p class="article-excerpt"> Daimond Platinum, renowned Tanzanian Musician, graced Glory High School's campus with his presence, marking an unforgettable day for students and staff alike. As word spread of his impending visit, excitement rippled through the corridors, creating an atmosphere...</p>
+            <button class="read-more-btn" onclick="toggleFullArticle()">Read More <i class="fas fa-arrow-right"></i></button>
+        </div>
+        
+        <!-- Full Article Content (Initially Hidden) -->
+        <div id="fullArticle" class="full-article-content">
+            <div class="full-article-wrapper scroll-animate slide-up">
+                <div class="full-article-grid">
+                    <div class="full-article-image scroll-animate zoom-in">
+                        <img src="../../assets/images/seeta2.png" alt="Ramsey Nouah Visit">
+                    </div>
+                    <div class="full-article-text scroll-animate slide-right">
+                        <h2>Diamond Platinum, renowned Tanzanian Musician, graced Glory High School's A campus</h2>
+                        <p class="article-category">Uncategorized | 1 comment</p>
+                        <div class="full-article-body">
+                            <p>Ramsey Nouah, the Tanzanian best Musician, graced Glory High School's campus with his presence, marking an unforgettable day for students and staff alike. As word spread of his impending visit, excitement rippled through the corridors, creating an atmosphere buzzing with anticipation.</p>
+                            
+                            <p>As the day dawned, the school grounds were adorned with vibrant banners and decorations, welcoming Diamond Platinum with open arms. Students, dressed in their finest attire, eagerly awaited his arrival, their faces alive with anticipation.</p>
+                            
+                            <p>Before bidding farewell, Diamond Platinum expressed his gratitude for the warm hospitality and unforgettable experience at Glory High School. He commended the students for their enthusiasm and eagerness to learn, urging them to pursue their passions with courage and determination.</p>
+                            
+                            <p>As the distinguished guest stepped onto the campus, he was greeted with thunderous applause and cheers of admiration from the excited crowd. Daiamond Platinum, with his charismatic presence and warm smile, exuded humility and grace as he interacted with students, teachers, and school officials.</p>
+                            
+                            <p>The visit kicked off with a grand assembly in the school's main hall, where Diamond platinum captivated the audience with inspiring words of encouragement and wisdom. He shared anecdotes from his illustrious career, emphasizing the importance of hard work, dedication, and perseverance in pursuing one's dreams.</p>
+                            
+                            <p>Following the assembly, Diamond took a tour of the school facilities, marveling at the modern amenities and vibrant learning environment. He engaged in lively conversations with students, exchanging laughs and posing for countless photos, leaving an indelible impression on everyone he met.</p>
+                            
+                            <p>The highlight of the visit was a special screening of one of Daimond Platinum's acclaimed films in the school's auditorium. Students gathered in awe as they watched the captivating performance unfold on the big screen, marveling at the talent and artistry of the esteemed actor.</p>
+                            
+                            <p>Before bidding farewell, Daimond Platinum expressed his gratitude for the warm hospitality and unforgettable experience at Glory High School. He commended the students for their enthusiasm and eagerness to learn, urging them to pursue their passions with courage and determination.</p>
+                            
+                            <p>As Daimond Platinum departed, leaving behind a trail of inspiration and admiration, the echoes of his visit lingered in the hearts and minds of all who had the privilege of meeting him. His visit not only enriched the educational experience at Glory High School but also served as a testament to the power of dreams and the boundless possibilities that lie ahead.</p>
+                        </div>
+                        
+                        <div class="article-meta-footer">
+                            <p><strong>see</strong> | <strong>see</strong></p>
+                        </div>
+                        
+                        <!-- Comments Section -->
+                        <div class="comments-section">
+                            <h3>1 Comment</h3>
+                            <div class="comment">
+                                <div class="comment-author">
+                                    <strong>tlover tonet</strong>
+                                    <span class="comment-date">on January 27, 2025 at 3:42 am</span>
+                                </div>
+                                <p>I feel that is among the so much important information for me. And i am happy reading your article. However want to remark on some basic issues, The website taste is ideal, the articles is in point of fact great : D. Excellent process, cheers</p>
+                                <button class="reply-btn">Reply</button>
+                            </div>
+                            
+                            <!-- Comment Form -->
+                            <div class="comment-form">
+                                <h3>Submit a Comment</h3>
+                                <p class="comment-note">Your email address will not be published. Required fields are marked *</p>
+                                <form id="commentForm">
+                                    <div class="form-group">
+                                        <label for="comment">Comment *</label>
+                                        <textarea id="comment" name="comment" rows="5" required></textarea>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group">
+                                            <label for="name">Name *</label>
+                                            <input type="text" id="name" name="name" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="email">Email *</label>
+                                            <input type="email" id="email" name="email" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="website">Website</label>
+                                        <input type="url" id="website" name="website">
+                                    </div>
+                                    <div class="checkbox-group">
+                                        <input type="checkbox" id="saveInfo">
+                                        <label for="saveInfo">Save my name, email, and website in this browser for the next time I comment.</label>
+                                    </div>
+                                    <button type="submit" class="submit-comment-btn">Submit Comment <i class="fas fa-paper-plane"></i></button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Map Section -->
+    <section class="map-section scroll-animate">
+        <div class="container">
+            <h2>Find Us</h2>
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.753627013521!2d32.0!3d0.0!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMMKwMDAnMDAuMCJOIDMywrAwMCcwMC4wIkU!5e0!3m2!1sen!2sug!4v1234567890!5m2!1sen!2sug"
+                    allowfullscreen="" 
+                    loading="lazy"
+                    title="School Location">
+                </iframe>
+                <p class="map-address"><i class="fas fa-map-pin"></i> Church of Uganda Busimbi Hill, Mityana Municipality, Along Mosque Road</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3><i class="fas fa-phone-alt"></i> Contact Us</h3>
+                    <p><i class="fas fa-phone"></i> 0754645377 / 0778654311</p>
+                    <p><i class="fas fa-envelope"></i> info@gloryhighschool.ac.ug</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Busimbi Hill, Mityana</p>
+                </div>
+                <div class="footer-section">
+                    <h3><i class="fas fa-link"></i> Quick Links</h3>
+                    <ul>
+                        <li><a href="admissions.html"><i class="fas fa-chevron-right"></i> Apply Now</a></li>
+                        <li><a href="dropdown-pages/academics/calendar.html"><i class="fas fa-chevron-right"></i> Academic Calendar</a></li>
+                        <li><a href="dropdown-pages/school-life/events.html"><i class="fas fa-chevron-right"></i> Upcoming Events</a></li>
+                        <li><a href="contacts.html"><i class="fas fa-chevron-right"></i> Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3><i class="fas fa-share-alt"></i> Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Glory High School. All rights reserved. <i class="fas fa-heart" style="color: #e74c3c;"></i></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Chat Widget -->
+    <div class="chat-widget" id="chatWidget">
+        <button class="chat-toggle" aria-label="Open chat">
+            <i class="fas fa-comment"></i>
+        </button>
+        <div class="chat-box">
+            <div class="chat-header">
+                <h4><i class="fas fa-comment-dots"></i> Chat with us</h4>
+                <button class="close-chat" aria-label="Close chat"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="chat-messages">
+                <p class="bot-message"><i class="fas fa-robot"></i> Hello! How can we help you today?</p>
+            </div>
+            <div class="chat-input">
+                <input type="text" placeholder="Type your message...">
+                <button><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- JavaScript Files -->
+    <script src="js/main.js"></script>
+    <script src="js/header-scroll.js"></script>
+    <script src="js/navigation.js"></script>
+    <script src="js/darkMode.js"></script>
+    <script src="js/banner-slider.js"></script>
+    <script src="js/chatWidget.js"></script>
+    <script src="js/backToTop.js"></script>
+    <script src="js/scroll-animations.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/comments.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Contact Us - Glory High School</title>
+    <!-- Core CSS Files -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/navigation.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/dark-mode.css">
+    <link rel="stylesheet" href="css/portrait-mode.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- Contact Page Specific CSS -->
+    <link rel="stylesheet" href="css/contact.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- EmailJS Library for sending emails -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+<body>
+    <!-- Top Header with Contact Info -->
+    <div class="top-header" id="topHeader">
+        <div class="container">
+            <div class="contact-info">
+                <div class="phone-numbers">
+                    <i class="fas fa-phone-alt"></i>
+                    <a href="tel:0755730931">0755730931</a>
+                    <span class="separator">|</span>
+                    <a href="tel:0766809020">0766809020</a>
+                </div>
+                <div class="email">
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:fivestarsaloon3@gmail.com">fivestarsaloon3@gmail.com</a>
+                </div>
+                <div class="location">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Church of Uganda Busimbi Hill, Mityana</span>
+                </div>
+            </div>
+            <div class="dark-mode-toggle">
+                <button id="darkModeBtn" class="dark-mode-btn">🌓 Dark Mode</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Header -->
+    <header class="main-header" id="mainHeader">
+        <div class="container">
+            <a href="index.html" class="logo-link">
+                <div class="logo-section">
+                    <img src="assets/images/seeta3.png" alt="Glory High School Logo" class="logo" onerror="this.src='https://via.placeholder.com/60x60?text=GHS'">
+                    <div class="school-info">
+                        <h1>Glory High School</h1>
+                        <p class="motto">Excellence, Integrity, Service</p>
+                    </div>
+                </div>
+            </a>
+            
+            <nav class="main-nav">
+                <ul class="nav-menu">
+                    <!-- Home Dropdown -->
+                    <li class="dropdown">
+                        <a href="index.html">Home</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="index.html">Home Overview</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- About Dropdown -->
+                    <li class="dropdown">
+                        <a href="about.html">About</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="dropdown-pages/about/history.html">History</a></li>
+                            <li><a href="dropdown-pages/about/mission-vision.html">Mission & Vision</a></li>
+                            <li><a href="dropdown-pages/about/leadership.html">Leadership</a></li>
+                            <li><a href="dropdown-pages/about/staff.html">Staff Directory</a></li>
+                            <li><a href="dropdown-pages/about/accreditation.html">Accreditation</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Academics Dropdown -->
+                    <li class="dropdown">
+                        <a href="academics.html">Academics</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="dropdown-pages/academics/curriculum.html">Curriculum</a></li>
+                            <li><a href="dropdown-pages/academics/departments.html">Departments</a></li>
+                            <li><a href="dropdown-pages/academics/calendar.html">Academic Calendar</a></li>
+                            <li><a href="dropdown-pages/academics/results.html">Examination Results</a></li>
+                            <li><a href="dropdown-pages/academics/apply-now.html" class="apply-btn">Apply Now</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Admissions Dropdown -->
+                    <li class="dropdown">
+                        <a href="admissions.html">Admission</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="dropdown-pages/admissions/requirements.html">Requirements</a></li>
+                            <li><a href="dropdown-pages/admissions/fees-structure.html">Fees Structure</a></li>
+                            <li><a href="dropdown-pages/admissions/application-form.html">Application Form</a></li>
+                            <li><a href="dropdown-pages/admissions/scholarships.html">Scholarships</a></li>
+                            <li><a href="dropdown-pages/admissions/faqs.html">FAQs</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- School Life Dropdown -->
+                    <li class="dropdown">
+                        <a href="school-life.html">School Life</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="dropdown-pages/school-life/sports.html">Sports</a></li>
+                            <li><a href="dropdown-pages/school-life/clubs.html">Clubs & Societies</a></li>
+                            <li><a href="dropdown-pages/school-life/events.html">Events</a></li>
+                            <li><a href="dropdown-pages/school-life/gallery.html">Gallery</a></li>
+                            <li><a href="dropdown-pages/school-life/student-council.html">Student Council</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Contacts Dropdown - Active -->
+                    <li class="dropdown active">
+                        <a href="contacts.html">Contacts</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="contacts.html" class="active">Contact Form</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- YouTube Video Section -->
+    <section class="video-section">
+        <div class="video-container">
+            <div class="video-wrapper">
+                <div class="video-title-overlay">
+                    <h2 class="section-title-overlay">Why choose us?</h2>
+                </div>
+                <iframe 
+                    src="https://www.youtube.com/embed/vtIc5wNj7vA?si=KlH1NoZs7KyiNvC4&autoplay=0&rel=0" 
+                    title="Glory High School Video" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerpolicy="strict-origin-when-cross-origin" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-choose-us">
+        <div class="container">
+            <div class="features-grid">
+                <!-- Left Column -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Core Production</h3>
+                    <p>We have managed to produce some of the country's top job holders like the Governor BOU & Minister of Finance.</p>
+                </div>
+
+                <!-- Middle Column (Different Color) -->
+                <div class="feature-card middle-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h3>We Always Lead</h3>
+                    <p>Across all parts of the curriculum, we produce some of the best students & athletes in the country each year.</p>
+                </div>
+
+                <!-- Right Column -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>We are Resourceful</h3>
+                    <p>With a well-equipped ICT LAB & Library, we boast of resources and tools to enable our children excel in school.</p>
+                </div>
+            </div>
+
+            <!-- Statistics Row -->
+            <div class="stats-row">
+                <div class="stat-item">
+                    <div class="stat-number">4500+</div>
+                    <div class="stat-label">Students</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">185+</div>
+                    <div class="stat-label">Teachers</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">7+</div>
+                    <div class="stat-label">Co-curricular</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Image Gallery Section -->
+    <section class="image-gallery">
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="assets/images/seeta3.png" alt="Gallery Image 1">
+            </div>
+            <div class="gallery-item">
+                <img src="assets/images/seeta3.png" alt="Gallery Image 2">
+            </div>
+            <div class="gallery-item">
+                <img src="assets/images/seeta3.png" alt="Gallery Image 3">
+            </div>
+            <div class="gallery-item">
+                <img src="assets/images/seeta3.png" alt="Gallery Image 4">
+            </div>
+            <div class="gallery-item">
+                <img src="assets/images/seeta3.png" alt="Gallery Image 5">
+            </div>
+            <div class="gallery-item">
+                <img src="assets/images/seeta3.png" alt="Gallery Image 6">
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="container">
+            <div class="section-header zoom-in-animation">
+                <i class="fas fa-map-marked-alt"></i>
+                <h2>Find Us Here</h2>
+                <p>Visit our campus located in Busimbi Hill, Mityana</p>
+            </div>
+            <div class="map-wrapper slide-up-animation">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.729043562258!2d32.418171!3d0.417119!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x177d1f6b5b5b5b5b%3A0x5b5b5b5b5b5b5b5b!2sMityana!5e0!3m2!1sen!2sug!4v1700000000000!5m2!1sen!2sug" 
+                    width="100%" 
+                    height="450" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3><i class="fas fa-phone-alt"></i> Contact Us</h3>
+                    <p><i class="fas fa-phone"></i> 0755730931 / 0766809020</p>
+                    <p><i class="fas fa-envelope"></i> fivestarsaloon3@gmail.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Busimbi Hill, Mityana</p>
+                </div>
+                <div class="footer-section">
+                    <h3><i class="fas fa-link"></i> Quick Links</h3>
+                    <ul>
+                        <li><a href="admissions.html"><i class="fas fa-chevron-right"></i> Apply Now</a></li>
+                        <li><a href="dropdown-pages/academics/calendar.html"><i class="fas fa-chevron-right"></i> Academic Calendar</a></li>
+                        <li><a href="dropdown-pages/school-life/events.html"><i class="fas fa-chevron-right"></i> Upcoming Events</a></li>
+                        <li><a href="contacts.html"><i class="fas fa-chevron-right"></i> Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3><i class="fas fa-share-alt"></i> Follow Us</h3>
+                    <div class="social-links">
+                        <a href="https://facebook.com/gloryhighschool" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/gloryhighschool" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="https://youtube.com/@gloryhighschool" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="https://tiktok.com/@gloryhighschool" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://wa.me/256755730931" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Glory High School. All rights reserved. <i class="fas fa-heart" style="color: #e74c3c;"></i></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Chat Widget -->
+    <div class="chat-widget" id="chatWidget">
+        <button class="chat-toggle" aria-label="Open chat">
+            <i class="fas fa-comment"></i>
+        </button>
+        <div class="chat-box">
+            <div class="chat-header">
+                <h4><i class="fas fa-comment-dots"></i> Chat with us</h4>
+                <button class="close-chat" aria-label="Close chat"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="chat-messages">
+                <p class="bot-message"><i class="fas fa-robot"></i> Hello! How can we help you today?</p>
+            </div>
+            <div class="chat-input">
+                <input type="text" placeholder="Type your message...">
+                <button><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript Files -->
+    <script src="js/main.js"></script>
+    <script src="js/header-scroll.js"></script>
+    <script src="js/navigation.js"></script>
+    <script src="js/darkMode.js"></script>
+    <script src="js/scroll-animations.js"></script>
+    <script src="js/backToTop.js"></script>
+    <script src="js/chatWidget.js"></script>
+    <!-- Contact Form JavaScript -->
+    <script src="js/contact-form.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/comments.js"></script>
+</body>
+</html>
